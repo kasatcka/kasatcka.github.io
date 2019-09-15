@@ -7,6 +7,9 @@
 
  body {
  	font-size: 100%;
+ 	text-align: center;
+ 
+
  }
 
 ul {
@@ -23,8 +26,8 @@ li {
 a {
 	display: block;
 	width: 100%;
-	max-width: 300px;
-	min-width: 300px;
+	max-width: 200px;
+	min-width: 200px;
 	text-align: center;
 	border: 10px solid yellow;
 	border-radius: 5px;
