@@ -1,7 +1,12 @@
 body {
 	background-color: #990909;
-
+	padding-bottom: 20px;
 }
+
+.site-header{
+	text-align: center;
+}
+
 .container {
 	background-color: #000000;
 	display: flex;
@@ -18,24 +23,51 @@ body {
 	font-size: 18px;
 	color: white;
 }
+
 .container div img {
 	width: 80%;
 }
-.side {
 
+a {
+	color: #E95B11;
+}
+
+.side-left {
 	background-color: #7D0909;
 	float: left;
 	font-size: 18px;
-
+	width: 25%;
+	height: 350px;
+	line-height: 2.5;
 }
-.site-header{
+
+.side-right {
+	background-color: #E3DDDD;
+	float: left;
+	font-size: 18px;
+	width: 25%;
+	height: 350px;
+}
+
+.side {
 	text-align: center;
+	background-color: #BDBDBD;
+	padding: 5px;
+	border: 0;
 }
 
-.site-footer {
+main {
+	color: white;
+	float: left;
+	width: 50%;
+	font-size: 18px;
+}
+
+footer {
+	clear: both;
 	text-align: center;
 	background-color: #E95B11;
 	font-size: 20px;
 	color: white;
-
 }
+
