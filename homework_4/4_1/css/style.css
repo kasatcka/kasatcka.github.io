@@ -1,24 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
-	max-width: 760px;
+	max-width: 780px;
 	padding-left: 30px;
+	margin: 0 auto;
 
+}
+
+.pic {
+	width: 100%;
 }
 
 .div-header {
 	margin-top: 15px;
+	margin-bottom: 20px;
 	background-color:#A52A2A; 
 	color:white;
 	font-size: 30px;
 	text-align: center;
 	font-weight: bold;
+	width: 100%;
 }
 
 .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	width: 100%;
-	
+
 }
 
 .div-img {
@@ -33,14 +44,12 @@ body {
 	color: white;
 }
 
-.down {
-	padding-top: 10px;
-	padding-bottom: 10px;
+.down,.up {
+	padding: 10px 10px 10px 0;
 	font-size: 18px;
 }
 .up {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 10px 10px 10px 0;
 	font-size: 18px;
 }
 span {
