@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size:100%;
+	height: : 420px;
+	width: 1920px;
+	background-color: black;
+	padding-top: 120px 0 55px ;
+}
+
+.logo__a, li {
+	display: inline-block;
+}
+
+li {
+	max-width: 145px;
+	display: inline-block;
+}
+
+.text__p {
+	color: white;
+}
+
+nav,
+.logo__p,
+.copyring__p,
+.text__p, .p__line {
+	text-align: center;
+}
