@@ -16,8 +16,14 @@ body {
 	padding-top: 120px 0 55px ;
 }
 
+.nav__a:hover {
+	background: orange;
+	padding:5px;
+	border-radius: 15px;
+}
 .logo__a, li {
 	display: inline-block;
+	
 }
 
 li {
@@ -27,6 +33,8 @@ li {
 
 .text__p {
 	color: white;
+	font-size: 20px;
+
 }
 
 nav,
