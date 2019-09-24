@@ -11,67 +11,49 @@ html, body {
 body {
 	font-size:100%;
 	font-family: sans-serif;
-	padding-top: 40px;
 }
 
 footer {
 	background-color: black;
 	margin: 0 auto;
-	padding-top: 120px 0 55px;
-	padding-bottom: 42px;
 }
 
-.nav__li:not(:last-child) {
-	margin-right: 36px;
-}
-
-.nav__a:hover {
-	background: orange;
-	padding:1px;
-	border-radius: 15px;
-}
-
-.logo__a {
-	display: inline-block;
-	margin-top: 120px;
-	margin-bottom: 45px;
-}
-
-.p__line {
-	margin-bottom: 15px;
-}
-
-li {
-	max-width: 145px;
-	display: inline-block;
-}
-
-.text__p {
-	color: white;
-	font-size: 15px;
-	text-transform: uppercase;
-	margin: 0;
-	padding: 0;
-}
-
-.navigation {
-	margin-bottom: 85px;
-}
-
-nav,
-.logo__p,
-.copyring__p,
-.text__p,
-.p__line {
+.item {
 	text-align: center;
 }
 
-.copyring__p {
+h2,hr {
 	color: white;
-	text-transform: capitalize;
-	font-size: 15px;
+	text-align: center;
 }
 
-span {
-	color:#19C8FA;
+nav {
+	text-align: center;
+}
+
+.nav_a:hover {
+	background-color: orange;
+	color: red;
+	border-color: currentcolor;
+	display: block;
+	border-radius: 1 50%;
+
+}
+
+.nav_li {
+	display:inline-block;
+}
+
+.nav_li:not(:last-child) {
+padding-right: 20px;
+}
+
+.down {
+	text-align: center;
+	color: white;
+	text-transform: capitalize;
+}
+
+.copyring_a {
+	color:#19C8FA; 
 }
