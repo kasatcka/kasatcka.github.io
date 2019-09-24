@@ -4,9 +4,10 @@
 	box-sizing: border-box;
 }
 
-body {
+html,body {
 	background-color: #990909;
 	font-size: 100%;
+	font-family: sans-serif;
 	padding-bottom: 20px;
 	margin: 0 auto;
 }
@@ -17,6 +18,7 @@ nav {
 
 .site-header{
 	text-align: center;
+	padding-bottom: 10px;
 }
 
 .container {
@@ -26,24 +28,31 @@ nav {
 	width: 100%;
 	margin: 0 auto;
 }
+
 .container a {
 	text-align: center;
 	text-decoration: none;
 }
+
 .container li{
 	background-color: #000000;
 	text-align: center;
 	margin: 20px;
-	/*max-width: 200px;*/
-	/*min-width: 200px;*/
 	font-size: 18px;
 	color: white;
-	box-shadow: 2px 2px 17px white;
-	
+	/*padding: 15px 0 0;*/
+	box-shadow: 2px 2px 15px white;
 }
+
 figcaption {
 	color: white;
+	text-transform: capitalize;
 }
+
+figure {
+	padding: 15px 0 0;
+}
+
 nav img {
 	width: 60%;
 }
@@ -57,7 +66,7 @@ a {
 }
 
 a:hover {
-	border-color: currentColor;
+	border-color: green;
 	color: grey;
 }
 
@@ -74,7 +83,7 @@ a:hover {
 	background-color: #E3DDDD;
 	float: left;
 	font-size: 18px;
-	width: 25%;
+	width: 20%;
 	height: 350px;
 
 }
@@ -88,16 +97,17 @@ a:hover {
 	background-color: #BDBDBD;
 	border: 0;
 }
-пшіе
+
 main {
 	color: white;
 	float: left;
 	width: 50%;
 	font-size: 18px;
 }
- .main__p {
- 	margin-bottom:10px;
- }
+
+.main__p {
+	margin-bottom:10px;
+}
 
 footer {
 	clear: both;
