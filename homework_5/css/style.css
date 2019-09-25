@@ -21,7 +21,7 @@ footer {
 
 .item {
 	text-align: center;
-	padding-bottom: 55px;
+	margin-bottom: 55px;
 }
 
 .item_a {
@@ -33,12 +33,12 @@ h2 {
 	color: white;
 	text-align: center;
 	text-transform: uppercase;
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 nav {
 	text-align: center;
-	padding: 20px 0 90px;
+	margin: 20px 0 90px;
 }
 
 hr {
@@ -52,7 +52,7 @@ hr {
 }
 
 .nav_li:not(:last-child) {
-	padding-right: 35px;
+	margin-right: 35px;
 }
 
 .nav_a {
