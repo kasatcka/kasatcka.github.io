@@ -14,7 +14,7 @@ body {
 }
 
 footer {
-	background-color: black;
+	background-color: #121116;
 	margin: 0 auto;
 	padding: 120px 0 35px;
 }
@@ -29,14 +29,9 @@ footer {
 	display: inline-block;
 }
 
-.item_img {
-	width: 100%;
-}
-
 h2 {
 	color: white;
 	text-align: center;
-	/* font-size: 15px; */
 	text-transform: uppercase;
 	padding-bottom: 20px;
 }
@@ -51,22 +46,31 @@ hr {
 	margin: 0 auto;
 }
 
-.nav_li {
+.nav_ul {
 	display:inline-block;
+	font-size: 0;
 }
 
 .nav_li:not(:last-child) {
 	padding-right: 35px;
 }
 
+.nav_a {
+	display: inline-block;
+}
+
+.nav_li {
+	display: inline-block;
+	font-size: 0;
+}
+
 .down {
 	text-align: center;
 	color: white;
 	text-transform: capitalize;
-	/* font-size: 15px; */
 }
 
 .copyring_a {
-	color:#19C8FA; 
+	color:#19C8FA;
 	text-decoration: none;
 }
