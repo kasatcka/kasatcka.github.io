@@ -10,79 +10,93 @@ html,body {
 
 body {
 	margin: 0 auto;
-	font-family: sans-serif;
+	font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+	font-size: 25px;
 	background: #373F41;
 }
 
-footer {
+.title {
 	text-align: center;
 	width: 100%;
 	background: #474E50;
-	color: white;
+	color: #D88B80;
 	padding: 10px 0 10px;
 }
 
 .container {
 	width: 100%;
 	margin: 0 auto;
+	margin-top: 20px;
 }
 
-.container li {
+span,h3 {
+	text-transform: capitalize;
+}
+
+
+.container_label {
+	display: block;
+}
+
+.container_li {
+	padding: 5px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid #3c3c3c;
+	background: #848499;
 	position: relative;
+	height: 35px;
 }
 
-/*.container li:nth-child(odd) {
- background: red;
+.dbl-border {
+	width: 600px;
+	color: white;
+	list-style: none;
+	padding-left: 0;
+	margin:0 auto;
 }
 
-.container li:nth-child(even) {
- background: green;
- }*/
+input:checked + span {
+	text-decoration: line-through;
+}
 
- .dbl-border {
- 	width: 300px;
- 	color: white;
- 	list-style: none;
- 	padding-left: 0;
- 	margin:0 auto;
- }
+[type="checkbox"] {
+	margin-right: 10px;
+}
 
- [type="checkbox"] {
- 	margin-right: 10px;
- }
+.container_li:nth-child(2n) {
+	background: #77778E;
+}
 
- li {
- 	padding: 5px;
- 	border-bottom: 1px solid black;
- 	border-top: 1px solid #3c3c3c;
- 	background: #85849A;
- 	position: relative;
- }
+.container_li:first-child {
+	border-top: none;
+}
 
- li:nth-child(2n) {
- 	background: #787791;
- }
+.container_li:last-child {
+	border-bottom: none;
+}
 
- li:first-child {
- 	border-top: none;
- }
+.container_li:hover {
+	background: #5E6174;
+	border: 2px solid white;
+	width: 98%;
+}
 
- li:last-child {
- 	border-bottom: none;
- }
-
-.container li:hover {
-	background: black;
-	width: 97%;
+[type="submit"]:hover {
+	display: block;
+	width: 600px;
+	color: #474E50;
+	background: #D88B80;
 }
 
 [type="submit"] {
 	display: block;
-	width: 300px;
-	height: 30px;
-	color: white;
+	width: 600px;
+	height: 45px;
+	font-size: 25px;
+	color: #D88B80;
 	padding-left: 0;
 	margin:15px auto;
 	background: #474E50;
-	border:none; 
+	border:none;
 }
+
