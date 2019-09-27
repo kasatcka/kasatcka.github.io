@@ -45,6 +45,7 @@ span,h3 {
 	background: #848499;
 	position: relative;
 	height: 35px;
+	transition: all .1s ease-in;
 }
 
 .dbl-border {
