@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border;
+	box-sizing: border-box;
 }
 
 html,body {
@@ -22,13 +22,15 @@ body {
 	background: #474E50;
 	color: #D88B80;
 	padding: 10px 0 10px;
+	margin-bottom: 20px;
 }
 
 .container {
 	width: 100%;
+	max-width: 1200px;
+	min-width: 640px;
 	margin: 0 auto;
-	margin-top: 20px;
-
+	padding: 0 20px;
 }
 
 span,h3 {
@@ -38,24 +40,23 @@ span,h3 {
 
 .container_label {
 	display: block;
+	height: 40px;
+	padding-left: 10px;
+
 }
 
 .container_li {
-	padding: 5px;
-	border-bottom: 1px solid black;
-	border-top: 1px solid #3c3c3c;
 	background: #848499;
 	position: relative;
-	height: 35px;
 	transition: all .1s ease-in;
 }
 
 .dbl-border {
-	width: 600px;
+	max-width: 640px;
 	color: white;
 	list-style: none;
-	padding-left: 0;
-	margin:0 auto;
+	margin: 0 auto;
+	padding-bottom: 30px;
 }
 
 input:checked + span {
@@ -78,27 +79,33 @@ input:checked + span {
 	border-bottom: none;
 }
 
-.container_li:hover {
+.container_label:hover {
 	background: #5E6174;
 	border: 2px solid white;
-	width: 98%;
+	width: 100%;
 }
 
-[type="submit"]:hover {
+.container_label:active {
+	background: #D88B80;
+	border: 2px solid white;
+	width: 100%;
+}
+
+[type="submit"]:active {
 	display: block;
-	width: 600px;
+	max-width: 1200px;
 	color: #474E50;
 	background: #D88B80;
 }
 
 [type="submit"] {
 	display: block;
-	width: 600px;
-	height: 45px;
+	max-width: 1200px;
+	min-width: 640px;
+	padding: 15px;
 	font-size: 25px;
 	color: #D88B80;
-	padding-left: 0;
-	margin:15px auto;
+	margin: 0 auto;
 	background: #474E50;
 	border:none;
 }
