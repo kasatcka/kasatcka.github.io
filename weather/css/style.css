@@ -6,24 +6,22 @@
 
 html,body {
 	height: 100%;
+
 }
+
 body {
 	width: 100%;
-	max-width: 1200px;
 	margin: 0 auto;
 	color: white;
-	border: 20px solid #1E7EAE;
 	font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+	background: #268EC4;
 }
 
 .container {
 	width: 100%;
-	max-width: 1200px;
-	padding:0 15px;
+	max-width: 960px;
+	padding:20px 15px;
 	margin: 0 auto;
-	text-transform: capitalize;
-	background: #268EC4;
-	height: 100%;
 }
 
 .title {
@@ -31,13 +29,24 @@ body {
 	font-size: 25px;
 }
 
+.upper {
+	text-transform: uppercase;
+}
+
+.capital {
+	text-transform: capitalize;
+	margin-right: 20px;
+}
+
 .weath {
+	display: inline-block;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 960px;
 	list-style: none;
 	text-align: center;
 	font-size: 0;
 	margin-bottom: 20px;
+	border: 2px solid white;
 }
 
 .weath__li {
@@ -45,28 +54,25 @@ body {
 }
 
 .weath__a {
-	display: block;
-	padding: 40px 25px 40px ;
+	display: inline-block;
+	width: 100%;
+	padding: 20px 0 20px;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
+	text-transform: capitalize;
 	border: 2px solid white;
 }
 
-.weath:hover {
-	opacity: 0.5;
-}
-
-
-.wi {
-	padding-left: 20px;
+.weath__a:hover {
+	opacity: .5;
 }
 
 .blue {
 	background-color:#2596C8;
 }
 
-.lightblue{
+.lightblue {
 	background-color: #28BDCA;
 }
 
@@ -116,4 +122,8 @@ li.twfive {
 
 li.hundred {
 	width: 100%;
+}
+
+.footer_span {
+	text-transform: capitalize;
 }
