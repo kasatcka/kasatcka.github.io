@@ -1,4 +1,4 @@
-* * {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -11,7 +11,6 @@ body {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	background: #268EC4;
 	color: white;
 	border: 20px solid #1E7EAE;
 	font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
@@ -23,16 +22,18 @@ body {
 	padding:0 15px;
 	margin: 0 auto;
 	text-transform: capitalize;
+	background: #268EC4;
+	height: 100%;
 }
 
 .title {
 	margin-bottom: 20px;
+	font-size: 25px;
 }
 
 .weath {
 	width: 100%;
 	max-width: 1200px;
-	margin: 0 auto;
 	list-style: none;
 	text-align: center;
 	font-size: 0;
