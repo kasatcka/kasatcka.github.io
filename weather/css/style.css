@@ -46,7 +46,6 @@ body {
 	text-align: center;
 	font-size: 0;
 	margin-bottom: 20px;
-	border: 2px solid white;
 }
 
 .weath__li {
@@ -61,11 +60,15 @@ body {
 	font-size: 18px;
 	color: white;
 	text-transform: capitalize;
-	border: 2px solid white;
+	border: 1px solid white;
 }
 
-.weath__a:hover {
-	opacity: .5;
+.weath:hover .weath__a {
+	opacity: .45;
+}
+
+.weath .weath__a:hover {
+	opacity: 1;
 }
 
 .blue {
