@@ -13,7 +13,6 @@ body {
 	font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
 	font-size: 25px;
 	background: #373F41;
-	border: 20px solid white;
 }
 
 .title {
@@ -28,7 +27,6 @@ body {
 .container {
 	width: 100%;
 	max-width: 1200px;
-	min-width: 640px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -42,25 +40,30 @@ span,h3 {
 	display: block;
 	height: 40px;
 	padding-left: 10px;
-
+	background: #848499;
+	transition: all .1s ease-in;
+	border: 1px solid white;
 }
 
 .container_li {
-	background: #848499;
 	position: relative;
-	transition: all .1s ease-in;
 }
 
 .dbl-border {
-	max-width: 640px;
 	color: white;
 	list-style: none;
 	margin: 0 auto;
-	padding-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 input:checked + span {
 	text-decoration: line-through;
+}
+
+.container_span {
+	height: 40px;
+	line-height: 40px;
+	white-space: nowrap;
 }
 
 [type="checkbox"] {
@@ -81,28 +84,22 @@ input:checked + span {
 
 .container_label:hover {
 	background: #5E6174;
-	border: 2px solid white;
-	width: 100%;
 }
 
 .container_label:active {
 	background: #D88B80;
-	border: 2px solid white;
-	width: 100%;
 }
 
 [type="submit"]:active {
 	display: block;
-	max-width: 1200px;
 	color: #474E50;
 	background: #D88B80;
 }
 
 [type="submit"] {
+	width: 100%;
 	display: block;
-	max-width: 1200px;
-	min-width: 640px;
-	padding: 15px;
+	padding: 15px 0 15px;
 	font-size: 25px;
 	color: #D88B80;
 	margin: 0 auto;
