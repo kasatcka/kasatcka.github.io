@@ -2,65 +2,70 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>CSS</title>
+	<title>Hard</title>
+	<link rel="stylesheet" href="C:\Users\Home\AppData\Roaming\Sublime Text 3\Lib\reset.css">
+	<link rel="stylesheet" href="C:\Users\Home\AppData\Roaming\Sublime Text 3\Lib\normalize.css">
+	<link rel="icon" href="./fav/favicon.png" type="image/png" />
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	<header>
-		<div class="site-header"><img src="./img/title.gif" alt="Заголовок"></div>
+		<a href="#" class="site-header"><img src="./img/title.gif" alt="Заголовок"></a>
 	</header>
-		<nav>
-			<ul class="container">
-				<li>
-					<a href="#">
-						<figure>
-							<img src="./img/img00.jpg" alt="cat">
-							<figcaption>home</figcaption>
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<figure>
-							<img src="./img/img01.jpg" alt="butterfly">
-							<figcaption>about</figcaption>
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<figure>
-							<img src="./img/img02.jpg" alt="clock">
-							<figcaption>services</figcaption>
-						</figure>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<figure>
-							<img src="./img/img03.jpg" alt="flower">
-							<figcaption>contact</figcaption>
-						</figure>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	
-	<aside class="side-left">
-		<ul>
-			<li><a href="">Lorem ipsum.</a></li>
-			<li><a href="">Dolor sit</a></li>
-			<li><a href="">Consectetur adipisicing</a></li>
-			<li><a href="">Dolor, corporis.</a></li>
-			<li><a href="">Voluptates quisquam?</a></li>
+
+	<nav class="navigation">
+		<ul class="navigation__ul">
+			<li class="navigation__list">
+				<a class="navigation__link" href="#">
+					<figure>
+						<img class="navigation__pic" src="./img/img00.jpg" alt="cat">
+						<figcaption class="navigation__cap">home</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="navigation__list">
+				<a class="navigation__link" href="#">
+					<figure>
+						<img class="navigation__pic" src="./img/img01.jpg" alt="butterfly">
+						<figcaption class="navigation__cap">about</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="navigation__list">
+				<a class="navigation__link" href="#">
+					<figure>
+						<img class="navigation__pic" src="./img/img02.jpg" alt="clock">
+						<figcaption class="navigation__cap">services</figcaption>
+					</figure>
+				</a>
+			</li>
+			<li class="navigation__list">
+				<a class="navigation__link" href="#">
+					<figure>
+						<img class="navigation__pic" src="./img/img03.jpg" alt="flower">
+						<figcaption class="navigation__cap">contact</figcaption>
+					</figure>
+				</a>
+			</li>
 		</ul>
-	</aside>
-	<main>
-		<p class="main__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nesciunt odio consectetur aliquam quod natus temporibus assumenda, qui quo itaque vitae hic voluptatum accusamus veniam incidunt! Deserunt quos, molestiae, natus labore consequuntur porro delectus sequi et saepe, pariatur consectetur! Officiis, voluptas dolor fuga! Sint similique fugit neque optio nobis beatae animi maxime, veniam aliquam! Veritatis distinctio voluptatibus quis pariatur impedit.</p>
-		<p class="main__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eveniet dicta soluta suscipit, quia vitae saepe voluptatibus, accusamus nostrum. Quod iste alias recusandae eaque qui nemo repellendus hic sunt, ipsum.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti accusamus odio modi saepe perferendis officia autem incidunt recusandae voluptate!</p>
-	</main>
-	<aside class="side-right">
+	</nav>
+	<main class="general">
+		<div class="side-left">
+			<ul>
+				<li><a href="">Lorem ipsum.</a></li>
+				<li><a href="">Dolor sit</a></li>
+				<li><a href="">Consectetur adipisicing</a></li>
+				<li><a href="">Dolor, corporis.</a></li>
+				<li><a href="">Voluptates quisquam?</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<p class="content__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nesciunt odio consectetur aliquam quod natus temporibus assumenda, qui quo itaque vitae hic voluptatum accusamus veniam incidunt! Deserunt quos, molestiae, natus labore consequuntur porro delectus sequi et saepe, pariatur consectetur! Officiis, voluptas dolor fuga! Sint similique fugit neque optio nobis beatae animi maxime, veniam aliquam! Veritatis distinctio voluptatibus quis pariatur impedit.</p>
+			<p class="content__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eveniet dicta soluta suscipit, quia vitae saepe voluptatibus, accusamus nostrum. Quod iste alias recusandae eaque qui nemo repellendus hic sunt, ipsum.</p>
+			<p class="content__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti accusamus odio modi saepe perferendis officia autem incidunt recusandae voluptate!</p>
+		
+	
+	<div class="side-right">
 		<p class="side"><strong>Title</strong></p>
 		<p class="side__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		</p>
@@ -70,7 +75,9 @@
 		<hr aligh="center" width="50%">
 		<p class="side__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		</p>
-	</aside>
+	</div>
+</main>
+</main>
 	<footer>
 		<p>&#169; Copyright</p>
 	</footer>
