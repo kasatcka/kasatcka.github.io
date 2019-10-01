@@ -26,7 +26,7 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 960px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -42,7 +42,6 @@ span,h3 {
 	padding-left: 10px;
 	background: #848499;
 	transition: all .1s ease-in;
-	border: 1px solid white;
 }
 
 .container_li {
@@ -70,7 +69,7 @@ input:checked + span {
 	margin-right: 10px;
 }
 
-.container_li:nth-child(2n) {
+.container_li:nth-child(2n) > label {
 	background: #77778E;
 }
 
@@ -82,8 +81,9 @@ input:checked + span {
 	border-bottom: none;
 }
 
+
 .container_label:hover {
-	background: #5E6174;
+	background: #625E77;
 }
 
 .container_label:active {
