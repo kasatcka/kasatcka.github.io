@@ -10,8 +10,8 @@ html,body {
 
 body {
 	margin: 0 auto;
-	font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
-	font-size: 25px;
+	font-family: sans-serif;
+	font-size: 18px;
 	background: #373F41;
 }
 
@@ -26,7 +26,7 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 960px;
+	max-width: 640px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
@@ -35,13 +35,13 @@ span,h3 {
 	text-transform: capitalize;
 }
 
-
 .container_label {
 	display: block;
 	height: 40px;
 	padding-left: 10px;
 	background: #848499;
 	transition: all .1s ease-in;
+	border: 2px groove transparent;
 }
 
 .container_li {
@@ -81,12 +81,13 @@ input:checked + span {
 	border-bottom: none;
 }
 
-
-.container_label:hover {
+.container_li .container_label:hover {
 	background: #625E77;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
 }
 
-.container_label:active {
+.container_li .container_label:active {
 	background: #D88B80;
 }
 
@@ -100,7 +101,7 @@ input:checked + span {
 	width: 100%;
 	display: block;
 	padding: 15px 0 15px;
-	font-size: 25px;
+	font-size: 18px;
 	color: #D88B80;
 	margin: 0 auto;
 	background: #474E50;
