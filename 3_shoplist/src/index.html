@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<title>Title</title>
+	<title>Shoplist</title>
 	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,25 +13,32 @@
 			<ul class="form__list">
 				<li class="form__list-item">
 					<label class="form__label">
-						<input type="checkbox">
-						<span >item</span>
-					</li>
-				</label>
-				<li class="form__list-item">
-					<label class="form__label">
-						<input type="checkbox">
-						<span>item</span>
-					</li>
-				</label>
-				<li class="form__list-item">
-					<label class="form__label">
-						<input type="checkbox">
+						<input class="form__check" type="checkbox" id="1">
+						<label for="1" class="fake-label"></label>
 						<span class="form__text">item</span>
-					</li>
-				</label>
+					</label>
+				</li>
+				<li class="form__list-item">
+					<label class="form__label">
+						<input class="form__check" type="checkbox" id="2">
+						<label for="2" class="fake-label"></label>
+						<span class="form__text">item</span>
+					</label>
+				</li>
+				<li class="form__list-item">
+					<label class="form__label">
+						<input class="form__check" type="checkbox" id="3">
+						<label for="3" class="fake-label"></label>
+						<span class="form__text">item</span>
+					</label>
+				</li>
 			</ul>
 		</form>
+
+		<span class="target"></span>
 	</div>
+
+	<script src="./js/script.js"></script>
 	<script src="js/bundle.js"></script>
 </body>
 </html>
