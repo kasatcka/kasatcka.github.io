@@ -1,0 +1,139 @@
+@font-face {
+	font-family: Hans Kendrick;
+	src: url("../fonts/HansKendrick-Regular.otf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body {
+	height: 100%;
+}
+
+body {
+	font-family: Hans Kendrick,sans-serif;
+	font-size: 100%;
+	background-color: #e2e7ec;
+}
+
+.general {
+	display: flex;
+	width: 100%;
+	padding: 90px 0 90px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+.main__item {
+	padding: 0 10px 20px;
+}
+
+.main__link {
+	display: flex;
+	width: 100%;
+	text-decoration: none;
+}
+
+.large {
+	height: 540px;
+	max-width: 740px;
+	min-width: 740px;
+	position: relative;
+}
+
+.small {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-width: 360px;
+	max-width: 360px;
+	height: 540px;
+	background: white;
+
+}
+
+.main__link-footer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	position: absolute;
+	bottom: 0;
+	color: #FFF;
+	text-transform: uppercase;
+	background: linear-gradient(to bottom, rgba(125,185,232,0) 10%,rgba(0,0,0,0.7) 60%,black 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.main__link-footers {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	bottom: 0;
+	padding: 30px 25px 0 27px;
+	color: black;
+	text-transform: uppercase;
+}
+
+.main__link-footers-only {
+	width: 100%;
+	display: inline-block;
+	bottom: 0;
+	padding: 67px 25px 0 27px;
+	color: black;
+	text-transform: uppercase;
+}
+
+.main__link-title {
+	font-size: 30px;
+	max-width: 430px;
+}
+
+.main__link-titles {
+	font-size: 22px;
+	margin-bottom: 70px;
+	font-weight: 600;
+	line-height: 25px;
+}
+.main__link-text {
+	font-size: 13px;
+	margin-bottom: 25px;
+	opacity: .5;
+}
+
+.main__link[pic="car"] {
+	background: url(../img/car.gif) no-repeat;
+}
+
+.loading {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 100px;
+	font-size: 13px;
+	opacity: .5;
+	text-transform: uppercase;
+}
+
+.loading__img {
+	margin-right: 10px;
+}
+
+.loading__p {
+	line-height: 30px;
+}
