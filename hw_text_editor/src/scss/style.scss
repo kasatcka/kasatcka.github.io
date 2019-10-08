@@ -1,0 +1,75 @@
+@font-face {
+	font-family: ProximaNovaRegular;
+	src: url("../assets/fonts/Proxima Nova Regular.otf");
+}
+
+@font-face {
+	font-family: PlayfairDisplay;
+	src: url("../assets/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+	font-family: FuturaPTHeavy;
+	src: url("../assets/fonts/FuturaPTHeavy.otf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body {
+	min-height: 100%;
+}
+
+body {
+	width: 100%;
+	font-family: sans-serif;
+	color:#464f54;
+	margin: 0 auto;
+}
+
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	background: #464f54;
+	padding-top: 150px;
+	margin: 0 auto;
+}
+
+.main {
+	width: 100%;
+	max-width: 1060px;
+	background-color: white;
+	padding: 150px 130px 40px 125px;
+	margin: 0 auto;
+}
+
+.vertical_line {
+
+}
+
+.autor {
+	font-family: ProximaNovaRegular,sans-serif;
+	font-size: 30px;
+}
+
+.title {
+	font-size:78px;
+	font-family: FuturaPTHeavy,sans-serif;
+	color: #2a2a2a;
+}
+
+.text__p-1 {
+	color:#8f8f8f;
+}
+
+.text__p {
+	font-size:28px;
+	color: black;
+}
+
+/* #f7bd2c yellow
+#181818  gray dark */
