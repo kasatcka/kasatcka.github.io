@@ -1,12 +1,6 @@
-/* font-family: 'Lato', sans-serif;
-font-family: 'Playfair Display', serif; */
-// @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
-// font-family: 'Playfair Display', serif;
-
-// @import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
-// font-family: 'Lato', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:300i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
+
 
 * {
 	margin: 0;
@@ -21,7 +15,7 @@ html,body {
 body {
 	width: 100%;
 	font-family: sans-serif;
-	color: black;
+	color: #8f8f8f;
 	padding-top: 20px;
 	margin: 0 auto;
 }
@@ -43,6 +37,7 @@ body {
 
 .text__title {
 	font-size: 42px;
+	color: black;
 	font-family: 'Playfair Display', serif;
 	text-transform: capitalize;
 	margin-bottom: 40px;
@@ -56,6 +51,7 @@ body {
 
 .t:first-letter {
 	font-size: 110px;
+	color:black;
 	font-family: 'Playfair Display', serif;
 	float: left;
 	padding-right: 30px;
