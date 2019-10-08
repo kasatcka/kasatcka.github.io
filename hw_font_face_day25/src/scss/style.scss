@@ -1,6 +1,26 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
 
+=======
+//  font-family: 'Lato', sans-serif;
+// // font-family: 'Playfair Display', serif;
+
+@font-face {
+	font-family: LatoLight;
+	src: url(../assets/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+	font-family: LatoBold;
+	src: url(../assets/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+	font-family: PlayfairDisplay;
+	src: url(../assets/fonts/PlayfairDisplay-Regular.ttf);
+}
+>>>>>>> 08dcdc0ba0720d6f084fdc1e72a53f500e3fdb07
 
 * {
 	margin: 0;
@@ -14,8 +34,13 @@ html,body {
 
 body {
 	width: 100%;
+<<<<<<< HEAD
 	font-family: sans-serif;
 	color: #8f8f8f;
+=======
+	font-family: LatoLight, sans-serif;
+	color: #5c5c5c;
+>>>>>>> 08dcdc0ba0720d6f084fdc1e72a53f500e3fdb07
 	padding-top: 20px;
 	margin: 0 auto;
 }
@@ -30,15 +55,19 @@ body {
 .text {
 	display: block;
 	padding: 120px;
-	font-family: 'Lato', sans-serif;
 	box-shadow: 3px 3px 10px 0 rgba(0,0,0,.5);
 	margin: 0 auto;
 }
 
 .text__title {
 	font-size: 42px;
+<<<<<<< HEAD
 	color: black;
 	font-family: 'Playfair Display', serif;
+=======
+	font-family: Playfair Display, serif;
+	color: black;
+>>>>>>> 08dcdc0ba0720d6f084fdc1e72a53f500e3fdb07
 	text-transform: capitalize;
 	margin-bottom: 40px;
 }
@@ -51,8 +80,13 @@ body {
 
 .t:first-letter {
 	font-size: 110px;
+<<<<<<< HEAD
 	color:black;
 	font-family: 'Playfair Display', serif;
+=======
+	font-family: PlayfairDisplay, serif;
+	color: black;
+>>>>>>> 08dcdc0ba0720d6f084fdc1e72a53f500e3fdb07
 	float: left;
 	padding-right: 30px;
 	line-height: .8;
@@ -66,7 +100,7 @@ body {
 
 .button {
 	display: inline-block;
-	font-family: 'Lato Bold', sans-serif;
+	font-family: LatoBold, sans-serif;
 	font-size: 18px;
 	color: #eaa258;
 	border: 2px solid  #eaa258;
