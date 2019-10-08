@@ -37,6 +37,7 @@ body {
 	background: #464f54;
 	padding-top: 150px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .main {
@@ -47,28 +48,54 @@ body {
 	margin: 0 auto;
 }
 
-.vertical_line {
-
-}
+// .vertical_line {
+// border-left: 2px solid #ccc; /* Параметры линии */ 
+//     margin-left: 67px; /* Отступ слева */
+//     padding-left: 55px; /* Расстояние от линии до текста */ 
+// }
 
 .autor {
-	font-family: ProximaNovaRegular,sans-serif;
-	font-size: 30px;
+	font-family: ProximaNovaRegular;
+	font-size: 15px;
+	margin-bottom: 50px;
+	color: #8f8f8f;
+	text-transform: uppercase;
 }
 
-.title {
+.text__h1 {
 	font-size:78px;
 	font-family: FuturaPTHeavy,sans-serif;
 	color: #2a2a2a;
+	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
-.text__p-1 {
+.text__h2 {
 	color:#8f8f8f;
+	font-style: italic;
+	margin-bottom: 70px;
 }
 
 .text__p {
-	font-size:28px;
+	font-family: ProximaNovaRegular,sans-serif;
+	font-size:26px;
 	color: black;
+}
+
+.down {
+	margin-bottom: 40px;
+}
+
+.navigation {
+
+	
+}
+.navigation__list {
+	width: 100%;
+	max-width: 812px;
+	display: inline-flex;
+	position: absolute;
+	background-color:#f7bd2c; 
 }
 
 /* #f7bd2c yellow
