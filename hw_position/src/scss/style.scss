@@ -30,7 +30,7 @@ body {
 .container {
 	width: 100%;
 	max-width: 1600px;
-	margin: 0 auto;
+	margin: auto;
 	padding: 0 15px;
 }
 
@@ -57,17 +57,22 @@ body {
 
 .content {
 	display: flex;
-	width: 100%;
-	justify-content: space-around;
-}
-
-.content__list {
 	list-style: none;
-}
+	justify-content: space-around;
 
-.content__card-img {
-	margin-bottom: 20px;
-	width: 100%;
+	&__card {
+		width: 100%;
+		max-width: 270px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		transition: all .3s ease;
+	}
+
+	&__card-img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
 
 .bold {
@@ -80,25 +85,44 @@ body {
 	font-family: LatoLight;
 	font-size: 14px;
 	text-transform: capitalize;
-	padding-bottom: 120px;
+	// padding-bottom: 120px;
 }
 
 .social {
+	list-style: none;
 	display: flex;
-	justify-content:center;
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	left: 0;
-	list-style: none;
-	background-color: #18b5dc;
+	left:0;
+	justify-content: center;
+	align-items: center;
 	opacity: 0;
 	transition: all .3s ease;
+	
+	&:hover {
+		opacity: 1;
+	}
 
+	&__item {
+		margin: 0 5px;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		background-color:#6bbccf;
+		width: 40px;
+		height: 40px;
+		
+	}
+
+	
 }
 
 .social:hover {
-	opacity: 1;
-}
-
+	background-color: #2ca8c6;
+}	
