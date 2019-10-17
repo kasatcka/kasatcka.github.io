@@ -1,5 +1,36 @@
 
 .about {
 	background-color: $bg-about;
+	
+
+
+
+	&__content {
+		width: 100%;
+		max-width: 1200px;
+		display: flex;
+		align-items: center;
+		padding-left: 100px;
+	}
 }
 
+
+.about__content-left {
+	display: flex;
+}
+
+.about__content-right {
+	color: $letter-color;
+
+
+	&__title {
+		font-size: 90px;
+		font-weight: 900;
+	}
+
+	&__subtitle {
+		font-weight: 300;
+		font-size: 17px;
+		line-height: 27px;
+	}
+}
