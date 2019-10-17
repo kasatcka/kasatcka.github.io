@@ -55,7 +55,7 @@ body {
 .title__p {
 	font-size: 16px;
 	font-family: LatoLight;
-	max-width: 45%;
+	max-width: 570px;
 	margin: 0 auto;
 }
 
@@ -68,7 +68,6 @@ body {
 	&__card {
 		width: 100%;
 		max-width: 270px;
-		max-height: 270px;
 		position: relative;
 		display: flex;
 		flex-direction: column;
@@ -105,9 +104,13 @@ body {
 	align-items: center;
 	opacity: 0;
 	transition: all .3s ease;
+	height: 270px;
+	width: 270px;
+
 
 	&:hover {
 		opacity: 1;
+
 	}
 
 	&__item {
@@ -128,5 +131,7 @@ body {
 
 .social:hover {
 	background-color: #2ca8c6;
-
+	height: 270px;
+	width: 270px;
 }
+
