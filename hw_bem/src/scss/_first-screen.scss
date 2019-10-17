@@ -1,6 +1,7 @@
 
 
 .first-screen {
+	display: flex;
 	width: 100%;
 	max-width: 1200px;
 	margin:0 auto;
@@ -15,8 +16,8 @@
 	}
 
 	.main {
-		background: url("../img/scrol.jpg") no-repeat 43% 85%;
-		padding-bottom: 330px;
+		background: url("../img/scrol.jpg") no-repeat 50% 85%;
+		padding-bottom: 300px;
 	}
 
 	&__menu {
@@ -69,9 +70,8 @@
 	font-weight: 300;
 	font-size: 17px;
 	margin-bottom: 35px;
-	max-width: 30%;
+	max-width: 400px;
 	line-height: 27px;
-
 }
 
 .button {
