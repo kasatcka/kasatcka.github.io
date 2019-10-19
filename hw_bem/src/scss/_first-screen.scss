@@ -1,11 +1,9 @@
 
 
 .first-screen {
-	display: flex;
 	width: 100%;
-	max-width: 1200px;
-	margin:0 auto;
-	background: url("../img/1.jpg") top center no-repeat;
+	min-height: 1000px;
+	background:$bg url("../img/1.jpg") top center no-repeat;
 
 
 	&__header {
@@ -15,11 +13,6 @@
 		margin-bottom: 255px;
 	}
 
-	.main {
-		background: url("../img/scrol.jpg") no-repeat 50% 85%;
-		padding-bottom: 300px;
-	}
-
 	&__menu {
 		display: flex;
 		align-items: center;
@@ -27,7 +20,7 @@
 		text-transform: uppercase;
 	}
 
-	&__item {
+	&__item:not(:last-child) {
 		margin-right: 40px;
 
 	}
@@ -61,7 +54,7 @@
 
 .title {
 	font-weight:900;
-	font-size:70px;
+	font-size:60px;
 	margin-bottom: 35px;
 	color: $title-font;
 }
@@ -75,19 +68,26 @@
 }
 
 .button {
-	width: 100%;
-	max-width: 200px;
-	height: 55px;
+	display: inline-flex;
 	color:white;
 	background-color: $line-menu;
-	cursor: pointer;
 	text-transform:uppercase;
 	font-weight: 400;
 	font-size: 20px;
+	text-decoration: none;
+	padding: 17px 24px;
+	border:1px solid grey;
+	transition: all .3s ease;
 
 	&:hover {
 		color:$line-menu;
 		background-color: $letter-color;
 	}
+}
+
+.scrol {
+	position: relative;
+	left:380px;
+	top:300px;
 }
 
