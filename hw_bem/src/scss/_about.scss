@@ -1,6 +1,8 @@
 .about {
 	width: 100%;
+	height: 100vh;
 	background: $bg-about;
+	display: flex;
 
 }
 
@@ -8,6 +10,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 100vh;
 
 	&-right {
 		color:$letter-color;
