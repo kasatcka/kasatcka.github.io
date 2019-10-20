@@ -30,14 +30,14 @@
 .form-sing__input {
 	display: block;
 }
+
 .form-sing__label {
-	display: flex;
-	align-items: column;
+	// display: flex;
+	// align-items: column;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 16px;
 	margin-bottom: 16px;
-	
 }
 
 .form-sing__input {
@@ -51,6 +51,32 @@
 	cursor: pointer;
 
 }
+
+.form-sing__checkbox {
+	display: none;/* <--скрываем дефолтный чекбокс */
+}
+
+.checkbox-new {/* <-- стилизируем новый */
+	height: 15px;
+	width: 15px;
+	border: 1px solid gray;
+	display: flex;
+	position: relative;
+	background-color:$button;
+	border-radius:2px;
+	padding:3px;
+}
+
+[type=checkbox]:checked + .checkbox-new:before {/* <-- ставим иконку, когда чекбокс включен  */
+	content: '\2714';
+	position: absolute;
+	top: -5px;
+	left: 0;
+	font-size:18px;
+	color:#fff;
+}
+
+
 
 .form_sign-footer {
 	display: flex;
