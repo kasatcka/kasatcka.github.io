@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Sign in form</title>
+	<link rel="stylesheet" type="text/css" href="assets/libs/reset.css">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<form class="form-sign">
+			<header class="form-sign__header">
+				<ul class="form-sign__header-menu">
+					<li class="form-sing__header-item">
+						<a class="form-sing__header-link" href="#">
+							<span class="letter-up">sign</span> in</a>
+					</li>
+					<li class="form-sing__header-item">
+						<a class="form-sing__header-link" href="#">
+							<span class="letter-up">join</span> us</a>
+					</li>
+				</ul>
+			</header>
+
+
+
+			<label class="form-sing__label" for="username-field">
+				<span class="pass_span letter-up">username</span>
+				<input type="text" name="login" id="username-field">
+			</label>
+
+			<label class="form-sing__label" for="password-field">
+				<span class="pass_span letter-up">password</span>
+				<input type="password" name="password" id="password-field">
+			</label>
+			<label class="form-sing__label" for="subscribe-field">
+				<input type="checkbox" id="subscribe-field" checked >
+				<span class="">Keep me signed in</span>
+			</label>
+			<input class="form-sing__input" type="submit" name="button" value="Sign in">
+
+			<footer class="form_sign-footer">
+				<a class="form_sing-footer-link" href="#"><span class="letter-up">forgot</span> password</a>
+				<a class="form_sing-footer-link" href="#"><span class="letter-up">create</span> an account</a>
+			</footer>
+		</form>
+	</div>
+	<script src="js/bundle.js"></script>
+</body>
+</html>
