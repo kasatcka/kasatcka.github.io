@@ -32,8 +32,6 @@
 }
 
 .form-sing__label {
-	// display: flex;
-	// align-items: column;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 16px;
@@ -61,6 +59,7 @@
 	width: 15px;
 	border: 1px solid gray;
 	display: flex;
+
 	position: relative;
 	background-color:$button;
 	border-radius:2px;
