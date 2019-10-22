@@ -20,58 +20,28 @@
 }
 
 .form-sing__header-link {
-	display: inline-flex;
-	position: relative;
-	color: $letter; /*задаём цвет ссылки*/
+	display: inline-block;
+	color: $letter;
 	cursor: pointer;
-	line-height: 1; /*задаём высоту строки*/
-	text-decoration: none; /*убираем подчёркивание*/
-	font-weight: 900;
-
-
-	// display: inline-block;
-	// text-decoration: none;
-	// color: $letter;
-	// line-height: 1;
-	// font-weight: 700;
-	// font-size: 18px;
-	// cursor: pointer;
-
-
-	// display: inline-block;
-	// 	color: $menu;
-	// 	line-height: 1;
-	// 	text-decoration: none;
-	// 	cursor: pointer;
-	// 	font-weight: 900;
-
-	&-link:after {
-		display: block;
-		position: absolute;
-		left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-		width: 0;/*задаём длинну линии до наведения курсора*/
-		height: 2px; /*задаём ширину линии*/
-		background-color: red; /*задаём цвет линии*/
-		content: "";
-		transition: width 0.3s ease-out; /*задаём время анимации*/
-
-
-
-		// background-color: $line-menu;
-		// display: block;
-		// content: "";
-		// height: 4px;
-		// width: 0%;
-		// -webkit-transition: width .3s ease-in-out;
-		// -moz--transition: width .3s ease-in-out;
-		// transition: width .3s ease-in-out;
-	}
-
-	&-link:hover:after,
-	&-link:focus:after {
-		width: 100%;
-	}
+	line-height: 1.5;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 18px;
 }
+
+.form-sing__header-link:after {
+	display: block;
+	width: 0;
+	height: 3px;
+	background-color: #e68681;
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+.form-sing__header-link:focus:after {
+	width: 100%;
+}
+
 
 .form-sing__header-item:not(:last-child) {
 	margin-right: 30px;
@@ -81,6 +51,8 @@
 .pass_span {
 	display: block;
 	margin-bottom: 10px;
+	font-weight: 700;
+	font-size: 16px;
 }
 
 .form-sing__label,
@@ -89,10 +61,41 @@
 }
 
 .form-sing__label {
-	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 13px;
 	margin-bottom: 16px;
+}
+
+.form-sing__checkbox {
+	display: none;
+}
+
+.down {
+	margin-bottom: 40px;
+	height: 20px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.fake-label {
+	height: 16px;
+	width: 16px;
+	border: 1px solid gray;
+	display: inline-block;
+	background-color:$button;
+	border-radius:2px;
+	margin-right: 10px;
+}
+
+[type=checkbox]:checked + .fake-label:before {
+	display: flex;
+	position: relative;
+	content: '\2714';
+	top: -3px;
+	left: 2px;
+	font-size: 15px;
+	color:#fff;
 }
 
 .form-sing__input {
@@ -104,7 +107,6 @@
 	background: transparent;
 	border:2px solid #b9b9cc;
 	padding: 0 15px;
-
 }
 
 .form-sing__bt {
@@ -122,30 +124,6 @@
 	}
 }
 
-.form-sing__checkbox {
-	display: none;/* <--скрываем дефолтный чекбокс */
-}
-
-.checkbox-new {/* <-- стилизируем новый */
-	height: 15px;
-	width: 15px;
-	border: 1px solid gray;
-	display: flex;
-	position: relative;
-	background-color:$button;
-	border-radius:2px;
-	padding:3px;
-}
-
-[type=checkbox]:checked + .checkbox-new:before {/* <-- ставим иконку, когда чекбокс включен  */
-	content: '\2714';
-	position: absolute;
-	top: -5px;
-	left: 0;
-	font-size:18px;
-	color:#fff;
-}
-
 .form_sign-footer-menu {
 	display: flex;
 	justify-content: space-between;
@@ -156,6 +134,7 @@
 	font-size: 13px;
 	font-weight: 400;
 	color: $letter;
+	opacity: .5;
 
 	&:hover {
 		color: lighten($button, 10%);
