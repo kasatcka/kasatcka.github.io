@@ -14,21 +14,23 @@
 
 	&-right {
 		color:$letter-color;
+
+		.about__title {
+			font-size: 90px;
+			font-weight: 700;
+		}
+
+		.about__subtitle {
+			font-size: 17px;
+			font-weight: 300;
+			line-height: 27px;
+
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+
 	}
 }
 
-.about__title {
-	font-size: 90px;
-	font-weight: 700;
-}
-
-.about__subtitle {
-	font-size: 17px;
-	font-weight: 300;
-	line-height: 27px;
-
-	&:not(:last-child) {
-		margin-bottom: 20px;
-	}
-}
 
