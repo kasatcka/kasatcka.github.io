@@ -6,68 +6,94 @@
 	max-width:400px;
 	padding: 40px 70px;
 	box-shadow: 2px 2px 17px black;
+
+	&__label,
+	&__bt {
+		display: block;
+	}
+
+	&__label {
+		font-weight: 700;
+		font-size: 16px;
+		margin-bottom: 16px;
+	}
+
+	&__checkbox {
+		display: none;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		height: 40px;
+		line-height: 1.2;
+		color:$letter;
+		background: transparent;
+		border:2px solid #b9b9cc;
+		padding: 0 15px;
+	}
+
+	&__bt {
+		width: 100%;
+		font-size: 18px;
+		font-weight: 400;
+		background-color: $button;
+		margin-bottom: 33px;
+		color: $letter;
+		padding:12px 100px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: lighten($button, 7%);
+		}
+	}
+
 }
 
 .form-sign__header {
 	display: flex;
 	margin-bottom:60px;
+
+	&-menu {
+		display: flex;
+		list-style: none;
+		justify-content: flex-start;
+	}
+
+	&-link {
+		display: inline-block;
+		color: $letter;
+		cursor: pointer;
+		line-height: 1.5;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 18px;
+
+		&:after {
+			display: block;
+			width: 0;
+			height: 3px;
+			background-color: #e68681;
+			content: "";
+			transition: width 0.3s ease-out;
+		}
+
+		&:focus:after,
+		&:hover:after {
+			width: 100%;
+		}
+	}
+
+	&-item:not(:last-child) {
+		margin-right: 30px;
+	}
 }
-
-.form-sign__header-menu {
-	display: flex;
-	list-style: none;
-	justify-content: flex-start;
-}
-
-.form-sing__header-link {
-	display: inline-block;
-	color: $letter;
-	cursor: pointer;
-	line-height: 1.5;
-	text-decoration: none;
-	font-weight: 700;
-	font-size: 18px;
-}
-
-.form-sing__header-link:after {
-	display: block;
-	width: 0;
-	height: 3px;
-	background-color: #e68681;
-	content: "";
-	transition: width 0.3s ease-out;
-}
-
-.form-sing__header-link:focus:after {
-	width: 100%;
-}
-
-
-.form-sing__header-item:not(:last-child) {
-	margin-right: 30px;
-}
-
 
 .pass_span {
 	display: block;
 	margin-bottom: 10px;
 	font-weight: 700;
 	font-size: 16px;
-}
-
-.form-sing__label,
-.form-sing__bt {
-	display: block;
-}
-
-.form-sing__label {
-	font-weight: 700;
-	font-size: 13px;
-	margin-bottom: 16px;
-}
-
-.form-sing__checkbox {
-	display: none;
 }
 
 .down {
@@ -98,39 +124,13 @@
 	color:#fff;
 }
 
-.form-sing__input {
-	display: block;
-	width: 100%;
-	height: 40px;
-	line-height: 1.2;
-	color:$letter;
-	background: transparent;
-	border:2px solid #b9b9cc;
-	padding: 0 15px;
-}
-
-.form-sing__bt {
-	width: 100%;
-	font-size: 18px;
-	font-weight: 400;
-	background-color: $button;
-	margin-bottom: 33px;
-	color: $letter;
-	padding:12px 100px;
-	cursor: pointer;
-
-	&:hover {
-		background-color: lighten($button, 7%);
-	}
-}
-
-.form_sign-footer-menu {
+.form-sign__footer-menu {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
 }
 
-.form_sing-footer-link {
+.form-sign__footer-link {
 	font-size: 13px;
 	font-weight: 400;
 	color: $letter;
