@@ -108,11 +108,13 @@
 	height: 16px;
 	width: 16px;
 	border: 1px solid gray;
-	display: inline-block;
+	display: flex;
 	background-color:$button;
 	border-radius:2px;
 	margin-right: 10px;
 }
+
+
 
 [type=checkbox]:checked + .fake-label:before {
 	display: flex;
