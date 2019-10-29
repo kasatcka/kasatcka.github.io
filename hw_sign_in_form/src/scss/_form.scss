@@ -42,6 +42,7 @@
 		color: $letter;
 		padding:12px 100px;
 		cursor: pointer;
+		border: none;
 
 		&:hover {
 			background-color: lighten($button, 7%);
