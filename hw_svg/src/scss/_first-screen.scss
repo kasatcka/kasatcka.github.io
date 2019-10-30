@@ -1,24 +1,8 @@
 .first-screen {
 	height: 100vh;
+
 	background: url("../img/first-screen.jpg") top center no-repeat;
 
-&__content {
-	height: 100%;
-	// max-width: 600px;
-	// display: inline-flex;
-	// align-items: center;
-	// flex-direction: column;
-	// justify-content: center;
-}
-
-	&__header {
-		display: inline-flex;
-		justify-content: center;
-	}
-
-	&__footer {
-		display: flex;
-		justify-content: center;
-		padding:100px 0 100px;
-	}
+	padding: 50px 0 50px;
+	
 }

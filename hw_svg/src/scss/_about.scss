@@ -4,25 +4,4 @@
 	max-width: 900px;
 	margin: 0 auto;
 
-	&-legend {
-		display: inline-block;
-		text-align: center;
-		font-weight:400;
-		font-size: 2rem;
-		text-transform: uppercase;
-		padding:0 120px;
-		display: inline-flex;
-		margin-bottom: 70px;
-	}
-
-	&-text {
-		text-align:  center;
-		font-weight: 300;
-		line-height: 24px;
-		font-size: 16px;
-		margin-bottom: 30px;
-		padding: 0 170px;
-
-	}
-
 }
