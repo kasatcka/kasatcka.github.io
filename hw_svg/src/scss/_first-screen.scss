@@ -1,8 +1,43 @@
 .first-screen {
 	height: 100vh;
-
 	background: url("../img/first-screen.jpg") top center no-repeat;
-
 	padding: 50px 0 50px;
-	
+
+	&__header {
+		display: flex;
+		justify-content: center;
+		padding:100px 0 50px;
+	}
+
+	&__title {
+		text-align: center;
+		max-width: 590px;
+		margin: 0 auto;
+		font-size: 54px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $fs;
+		margin-bottom: 50px;
+		word-wrap: break-word;
+	}
+
+		&__subtitle {
+		text-align: center;
+		margin: 0 auto;
+		max-width: 590px;
+		color: $fs;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 16px;
+		padding:50px 0;
+		line-height: 29px;
+
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: center;
+		padding-bottom:50px;
+	}
+
 }

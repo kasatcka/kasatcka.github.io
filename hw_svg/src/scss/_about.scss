@@ -3,5 +3,23 @@
 	color: $about;
 	max-width: 900px;
 	margin: 0 auto;
+	text-align: center;
 
+	&-wrapper {
+		border-right: 2px solid $about;
+		border-bottom: 2px solid $about;
+		border-left: 2px solid $about;
+	}
+
+
+	&-title {
+
+		text-transform: uppercase;
+		margin-bottom: 70px;
+	}
+
+	&-subtitle:not(:last-child)  {
+		margin-bottom: 40px;
+
+	}
 }
