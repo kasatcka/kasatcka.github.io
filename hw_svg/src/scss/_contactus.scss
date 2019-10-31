@@ -1,18 +1,14 @@
-.services {
-	height: 100vh;
-	background: url("../img/services.jpg") top center no-repeat;
-	padding:100px 0 100px;
-	color:$fs;
-
-
+.contactus {
+	padding:155px 0 155px;
+	color: $about;
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
 
 	&-wrapper {
-		border-right: 2px solid $fs;
-		border-bottom: 2px solid $fs;
-		border-left: 2px solid $fs;
-		max-width: 900px;
-		margin: 0 auto;
-		text-align: center;
+		border-right: 2px solid $about;
+		border-bottom: 2px solid $about;
+		border-left: 2px solid $about;
 	}
 
 
@@ -35,7 +31,7 @@
 	*/
 	width: 100%;
 	height: 2px;
-	background: $fs;
+	background: $about;
 
 	/* добавляем к линии левый и правый бордюр цветом основного фона заголовка
 	** благодаря этому создается нужный отступ между линиями и текстом
@@ -62,4 +58,6 @@
 
 }
 }
+
+
 
