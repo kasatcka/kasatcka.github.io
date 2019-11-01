@@ -6,57 +6,39 @@
 	text-align: center;
 
 	&-wrapper {
-		border-right: 2px solid $about;
-		border-bottom: 2px solid $about;
-		border-left: 2px solid $about;
+		border: solid 2px $about;
+		color: $about;
+		border-top: none;
+		
 	}
 
-
 	&-title {
-		/* чтобы линии не выходили за ширину блока заголовка */
 		overflow: hidden;
 		text-transform: uppercase;
+		text-align: center;
+		margin-top: -18px;
 	}
 
 	&-title:before,
 	&-title:after {
 		content: '';
-		display: inline-block;/* делаем линию строчно-блочной */
-		vertical-align: middle;/* выравниваем вертикально по середине */
-		box-sizing: border-box;/* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: border-box;
+		width: 100%;
+		height: 2px;
+		background: $about;
+		border: solid $about;
+		border-width: 0 100px;
+	}
 
-	/* установка ширины в 100% делает линию равной ширине тега заголовка
-	** благодаря этому линия заполнит все свободное пространство
-	** слева и справа от текста
-	*/
-	width: 100%;
-	height: 2px;
-	background: $about;
+	&-title:before {
+		margin-left: -100%;
+	}
 
-	/* добавляем к линии левый и правый бордюр цветом основного фона заголовка
-	** благодаря этому создается нужный отступ между линиями и текстом
-	*/
-	border: solid #FFF;
-	border-width: 0 100px;
-}
-
-&-title:before {
-	/* смещаем левую линию влево отрицательным отступом, равным 100% ширины
-	** благодаря этому линия встает слева от текста
-	*/
-	margin-left: -100%;
-}
-&-title:after {
-	/* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
-	** благодаря этому линия встает справа от текста
-	*/
-	margin-right: -100%;
-}
-
-&-subtitle:not(:last-child)  {
-	margin-bottom: 40px;
-
-}
+	&-title:after {
+		margin-right: -100%;
+	}
 }
 
 

@@ -1,65 +1,46 @@
 .services {
 	height: 100vh;
 	background: url("../img/services.jpg") top center no-repeat;
-	padding:100px 0 100px;
-	color:$fs;
 
-
-
-	&-wrapper {
-		border-right: 2px solid $fs;
-		border-bottom: 2px solid $fs;
-		border-left: 2px solid $fs;
+	&-wapper {
+		color:$fs;
+		margin: 40px 20px 20px;
+		padding: 1px 0px 20px;
+		border: solid 2px $fs;
+		border-top: none;
+		position: relative;
 		max-width: 900px;
-		margin: 0 auto;
-		text-align: center;
+		margin:0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
-
 	&-title {
-		/* чтобы линии не выходили за ширину блока заголовка */
 		overflow: hidden;
 		text-transform: uppercase;
+		text-align: center;
+		margin-top: -18px;
 	}
 
 	&-title:before,
 	&-title:after {
 		content: '';
-		display: inline-block;/* делаем линию строчно-блочной */
-		vertical-align: middle;/* выравниваем вертикально по середине */
-		box-sizing: border-box;/* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+		display: inline-block;
+		vertical-align: middle;
+		box-sizing: border-box;
+		width: 100%;
+		height: 2px;
+		background: $fs;
+		border: solid $fs;
+		border-width: 0 100px;
+	}
 
-	/* установка ширины в 100% делает линию равной ширине тега заголовка
-	** благодаря этому линия заполнит все свободное пространство
-	** слева и справа от текста
-	*/
-	width: 100%;
-	height: 2px;
-	background: $fs;
+	&-title:before {
+		margin-left: -100%;
+	}
 
-	/* добавляем к линии левый и правый бордюр цветом основного фона заголовка
-	** благодаря этому создается нужный отступ между линиями и текстом
-	*/
-	border: solid #FFF;
-	border-width: 0 100px;
+	&-title:after {
+		margin-right: -100%;
+	}
 }
-
-&-title:before {
-	/* смещаем левую линию влево отрицательным отступом, равным 100% ширины
-	** благодаря этому линия встает слева от текста
-	*/
-	margin-left: -100%;
-}
-&-title:after {
-	/* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
-	** благодаря этому линия встает справа от текста
-	*/
-	margin-right: -100%;
-}
-
-&-subtitle:not(:last-child)  {
-	margin-bottom: 40px;
-
-}
-}
-
