@@ -1,0 +1,11 @@
+.footer-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 400;
+
+	&__logo {
+		width: 65%;
+	}
+}
