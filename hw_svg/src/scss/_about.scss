@@ -1,19 +1,25 @@
 
 .about {
-	margin: 40px 20px 20px;
-	padding: 1px 0px 20px;
+	padding: 140px 0 140px;
+	max-width: 900px;
+	margin:0 auto;
+}
+
+.about-content {
+	padding: 1px 0 30px;
 	border: solid 2px $about;
 	color: $about;
 	border-top: none;
 	position: relative;
-	max-width: 900px;
-	margin:0 auto;
+	width: 100%;
+
 
 	&-title {
 		overflow: hidden;
 		text-transform: uppercase;
 		text-align: center;
 		margin-top: -18px;
+		margin-bottom: 60px;
 	}
 
 	&-title:before,
@@ -26,7 +32,7 @@
 		height: 2px;
 		background: $about;
 		border: solid $about;
-		border-width: 0 100px;
+		border-width: 0 10px;
 	}
 
 	&-title:before {
@@ -35,5 +41,16 @@
 
 	&-title:after {
 		margin-right: -100%;
+	}
+
+	&-subtitle {
+		padding: 0 170px;
+		text-align: center;
+		line-height: 1.4;
+		margin-bottom:30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }

@@ -1,8 +1,10 @@
+
 .services {
 	height: 100vh;
+	padding: 130px 0 100px;
 	background: url("../img/services.jpg") top center no-repeat;
 
-	&-wapper {
+	.services-content {
 		color:$fs;
 		margin: 40px 20px 20px;
 		padding: 1px 0px 20px;
