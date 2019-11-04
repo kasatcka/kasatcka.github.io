@@ -1,12 +1,41 @@
 .works {
 	display: flex;
-	width: 100%;
-
-}
-
-.works-content__list {
-	display:flex;
-	width: 100%;
 	justify-content: center;
-	list-style: none;
+
+	&__list {
+		display:flex;
+		max-width: 1920px;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: space-between;
+	}
+
+	&__title {
+		display: flex;
+		position: absolute;
+		left: 50px;
+		top: 161px;
+		text-transform: uppercase;
+		color:$fs;
+		font-weight: 700;
+		font-size: 34px;
+		letter-spacing: 0.4rem;
+	}
+
+	&__content {
+		position: relative;
+
+	}
+
+	&__item {
+
+
+		&:hover {
+			transition: $transition;
+			opacity: .6;
+		}
+	}
 }
+
+
+
