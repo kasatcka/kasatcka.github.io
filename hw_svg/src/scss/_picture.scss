@@ -1,10 +1,10 @@
-.works {
+.picture {
 	display: flex;
 	justify-content: center;
 
+
 	&__list {
 		display:flex;
-		max-width: 1920px;
 		flex-wrap: wrap;
 		list-style: none;
 		justify-content: space-between;
@@ -24,10 +24,11 @@
 
 	&__content {
 		position: relative;
+		cursor: pointer;
+
 	}
 
 	&__item {
-
 
 		&:hover {
 			transition: $transition;
@@ -35,6 +36,4 @@
 		}
 	}
 }
-
-
 

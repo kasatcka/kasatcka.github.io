@@ -7,7 +7,7 @@
       }
 
       .cls-1 {
-        stroke: #000;
+        stroke: #fff;
       }
 
       .cls-1, .cls-2, .cls-3 {
@@ -19,7 +19,7 @@
       }
 
       .cls-3, .cls-4 {
-        fill: #000;
+        fill: #fff;
       }
     </style>
   </defs>
