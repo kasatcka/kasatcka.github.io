@@ -7,12 +7,12 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		justify-content: space-around;
 	}
 
-	&__header {
-		display: flex;
-		justify-content: center;
+	&__svg {
+		margin-bottom: 50px;
 	}
 
 	&__title {
@@ -23,7 +23,6 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		color: $fs;
-		
 	}
 
 	&__subtitle {
@@ -36,7 +35,6 @@
 		font-size: 16px;
 		padding:50px 0;
 		line-height: 29px;
-
 	}
 
 	&__footer {
