@@ -9,8 +9,9 @@
 		color: $fs;
 		border-top: none;
 		position: relative;
-		max-width: 900px;
+		max-width: 870px;
 		margin:0 auto;
+		text-align: center;
 
 		&-title {
 			overflow: hidden;
@@ -43,9 +44,10 @@
 		}
 
 		&-subtitle {
-			padding: 0 170px;
+			display: inline-block;
 			text-align: center;
 			line-height: 1.4;
+			max-width: 540px;
 		}
 	}
 }

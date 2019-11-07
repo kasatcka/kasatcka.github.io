@@ -12,6 +12,7 @@
 	border-top: none;
 	position: relative;
 	width: 100%;
+	text-align: center;
 
 
 	&-title {
@@ -45,10 +46,11 @@
 	}
 
 	&-subtitle {
-		padding: 0 170px;
+		display: inline-block;
 		text-align: center;
 		line-height: 1.4;
 		margin-bottom:30px;
+		max-width: 550px;
 
 		&:last-child {
 			margin-bottom: 0;

@@ -3,37 +3,51 @@
 	justify-content: center;
 
 
-	&__list {
-		display:flex;
-		flex-wrap: wrap;
-		list-style: none;
-		justify-content: space-between;
-	}
+	// &__list {
+	// 	display:flex;
+	// 	flex-wrap: wrap;
+	// 	list-style: none;
+	// 	justify-content: space-between;
+	// }
 
-	&__title {
-		display: flex;
-		position: absolute;
-		left: 50px;
-		top: 161px;
-		text-transform: uppercase;
-		color:$fs;
-		font-weight: 700;
-		font-size: 34px;
-		letter-spacing: 0.4rem;
-	}
+	// &__title {
+	// 	display: flex;
+	// 	position: absolute;
+	// 	left: 50px;
+	// 	top: 161px;
+	// 	text-transform: uppercase;
+	// 	color:$fs;
+	// 	font-weight: 700;
+	// 	font-size: 34px;
+	// 	letter-spacing: 0.4rem;
+	// }
 
-	&__content {
-		position: relative;
-		cursor: pointer;
+	// &__content {
+	// 	position: relative;
+	// 	cursor: pointer;
 
-	}
+	// }
 
-	&__item {
+	// &__item {
 
-		&:hover {
-			transition: $transition;
-			opacity: .6;
-		}
-	}
+	// 	&:hover {
+	// 		transition: $transition;
+	// 		opacity: .6;
+	// 	}
+	// }
+}
+
+.picture__content[pic="topworkz"] {
+	background: url(../img/topworkz.jpg) no-repeat;
+	flex-basis: 29%;
+}
+
+.picture__list {
+	list-style: none;
+
+}
+
+.picture__content {
+	text-decoration: none;
 }
 
