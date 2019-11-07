@@ -1,53 +1,59 @@
 .picture {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 
+	&__item {
+		margin-right: 10px;
+		margin-bottom: 10px;
 
-	// &__list {
-	// 	display:flex;
-	// 	flex-wrap: wrap;
-	// 	list-style: none;
-	// 	justify-content: space-between;
-	// }
+		&:hover {
+			transition: $transition;
+			opacity: .6;
+		}
+	}
 
-	// &__title {
-	// 	display: flex;
-	// 	position: absolute;
-	// 	left: 50px;
-	// 	top: 161px;
-	// 	text-transform: uppercase;
-	// 	color:$fs;
-	// 	font-weight: 700;
-	// 	font-size: 34px;
-	// 	letter-spacing: 0.4rem;
-	// }
 
-	// &__content {
-	// 	position: relative;
-	// 	cursor: pointer;
+	&__img:ntn-child(2),
+	&__img:ntn-child(5) {
+		flex-basis: 42%;
+	}
 
-	// }
+	&__img {
+		flex-basis: 29%;
+	}
 
-	// &__item {
 
-	// 	&:hover {
-	// 		transition: $transition;
-	// 		opacity: .6;
-	// 	}
-	// }
+	&__list {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		list-style: none;
+
+	}
+
+	&__content {
+		width: 100%;
+		position: relative;
+		text-decoration: none;
+	}
+
+	&__title {
+		display: flex;
+		position: absolute;
+		left: 46px;
+		bottom: 36px;
+		color: white;
+		font-size: 34px;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.4rem;
+
+
+	}
 }
 
-.picture__content[pic="topworkz"] {
-	background: url(../img/topworkz.jpg) no-repeat;
-	flex-basis: 29%;
-}
 
-.picture__list {
-	list-style: none;
 
-}
-
-.picture__content {
-	text-decoration: none;
-}
 
