@@ -1,0 +1,47 @@
+.picture {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		height:485px;
+		margin-right: 10px;
+	}
+
+
+	&__item {
+		list-style: none;
+		width: 100%;
+		max-width: 33%;
+		position: relative;
+		overflow: hidden;
+	}
+
+
+	&__content {
+		background-size: contain;
+
+		&:hover {
+			opacity: .5;
+			transition: $transition;
+		}
+	}
+
+	&__title {
+		position: absolute;
+		font-size: 23px;
+		font-weight: 700;
+		letter-spacing: .4em;
+		text-transform: uppercase;
+		color: white;
+		left:46px;
+		bottom: 30px;
+	}
+}
+
+
+
+

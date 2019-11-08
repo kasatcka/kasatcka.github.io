@@ -1,0 +1,45 @@
+.first-screen {
+	height: 100vh;
+	background: url("../img/first-screen.jpg") center no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+	&__title {
+		text-align: center;
+		margin: 0 auto;
+		max-width: 590px;
+		font-size: 54px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $fs;
+		margin-bottom: 55px;
+
+	}
+
+	&__subtitle {
+		text-align: center;
+		margin: 0 auto;
+		max-width: 590px;
+		color: $fs;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 29px;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: center;
+		padding:50px 0 50px;
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 95px;
+	}
+
+}
