@@ -5,6 +5,27 @@
 	margin:0 auto;
 }
 
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 959px) {
+
+	.about {
+		padding: 50px 0 50px;
+	}
+
+	.about-content-title {
+		margin-bottom: 20px;
+		letter-spacing: 0;
+	}
+
+	.about-content-subtitle {
+		max-width: 375px;
+		font-size: 13px;
+	}
+
+}
+
 .about-content {
 	padding: 1px 0 30px;
 	border: solid 2px $about;
