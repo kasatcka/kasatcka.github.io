@@ -79,3 +79,31 @@
 		}
 	}
 }
+
+@media screen and (max-width: 575px) {
+	.whatwedo {
+		padding: 40px 0 40px;
+	}
+
+	.whatwedo-content-title {
+		margin-bottom: 20px;
+	}
+
+	.whatwedo-content-tittle {
+		margin-bottom: 10px;
+		letter-spacing: 0.2rem;
+	}
+
+	.whatwedo-content-img {
+		width: 10%;
+		margin-bottom: 10px;
+	}
+
+	.whatwedo-content__bl {
+		margin-bottom: 20px;
+	}
+
+	.whatwedo-content {
+		padding:1px 0 25px; 
+	}
+}

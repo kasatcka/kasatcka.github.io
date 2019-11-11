@@ -75,3 +75,23 @@
 		}
 	}
 }
+
+@media screen and (max-width: 575px) {
+	.contactus {
+		padding: 20px 0 20px;
+	}
+
+	.contactus-content {
+		padding: 1px 0 20px;
+	}
+
+	.contactus-content-title {
+		margin-bottom: 10px;
+	}
+
+	.contactus-content-anchor {
+		max-width: 200px;
+		min-width: 200px;
+	}
+
+}

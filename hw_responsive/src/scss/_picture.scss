@@ -3,12 +3,13 @@
 	max-width: 1600px;
 	margin: 0 auto;
 
+
+
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		height:485px;
-		margin-right: 10px;
 	}
 
 
@@ -42,13 +43,10 @@
 	}
 }
 
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 959px) {
-	.picture__list {
-		max-width: 0;
+@media screen and (max-width: 575px) {
+	.pisture__list {
+		flex-direction: column;
+
 	}
 }
-
-
 
