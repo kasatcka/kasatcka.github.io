@@ -1,48 +1,53 @@
 .contactus {
 	padding: 130px 0 50px;
-	color: $about;
-	max-width: 900px;
-	margin: 0 auto;
 }
 
 .contactus-content {
-	padding: 1px 0 60px;
 	border: solid 2px $about;
 	color: $about;
 	border-top: none;
-	width: 100%;
-	display: inline-flex;
+	text-align: center;
+	display: flex;
+	position: relative;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 30px;
 
+	&:before {
+		left: 0;
+	}
 
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 27%;
+		border-top: 2px solid $about;
+	}
+
+	&:after {
+		right: 0;
+	}
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 27%;
+		border-top: 2px solid $about;
+	}
 	&-title {
 		overflow: hidden;
 		text-transform: uppercase;
 		text-align: center;
 		margin-top: -18px;
-		margin-bottom: 115px;
+		margin-bottom: 60px;
 		letter-spacing: .4rem;
-	}
-
-	&-title:before,
-	&-title:after {
-		content: '';
-		display: inline-block;
-		vertical-align: middle;
-		box-sizing: border-box;
-		width: 100%;
-		height: 2px;
-		background: $about;
-		border: solid $fs;
-		border-width: 0 70px;
-	}
-
-	&-title:before {
-		margin-left: -100%;
-	}
-
-	&-title:after {
-		margin-right: -100%;
 	}
 
 	&-subtitle {
@@ -68,6 +73,7 @@
 		text-decoration: none;
 		margin:0 auto;
 		text-align: center;
+		display: block;
 
 		&:hover {
 			color: $fs;
@@ -94,4 +100,8 @@
 		min-width: 200px;
 	}
 
+	.contactus-content:before,
+	.contactus-content:after {
+		width: 10%;
+	}
 }
