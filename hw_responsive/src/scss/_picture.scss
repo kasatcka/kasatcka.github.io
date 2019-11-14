@@ -1,28 +1,27 @@
 .picture {
 	width: 100%;
-	max-width: 1600px;
+	max-width: 1920px;
 	margin: 0 auto;
 
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		height:485px;
-
+		min-height:485px;
+		align-content: space-between;
 	}
 
 
 	&__item {
 		list-style: none;
-		width: 100%;
-		max-width: 33%;
-		position: relative;
 		overflow: hidden;
 	}
 
 
 	&__content {
-		
+		display: flex;
+		position: relative;
+
 		&:hover {
 			opacity: .5;
 			transition: $transition;
@@ -55,14 +54,21 @@
 
 	.picture__item {
 		max-width: 75%;
+		min-width: 75%;
 		margin-bottom: 5px;
 	}
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 766px) {
 	.picture__title {
 		font-size: 20px;
 		left:15px;
 	}
 
+}
+
+@media screen and (max-width: 1920px) {
+	.picture__item {
+		max-width: 33%;
+	}
 }
