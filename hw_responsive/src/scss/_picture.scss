@@ -8,7 +8,7 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		height:485px;
-		margin-right: 10px;
+
 	}
 
 
@@ -22,7 +22,7 @@
 
 
 	&__content {
-		background-size: contain;
+		
 		&:hover {
 			opacity: .5;
 			transition: $transition;
@@ -66,4 +66,3 @@
 	}
 
 }
-

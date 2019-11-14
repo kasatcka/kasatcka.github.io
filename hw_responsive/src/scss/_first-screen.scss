@@ -3,8 +3,9 @@
 	background: url("../img/first-screen.jpg") center no-repeat;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-around;
+	align-items: stretch;
+
 
 
 	&__title {
@@ -15,7 +16,7 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		color: $fs;
-		margin-bottom: 55px;
+		// margin-bottom: 55px;
 
 	}
 
@@ -39,7 +40,7 @@
 	&__logo {
 		display: flex;
 		justify-content: center;
-		margin-bottom: 95px;
+		// margin-bottom: 95px;
 	}
 }
 
