@@ -15,6 +15,101 @@ body {
 
 }
 
+li {
+	list-style: none;
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header-container {
+	width: 90%;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-container a {
+	color: #000;
+	font-size: 16px;
+	margin-right: 63px;
+	padding: 27px 6px;
+}
+
+.header-container a:hover {
+	background: yellow;
+}
+
+#menu-checkbox {
+	display: none;
+}
+ul {
+	display: flex;
+}
+nav  {
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 420px) {
+	.header-container {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.main-menu {
+		display: none;
+	}
+
+	.main-menu  li {
+		width: 100%;
+		display: block;
+		font-size: 12px;
+	}
+
+	.main-menu  a {
+		display: block;
+		padding: 8px;
+	}
+	.toggle-button {
+		cursor: pointer;
+		text-align: center;
+		display: block;
+		color: #000;
+	}
+
+	.toggle-button:after {
+		display: block;
+		content: attr(data-open);
+	}
+
+	#menu-checkbox:checked + nav[role="navigation"] .main-menu {
+		display: block;
+	}
+
+	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+		content: attr(data-close);
+	}
+
+	.header-container a {
+		margin-right: -65px;
+	}
+
+	 .main-menu {
+	 	position: relative;
+	 	top:30px;
+	 	right: 115px;
+	 }
+}
+
+
+
+
+
+
+
 
 
 // .first-screen {
@@ -140,39 +235,39 @@ body {
 // 	// background:#b5ced8; /* для красоты */
 // }
 
-.container {
-	max-width: 900px;
-	margin: 0 auto;
+// .container {
+// 	max-width: 900px;
+// 	margin: 0 auto;
 
-}
+// }
 
-.nav,#touch-menu {
-	background:#3e4156;
-	display: flex;
-	list-style: none;
-}
+// .nav,#touch-menu {
+// 	background:#3e4156;
+// 	display: flex;
+// 	list-style: none;
+// }
 
-.nav li a ,
-#touch-menu {
-	display: flex;
-	color:white;
-	padding: 10px 15px;
-}
+// .nav li a ,
+// #touch-menu {
+// 	display: flex;
+// 	color:white;
+// 	padding: 10px 15px;
+// }
 
-.nav li a:hover,
-#touch-menu:hover {
-	background: lighten(#3e4156, 10%);
-}
+// .nav li a:hover,
+// #touch-menu:hover {
+// 	background: lighten(#3e4156, 10%);
+// }
 
-#touch-menu {
-	display: none;
-}
-@media (max-width: 768px) {
-	.nav {
-		display: none;
-	}
-	#touch-menu {
-		display: flex;
-	}
+// #touch-menu {
+// 	display: none;
+// }
+// @media (max-width: 768px) {
+// 	.nav {
+// 		display: none;
+// 	}
+// 	#touch-menu {
+// 		display: flex;
+// 	}
 
-}
+// }
