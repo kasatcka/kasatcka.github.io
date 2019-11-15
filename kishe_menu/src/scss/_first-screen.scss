@@ -8,20 +8,28 @@
 		text-decoration: none;
 		text-transform: capitalize;
 		color: $title-font;
+		height: 88px;
+		margin-right: 30px;
+		display: flex;
+
 	}
 
 	&__header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 50px 0 50px;
+		width: 90%;
 	}
 
-	&__menu, #touch_menu {
+	&__menu {
 		display: flex;
 		align-items: center;
 		list-style: none;
 		text-transform: uppercase;
+	}
+
+	&__item {
+		display: flex;
 	}
 
 	&__item:not(:last-child) {
@@ -54,6 +62,10 @@
 		width: 100%;
 	}
 
+}
+
+#menu-checkbox {
+	display: none;
 }
 
 .first-screen__content {
@@ -101,7 +113,6 @@
 	}
 }
 
-
 .first-screen__footer {
 	display: flex;
 	justify-content: center;
@@ -111,4 +122,57 @@
 .scrol-link {
 	display: flex;
 	justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+	.first-screen__content {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.first-screen__menu {
+		display: none;
+	}
+
+	.first-screen__item {
+		width: 100%;
+		display: block;
+		font-size: 12px;
+	}
+
+	.first-screen__link {
+		display: flex;
+		padding: 8px;
+	}
+	.toggle-button {
+		cursor: pointer;
+		text-align: center;
+		display: block;
+		color: #000;
+	}
+
+	.toggle-button:after {
+		display: block;
+		content: attr(data-open);
+	}
+
+	#menu-checkbox:checked + nav[role="navigation"] .first-screen__menu {
+		display: block;
+
+	}
+
+	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+		content: attr(data-close);
+	}
+
+	.first-screen__link {
+		margin-right: -75px;
+	}
+
+	.first-screen__menu {
+		position: relative;
+		top:30px;
+		right: 115px;
+	}
 }
