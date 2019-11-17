@@ -1,0 +1,62 @@
+*,*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+}
+
+.container {
+	width: 100%;
+	max-width: 1110px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+// .gradient-btn {
+// 	display: flex;
+// 	width: 225px;
+// 	height: 60px;
+// 	justify-content: center;
+// 	align-items: center;
+// 	text-transform: uppercase;
+// 	font-family: $secondary-font;
+// 	color:$white ;
+// 	text-decoration: none;
+// 	background-color:$gradient-right-color;
+// 	position: relative;
+// 	overflow: hidden;
+
+// 	&::before {
+// 		content: "";
+// 		display: block;
+// 		width: 160%; // 140%
+// 		height: 430%; // 430%
+// 		position: absolute;
+// 		background-color: $gradient-left-color;
+// 		left: -120%;
+// 		transform: rotate(45deg);
+// 		transition: all .5s ease;
+// 		z-index: 0;
+// 	}
+
+// 	&:hover {
+// 		&::before {
+// 			left: -30px;
+// 		}
+// 	}
+
+// 	&__text {
+// 		position: relative;
+// 		z-index: 1;
+// 	}
+
+// }

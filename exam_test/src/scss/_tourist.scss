@@ -1,0 +1,113 @@
+.bh-tourist {
+	background: url("../img/travel.jpg") center no-repeat;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	position: relative;
+
+	align-items: center;
+
+	&::before {
+		content: " ";
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		background-color:rgba(0, 0, 0, 0.85);
+		z-index:2;
+	}
+
+	&__wapper {
+		z-index:1;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-family: $secondary-font;
+		font-size: $section-title;
+		color:$white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 70px;
+	}
+
+	&__content {
+		display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+		// align-items: center;
+		// max-height: 284px;
+		flex-basis: 100%;
+
+
+		@include lg-screen {
+			flex-basis: 50%;
+		}
+		
+
+		&-left {
+			$xs-height: 283px;
+			// $md-height: 445px;
+
+			position: relative;
+			width: 40%;
+			max-width: 445px;
+			// margin-bottom: 20px;
+			@include padding-hack($xs-height);
+
+			// @include lg-screen {
+			// 	@include padding-hack($md-height);
+			// 	margin-bottom: 40px;
+			// }
+
+			&::before {
+				content: "";
+				width: 100%;
+				max-width: 445px;
+				height: $xs-height;
+				position: absolute;
+				background-color: grey;
+				z-index: 0;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				@include lg-screen {
+					// height: $md-height;
+				}
+			}
+		}
+
+		&-right {
+			display: flex;
+			flex-direction: column;
+			background-color: $brown;
+			color: $white;
+			font-family: $main-font;
+			max-width: 60%;
+			height: 283px;
+			padding: 50px;
+			width: 100%;
+		}
+
+		&-right-title {
+			text-transform: uppercase;
+			margin-bottom: 40px;
+			font-size: $card-title;
+		}
+
+		&-right-text {
+			font-size: $base-size;
+			line-height: 26px;
+
+		}
+	}
+}
+
+.fas {
+	color:$blue;
+	margin-right: 10px;
+}
+
