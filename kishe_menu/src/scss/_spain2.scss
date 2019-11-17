@@ -1,0 +1,73 @@
+.bh-spain2 {
+	background: url("../img/bg-spain2.jpg") top center no-repeat;
+	min-height: 700px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		max-width: 525px;
+		padding: 45px 45px 30px;
+		color:$white;
+		font-family: $main-font;
+		background-color: rgba(37,37,37,0.9);
+		position: absolute;
+		right: 122px ;
+		top:222px;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-size: $card-title;
+	}
+
+	&__text {
+		font-size: $base-size;
+		margin-bottom: 50px;
+		line-height: 26px;
+	}
+}
+
+.gradient-btn {
+	display: flex;
+	width: 225px;
+	height: 60px;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-family:$main-font;
+	color: $white;
+	text-decoration: none;
+	background-color: $gradient-right-color;
+	position: relative;
+	overflow: hidden;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 160%; // 140%
+		height: 430%; // 430%
+		position: absolute;
+		background-color: $gradient-left-color;
+		left: -120%;
+		transform: rotate(45deg);
+		transition: all .5s ease;
+		z-index: 0;
+	}
+
+	&:hover {
+		&::before {
+			left: -30px;
+		}
+	}
+
+	&__text {
+		position: relative;
+		z-index: 1;
+	}
+
+}
+
