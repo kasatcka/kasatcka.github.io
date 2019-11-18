@@ -1,6 +1,5 @@
 .bh-spain {
-	background: url("../img/bg-spain1.jpg") top center no-repeat;
-	background-size: 100%;
+	background: url("../img/bg-spain1.jpg") center/cover no-repeat;
 	min-height: 700px;
 	display: flex;
 	flex-direction: column;
@@ -9,11 +8,16 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
+		justify-content: space-around;
 		max-width: 525px;
+		height: 370px;
 		padding: 45px 45px 30px;
 		color:$white;
 		font-family: $main-font;
 		background-color: rgba(37,37,37,0.9);
+		@include md-screen-max {
+			margin: 0 auto;
+		}
 	}
 
 	&__title {
@@ -23,7 +27,7 @@
 
 	&__text {
 		font-size: $base-size;
-		margin-bottom: 50px;
+		// margin-bottom: 50px;
 		line-height: 26px;
 	}
 }
