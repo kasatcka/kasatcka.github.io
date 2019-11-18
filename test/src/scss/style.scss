@@ -1,0 +1,23 @@
+@import "vars";
+@import "mixins";
+@import "common";
+
+.container {
+    width: 20%;
+}
+
+.container__wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 80%; // пропорции блока определяются здесь
+}
+
+.container__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
