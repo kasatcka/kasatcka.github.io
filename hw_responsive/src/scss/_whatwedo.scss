@@ -86,6 +86,11 @@
 	}
 }
 
+.pic_svg {
+	fill:$about;
+	margin-bottom:  40px;
+}
+
 @media screen and (max-width: 575px) {
 	.whatwedo {
 		padding: 40px 0 40px;

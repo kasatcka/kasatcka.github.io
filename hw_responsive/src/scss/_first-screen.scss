@@ -1,6 +1,6 @@
 .first-screen {
 	height: 100vh;
-	background: url("../img/first-screen.jpg") center no-repeat;
+	background: url("../img/first-screen.jpg") center/cover no-repeat;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -16,8 +16,6 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		color: $fs;
-		// margin-bottom: 55px;
-
 	}
 
 	&__subtitle {
@@ -40,9 +38,15 @@
 	&__logo {
 		display: flex;
 		justify-content: center;
-		// margin-bottom: 95px;
+		margin-bottom: 95px;
 	}
 }
+
+.scroll {
+	fill:$fs;
+}
+
+
 
 @media screen and (max-width: 575px) {
 	.first-screen__logo {
