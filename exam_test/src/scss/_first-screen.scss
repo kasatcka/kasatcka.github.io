@@ -25,8 +25,6 @@
 	}
 
 	&__search {
-		// display: flex;
-		// justify-content: center;
 		margin-bottom: 50px;
 
 		@include md-screen-max {
@@ -61,7 +59,7 @@
 
 
 	&__scrool {
-		
+
 		&-link {
 			text-decoration: none;
 			color: $white;
@@ -103,7 +101,7 @@
 			display: flex;
 			align-items: center;
 			font-size:$navigation-size;
-			font-family:$secondary-font; 
+			font-family:$secondary-font;
 		}
 
 		&-link {
