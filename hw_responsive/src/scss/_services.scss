@@ -1,6 +1,9 @@
 .services {
 	padding: 130px 0 100px;
 	background: url("../img/services.jpg") center/cover no-repeat;
+	@include xs-screen {
+		padding: 40px 0 40px;
+	}
 }
 
 .services-content {
@@ -27,6 +30,9 @@
 		top: 0;
 		width: 27%;
 		border-top: 2px solid $fs;
+		@include xs-screen {
+			width: 10%;
+		}
 	}
 
 	&:after {
@@ -41,6 +47,9 @@
 		top: 0;
 		width: 27%;
 		border-top: 2px solid $fs;
+		@include xs-screen {
+			width: 10%;
+		}
 	}
 
 	&-title {
@@ -50,6 +59,9 @@
 		margin-top: -18px;
 		margin-bottom: 60px;
 		letter-spacing: .6rem;
+		@include xs-screen {
+			margin-bottom: 10px;
+		}
 	}
 
 	&-subtitle {
@@ -57,22 +69,5 @@
 		text-align: center;
 		line-height: 1.4;
 		max-width: 540px;
-	}
-}
-
-
-@media screen and (max-width: 575px) {
-
-	.services {
-		padding: 40px 0 40px;
-	}
-
-	.services-content-title {
-		margin-bottom: 10px;
-	}
-
-	.services-content:before,
-	.services-content:after {
-		width: 10%;
 	}
 }

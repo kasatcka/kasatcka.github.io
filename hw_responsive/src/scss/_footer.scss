@@ -5,17 +5,16 @@
 	font-size: 14px;
 	font-weight: 400;
 	padding: 60px 0 60px;
+	@include xs-screen {
+		padding: 25px 0 25px;
+	}
 
 	&__svg {
 		margin-right: 35px;
 	}
 }
 
-@media screen and (max-width: 575px) {
-	.footer-content {
-		padding: 25px 0 25px;
-	}
-
+@include xs-screen {
 	.footer__text {
 		font-size: 10px;
 	}

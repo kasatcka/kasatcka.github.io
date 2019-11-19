@@ -1,6 +1,9 @@
 .whatwedo {
 	padding:120px 0 112px;
 	color: $about;
+	@include xs-screen {
+		padding: 40px 0 40px;
+	}
 }
 
 .whatwedo-content {
@@ -14,6 +17,9 @@
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 30px;
+	@include xs-screen {
+		padding:1px 0 25px;
+	}
 
 	&:before {
 		left: 0;
@@ -27,6 +33,9 @@
 		top: 0;
 		width: 27%;
 		border-top: 2px solid $about;
+		@include xs-screen {
+			width: 10%;
+		}
 	}
 
 	&:after {
@@ -41,6 +50,9 @@
 		top: 0;
 		width: 27%;
 		border-top: 2px solid $about;
+		@include xs-screen {
+			width: 10%;
+		}
 	}
 
 	&-title {
@@ -50,10 +62,9 @@
 		margin-top: -18px;
 		margin-bottom: 115px;
 		letter-spacing: .4rem;
-	}
-
-	&-img {
-		margin-bottom:  40px;
+		@include xs-screen {
+			margin-bottom: 20px;
+		}
 	}
 
 	&-subtitle {
@@ -72,6 +83,10 @@
 		text-transform: uppercase;
 		letter-spacing: .4rem;
 		margin-bottom: 35px;
+		@include xs-screen {
+			margin-bottom: 10px;
+			letter-spacing: 0.2rem;
+		}
 	}
 
 	&__bl {
@@ -79,6 +94,9 @@
 		flex-direction: column;
 		align-items: center;
 		margin-bottom: 90px;
+		@include xs-screen {
+			margin-bottom: 20px;
+		}
 
 		&:last-child {
 			margin-bottom: 0;
@@ -89,38 +107,8 @@
 .pic_svg {
 	fill:$about;
 	margin-bottom:  40px;
-}
-
-@media screen and (max-width: 575px) {
-	.whatwedo {
-		padding: 40px 0 40px;
-	}
-
-	.whatwedo-content-title {
-		margin-bottom: 20px;
-	}
-
-	.whatwedo-content-tittle {
-		margin-bottom: 10px;
-		letter-spacing: 0.2rem;
-	}
-
-	.whatwedo-content-img {
-		width: 10%;
+	@include xs-screen {
+		width: 20%;
 		margin-bottom: 10px;
 	}
-
-	.whatwedo-content__bl {
-		margin-bottom: 20px;
-	}
-
-	.whatwedo-content {
-		padding:1px 0 25px;
-	}
-
-	.whatwedo-content:before,
-	.whatwedo-content:after {
-		width: 10%;
-	}
 }
-

@@ -1,5 +1,8 @@
 .about {
 	padding: 140px 0 140px;
+	@include xs-screen {
+		padding: 40px 0 40px;
+	}
 }
 
 .about-content {
@@ -26,6 +29,10 @@
 		top: 0;
 		width: 27%;
 		border-top: 2px solid $about;
+
+		@include xs-screen {
+			width: 10%;
+		}
 	}
 
 	&:after {
@@ -40,6 +47,10 @@
 		top: 0;
 		width: 27%;
 		border-top: 2px solid $about;
+
+		@include xs-screen {
+			width: 10%;
+		}
 	}
 
 	&-title {
@@ -49,6 +60,10 @@
 		margin-top: -18px;
 		margin-bottom: 60px;
 		letter-spacing: .6rem;
+
+		@include xs-screen{
+			margin-bottom: 10px;
+		}
 	}
 
 	&-subtitle {
@@ -63,19 +78,3 @@
 		}
 	}
 }
-
-@media screen and (max-width: 575px) {
-	.about {
-		padding: 40px 0 40px;
-	}
-
-	.about-content-title {
-		margin-bottom: 10px;
-	}
-
-	.about-content:before,
-	.about-content:after {
-		width: 10%;
-	}
-}
-
