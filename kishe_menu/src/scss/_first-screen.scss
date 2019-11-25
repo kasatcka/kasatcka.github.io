@@ -1,6 +1,6 @@
 .first-screen {
 	height: 100vh;
-	background:$bg url("../img/1.jpg") top center no-repeat;
+	background:url("../img/1.jpg") center/cover no-repeat;
 
 	&__logo {
 		font-family: $font-logo;
@@ -124,55 +124,55 @@
 	justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-	.first-screen__content {
-		width: 100%;
-		display: flex;
-		justify-content: space-around;
-	}
+// @media screen and (max-width: 768px) {
+// 	.first-screen__content {
+// 		width: 100%;
+// 		display: flex;
+// 		justify-content: space-around;
+// 	}
 
-	.first-screen__menu {
-		display: none;
-	}
+// 	.first-screen__menu {
+// 		display: none;
+// 	}
 
-	.first-screen__item {
-		width: 100%;
-		display: block;
-		font-size: 12px;
-	}
+// 	.first-screen__item {
+// 		width: 100%;
+// 		display: block;
+// 		font-size: 12px;
+// 	}
 
-	.first-screen__link {
-		display: flex;
-		padding: 8px;
-	}
-	.toggle-button {
-		cursor: pointer;
-		text-align: center;
-		display: block;
-		color: #000;
-	}
+// 	.first-screen__link {
+// 		display: flex;
+// 		padding: 8px;
+// 	}
+// 	.toggle-button {
+// 		cursor: pointer;
+// 		text-align: center;
+// 		display: block;
+// 		color: #000;
+// 	}
 
-	.toggle-button:after {
-		display: block;
-		content: attr(data-open);
-	}
+// 	.toggle-button:after {
+// 		display: block;
+// 		content: attr(data-open);
+// 	}
 
-	#menu-checkbox:checked + nav[role="navigation"] .first-screen__menu {
-		display: block;
+// 	#menu-checkbox:checked + nav[role="navigation"] .first-screen__menu {
+// 		display: block;
 
-	}
+// 	}
 
-	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
-		content: attr(data-close);
-	}
+// 	#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+// 		content: attr(data-close);
+// 	}
 
-	.first-screen__link {
-		margin-right: -75px;
-	}
+// 	.first-screen__link {
+// 		margin-right: -75px;
+// 	}
 
-	.first-screen__menu {
-		position: relative;
-		top:30px;
-		right: 115px;
-	}
-}
+// 	.first-screen__menu {
+// 		position: relative;
+// 		top:30px;
+// 		right: 115px;
+// 	}
+// }
