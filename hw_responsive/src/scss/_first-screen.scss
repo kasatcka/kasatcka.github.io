@@ -50,9 +50,15 @@
 		display: flex;
 		justify-content: center;
 		margin-bottom: 95px;
+
 		@include xs-screen {
 			margin-bottom: 10px;
+			display: none;
 		}
+		@include md-screen {
+			margin-bottom: 10px;
+		}
+		
 	}
 }
 

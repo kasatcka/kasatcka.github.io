@@ -1,78 +1,65 @@
 .picture {
-	width: 100%;
-	max-width: 1920px;
-	margin: 0 auto;
 
 	&__list {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: space-between;
-		min-height:485px;
 		align-content: space-between;
+		min-height: 480px;
 	}
-
 
 	&__item {
-		list-style: none;
-		overflow: hidden;
-		max-width: 33%;
+		
 	}
 
-
 	&__content {
-		display: flex;
+		width: 100%;
+		min-height: 235px;
+		align-items: flex-end;
 		position: relative;
 
 
-
-		&:hover {
-			opacity: .5;
-			transition: $transition;
-		}
 	}
 
 	&__title {
-		position: absolute;
-		font-size: 23px;
+		font-family: $font;
 		font-weight: 700;
-		letter-spacing: .4em;
+		font-size: 1.33333em;
+		color: #fff;
+		letter-spacing: 5px;
+		font-weight: 700;
 		text-transform: uppercase;
-		color: white;
-		left:46px;
-		bottom: 30px;
+		position: absolute;
+		bottom: 15px;
+		left: 15px;
 	}
 }
 
-@media screen and (max-width: 575px) {
-	.picture__list {
-		flex-wrap: nowrap;
-		flex-direction: column;
-		align-items: center;
-	}
 
-	.picture__title {
-		font-size: 13px;
-		left:15px;
-	}
 
-	.picture__item {
-		max-width: 75%;
-		min-width: 75%;
-		margin-bottom: 5px;
-	}
+
+
+
+.topworkz {
+	background: url("../img/topworkz.jpg") no-repeat;
 }
 
-@media screen and (min-width: 576px) and (max-width: 766px) {
-	.picture__title {
-		font-size: 20px;
-		left:15px;
-	}
-
+.joint {
+	background: url("../img/joint.jpg") no-repeat;
 }
 
-// @media screen and (max-width: 1920px) {
+.market {
+	background: url("../img/market.jpg") no-repeat;
+}
 
-// 	.picture__item {
-// 		max-width: 33%;
-// 	}
-// }
+.worktop {
+	background: url("../img/worktop.jpg") no-repeat;
+}
+
+.label {
+	background: url("../img/label.jpg") no-repeat;
+}
+
+.kyiv {
+	background: url("../img/kyiv.jpg") no-repeat;
+}
