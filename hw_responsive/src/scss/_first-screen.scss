@@ -3,10 +3,12 @@
 	background: url("../img/first-screen.jpg") center/cover no-repeat;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	align-items: stretch;
+	justify-content: center;
 
-
+	&__header {
+		display: flex;
+		justify-content: center;
+	}
 
 	&__title {
 		text-align: center;
@@ -16,6 +18,7 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		color: $fs;
+
 		@include xs-screen {
 			margin-bottom: 10px;
 			font-size: 30px;
@@ -46,22 +49,27 @@
 		}
 	}
 
-	&__logo {
-		display: flex;
-		justify-content: center;
-		margin-bottom: 95px;
+	.scroll {
+		fill:$fs;
+
+		@include md-screen {
+			display: none;
+		}
+	}
+
+	&__logo-img {
+
+		@include md-screen {
+			height: 42px;
+			width: 42px;
+		}
 
 		@include xs-screen {
 			margin-bottom: 10px;
 			display: none;
 		}
-		@include md-screen {
-			margin-bottom: 10px;
-		}
-		
 	}
+
 }
 
-.scroll {
-	fill:$fs;
-}
+

@@ -1,44 +1,69 @@
 .picture {
+	width: 100%;
+	max-width: 1920px;
+	margin:auto;
 
 	&__list {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		align-content: space-between;
-		min-height: 480px;
+
+		@include  xs-screen {
+			display: flex;
+			flex-wrap: nowrap;
+			flex-direction: column;
+		}
 	}
 
 	&__item {
-		
+		list-style: none;
+		flex-basis: 29%;
+	}
+
+	&__item:nth-child(2),
+	&__item:nth-child(5) {
+		flex-basis: 42%;
 	}
 
 	&__content {
-		width: 100%;
 		min-height: 235px;
 		align-items: flex-end;
 		position: relative;
+		display: block;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: $fs;
+		font-size: 20px;
+		border: 3px solid  $fs;
 
-
+		&:hover {
+			opacity: .7;
+			transition: all .3s;
+		}
 	}
 
 	&__title {
 		font-family: $font;
 		font-weight: 700;
-		font-size: 1.33333em;
+		font-size: 28px;
 		color: #fff;
 		letter-spacing: 5px;
-		font-weight: 700;
 		text-transform: uppercase;
 		position: absolute;
-		bottom: 15px;
-		left: 15px;
+		bottom: 30px;
+		left: 45px;
+
+		@include md-screen-max {
+			font-size: 18px;
+			left:15px;
+			bottom: 15px;
+
+		}
+
 	}
 }
-
-
-
-
-
 
 .topworkz {
 	background: url("../img/topworkz.jpg") no-repeat;
