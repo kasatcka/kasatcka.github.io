@@ -76,6 +76,10 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+
+		@include md-screen {
+			max-width: 80%;
+		}
 	}
 
 	&-anchor {

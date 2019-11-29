@@ -69,5 +69,9 @@
 		text-align: center;
 		line-height: 1.4;
 		max-width: 540px;
+
+		@include md-screen {
+			max-width: 80%;
+		}
 	}
 }
