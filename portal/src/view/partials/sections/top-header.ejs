@@ -1,0 +1,29 @@
+<% const contactsMenu = [
+{href: 'tel:+380969280487', className: 'fas fa-phone-alt'},
+{href: '#', className: 'fas fa-map-marker-alt'},
+{href: 'mailto:admin@gmail.com', className: 'far fa-envelope'}
+]
+%>
+
+<header class="top-header">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-5">
+				<a class="top-header__logo" href="/">
+					<img src="<%= blocks.imgholder %>/400/100/tech" alt="">
+				</a>
+			</div>
+			<div class="col-3 d-flex align-items-end">
+				<ul class="contacts-nav">
+					<% contactsMenu.forEach((menuItem) => { %>
+					<li class="contacts-nav__item">
+						<a href="<%= menuItem.href %>" class="contacts-nav__link" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+							<i class="<%= menuItem.className %>"></i>
+						</a>
+					</li>
+					<% }) %>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
