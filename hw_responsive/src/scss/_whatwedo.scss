@@ -7,80 +7,14 @@
 }
 
 .whatwedo-content {
+	@include border;
 	border: solid 2px $about;
 	color: $about;
 	border-top: none;
-	text-align: center;
-	display: flex;
-	position: relative;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 30px;
-	@include xs-screen {
-		padding:1px 0 25px;
-	}
-
-	&:before {
-		left: 0;
-	}
 
 	&:before,
 	&:after {
-		content: "";
-		display: block;
-		position: absolute;
-		top: 0;
-		width: 27%;
 		border-top: 2px solid $about;
-		@include xs-screen {
-			width: 10%;
-		}
-	}
-
-	&:after {
-		right: 0;
-	}
-
-	&:before,
-	&:after {
-		content: "";
-		display: block;
-		position: absolute;
-		top: 0;
-		width: 27%;
-		border-top: 2px solid $about;
-		@include xs-screen {
-			width: 10%;
-		}
-	}
-
-	&-title {
-		overflow: hidden;
-		text-transform: uppercase;
-		text-align: center;
-		margin-top: -18px;
-		margin-bottom: 115px;
-		letter-spacing: .4rem;
-		@include xs-screen {
-			margin-bottom: 20px;
-		}
-	}
-
-	&-subtitle {
-		text-align: center;
-		line-height: 1.4;
-		margin-bottom:110px;
-		display: inline-block;
-		max-width: 550px;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-
-		@include md-screen {
-			max-width: 80%;
-		}
 	}
 
 	&-tittle {
