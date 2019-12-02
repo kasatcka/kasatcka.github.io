@@ -1,0 +1,90 @@
+.picture {
+	width: 100%;
+	max-width: 1920px;
+	margin:auto;
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+
+		@include  xs-screen {
+			display: flex;
+			flex-wrap: nowrap;
+			flex-direction: column;
+		}
+	}
+
+	&__item {
+		list-style: none;
+		flex-basis: 29%;
+	}
+
+	&__item:nth-child(2),
+	&__item:nth-child(5) {
+		flex-basis: 42%;
+	}
+
+	&__content {
+		min-height: 235px;
+		align-items: flex-end;
+		position: relative;
+		display: block;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: $fs;
+		font-size: 20px;
+		border: 3px solid  $fs;
+
+		&:hover {
+			opacity: .7;
+			transition: all .3s;
+		}
+	}
+
+	&__title {
+		font-family: $font;
+		font-weight: 700;
+		font-size: 28px;
+		color: #fff;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		position: absolute;
+		bottom: 30px;
+		left: 45px;
+
+		@include md-screen-max {
+			font-size: 18px;
+			left:15px;
+			bottom: 15px;
+
+		}
+
+	}
+}
+
+.topworkz {
+	background: url("../img/topworkz.jpg") no-repeat;
+}
+
+.joint {
+	background: url("../img/joint.jpg") no-repeat;
+}
+
+.market {
+	background: url("../img/market.jpg") no-repeat;
+}
+
+.worktop {
+	background: url("../img/worktop.jpg") no-repeat;
+}
+
+.label {
+	background: url("../img/label.jpg") no-repeat;
+}
+
+.kyiv {
+	background: url("../img/kyiv.jpg") no-repeat;
+}

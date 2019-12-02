@@ -1,0 +1,77 @@
+.services {
+	padding: 130px 0 100px;
+	background: url("../img/services.jpg") center/cover no-repeat;
+	@include xs-screen {
+		padding: 40px 0 40px;
+	}
+}
+
+.services-content {
+	border: solid 2px $fs;
+	color: $fs;
+	border-top: none;
+	text-align: center;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 30px;
+
+	&:before {
+		left: 0;
+	}
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 27%;
+		border-top: 2px solid $fs;
+		@include xs-screen {
+			width: 10%;
+		}
+	}
+
+	&:after {
+		right: 0;
+	}
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 27%;
+		border-top: 2px solid $fs;
+		@include xs-screen {
+			width: 10%;
+		}
+	}
+
+	&-title {
+		overflow: hidden;
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: -18px;
+		margin-bottom: 60px;
+		letter-spacing: .6rem;
+		@include xs-screen {
+			margin-bottom: 10px;
+		}
+	}
+
+	&-subtitle {
+		display: inline-block;
+		text-align: center;
+		line-height: 1.4;
+		max-width: 540px;
+
+		@include md-screen {
+			max-width: 80%;
+		}
+	}
+}
