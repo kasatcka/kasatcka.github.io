@@ -1,3 +1,10 @@
+<% const item = [
+{type:'lemon', number: '20',title:'Green Smoothies: Too Much of a Good Thing?',time:'2 hours ago'},
+{type:'soup', number: '14',title:'Growing Food and a “Thirst” for Innovation',time:'3 hours ago'},
+{type:'raspberry', number: '10',title:'Pesticides & Food: What You Need to Know',time:'6 hours ago'}
+]
+%>
+
 <section class="blog cahee__section">
 	<div class="container">
 		<h2 class="cahee__title">
@@ -9,33 +16,18 @@
 		</h4>
 
 		<ul class="blog__list">
+
+			<% item.forEach ((menuItem) => { %>
 			<li class="blog__item">
-				<a href="#" class="blog__link cahee-shadow"  data-img="lemon">
-					<span class="blog__date">20<span class="blog__month">nov</span></span>
+				<a href="#" class="blog__link cahee-shadow"  data-img="<%= menuItem.type %>">
+					<span class="blog__date"><%= menuItem.number%><span class="blog__month">nov</span></span>
 					<footer class="blog__footer">
-						<h4 class="blog__title">Green Smoothies: Too Much of a Good Thing?</h4>
-						<p class="blog__author">by <span class="blog__author-name">Auskteez </span> - <span class="blog__author-time">2 hours ago</span></p>
+						<h4 class="blog__title"><%= menuItem.title%></h4>
+						<p class="blog__author">by <span class="blog__author-name">Auskteez </span> - <span class="blog__author-time"><%= menuItem.time%></span></p>
 					</footer>
 				</a>
 			</li>
-			<li class="blog__item">
-				<a href="#" class="blog__link cahee-shadow" data-img="soup">
-					<span class="blog__date">14<span class="blog__month">nov</span></span>
-					<footer class="blog__footer">
-						<h4 class="blog__title">Growing Food and a “Thirst” for Innovation</h4>
-						<p class="blog__author">by <span class="blog__author-name">Auskteez</span> - <span class="blog__author-time">3 hours ago</span></p>
-					</footer>
-				</a>
-			</li>
-			<li class="blog__item">
-				<a href="#" class="blog__link cahee-shadow" data-img="raspberry">
-					<span class="blog__date">10<span class="blog__month">nov</span></span>
-					<footer class="blog__footer">
-						<h4 class="blog__title">Pesticides & Food: What You Need to Know</h4>
-						<p class="blog__author">by <span class="blog__author-name">Auskteez</span> - <span class="blog__author-time">6 hours ago</span></p>
-					</footer>
-				</a>
-			</li>
+			<%})%>
 		</ul>
 		<a href="#" class="cahee__btn cahee__shadow">view more</a>
 	</div>
