@@ -22,11 +22,45 @@
 	}
 
 	&__item {
-		width: 100%;
 		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
+		flex-direction: column;
+		
 	}
+
+	&__list {
+		
+		
+	}
+
+	&__link {
+		
+	}
+
+
+	.large {
+		height: 545px;
+		max-width: 770px;
+		min-width: 770px;
+		position: relative;
+	}
+
+	.middle {
+		display: flex;
+		width: 100%;
+		min-width: 570px;
+		max-width: 570px;
+		height: 400px;
+
+	}
+
+	.small {
+		width: 100%;
+		min-width: 370px;
+		max-width: 370px;
+		height: 260px;
+
+	}
+
 
 
 
@@ -53,11 +87,22 @@
 		}
 	}
 
-	.peach {
-		background: url(../img/gallery1.jpg) no-repeat;
-	}
-	.large {
-		height: 552px;
-		width: 770px;
-	}
+}
+.peach {
+	background: url(../img/gallery1.jpg) no-repeat;
+}
+
+.blueberries {
+	background: url(../img/gallery2.jpg) no-repeat;
+}
+
+.blackberry {
+	background: url(../img/gallery3.jpg) no-repeat;
+}
+
+.glass {
+	background: url(../img/gallery4.jpg) no-repeat;
+}
+.persimmon {
+	background: url(../img/gallery5.jpg) no-repeat;
 }
