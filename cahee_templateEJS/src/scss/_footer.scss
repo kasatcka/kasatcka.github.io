@@ -1,0 +1,16 @@
+.ch-footer {
+	background-color:$menu;
+	height:90px;
+	color: $letter-color;
+
+	&__logo {
+		font-family: $font-logo;
+		font-size: 25px;
+		text-decoration: none;
+		text-transform: capitalize;
+
+	}
+
+}
+
+
