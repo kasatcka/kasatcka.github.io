@@ -1,0 +1,43 @@
+.team {
+	background: $white;
+	min-height: 100vh;
+	padding:45px 0 100px;
+	.bg {
+		background-color: $bg-card;
+	}
+
+	&__top {
+
+		@include section-title;
+
+		&-img {
+			margin-right: 40px;
+		}
+
+	}
+
+}
+
+.social {
+	padding:10px 0px;
+
+	&-link {
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: darken($bg-card,10%);
+		transition: all 0.3s;
+		font-size: 0.9rem;
+
+		&:hover,
+		&:focus {
+			background: $middle-grey;
+			text-decoration: none;
+			color: #555;
+		}
+
+	}
+}
+

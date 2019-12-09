@@ -4,6 +4,10 @@ $middle-grey: #808080;
 $grey: #eceef4;
 $grey-border: #dee0e6;
 
+
+$bg-card:#d5d5d5;
+
+
 $circle-grey: lighten($middle-grey, 40%);
 $portfolio-grey: $circle-grey;
 
@@ -26,4 +30,4 @@ $social-map: (
 	'fa-twitter': $twitter-color,
 	'fa-instagram': $insta-color,
 	'fa-google-plus-g': $google-color
-);
+	);
