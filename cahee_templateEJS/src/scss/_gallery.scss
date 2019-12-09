@@ -10,6 +10,7 @@
 		text-transform: capitalize;
 		margin-bottom: 40px;
 	}
+
 	&__subtitle {
 		font-size: 17px;
 		font-weight: 300;
@@ -20,74 +21,8 @@
 		line-height: 1.4;
 		margin-bottom: 50px;
 	}
-
-	&__item {
-		display: flex;
-		flex-direction: column;
-		
-	}
-
-	&__list {
-		
-		
-	}
-
-	&__link {
-		
-	}
-
-
-	.large {
-		height: 545px;
-		max-width: 770px;
-		min-width: 770px;
-		position: relative;
-	}
-
-	.middle {
-		display: flex;
-		width: 100%;
-		min-width: 570px;
-		max-width: 570px;
-		height: 400px;
-
-	}
-
-	.small {
-		width: 100%;
-		min-width: 370px;
-		max-width: 370px;
-		height: 260px;
-
-	}
-
-
-
-
-
-
-
-	&__btn {
-		display: block;
-		background-color: $gallery-btn;
-		color: $letter-color;
-		text-transform: uppercase;
-		font-weight: 300;
-		text-align: center;
-		font-size: 20px;
-		text-decoration: none;
-		padding: 15px 0;
-		max-width: 200px;
-		margin: auto;
-
-		&:hover {
-			background-color: $letter-color;
-			font-weight: 700;
-			color: $gallery-btn;
-		}
-	}
-
 }
+
 .peach {
 	background: url(../img/gallery1.jpg) no-repeat;
 }

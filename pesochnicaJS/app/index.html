@@ -9,17 +9,27 @@
 </head>
 <body>
   
-<ul>
-	<li><a href="#">link1</a></li>
-	<li><a href="#">link2</a></li>
-	<li><a href="#">link3</a></li>
-	<li><a href="#">link4</a></li>
-	<li><a href="#">link5</a></li>
-</ul>
-<h2>Start page</h2>
+<form class="form" id="form">
+		<label for="name">Ваше имя:
+			<input id="name" type="text" placeholder="Type your name" name="name" value="Tanya">
+		</label>
 
-<h1>Page title</h1>
-<p>Welcome to Page title</p>
+		<label for="secname">Ваш возраст:
+			<input id="secname" type="text" placeholder="Type your second name" name="secname" value="Petrova">
+		</label>
+
+		<label for="age">Ваш возраст:
+			<input id="age" type="text" placeholder="Type your age" name="age" value="18">
+		</label>
+
+		<input type="submit" value="Расcчитать" name="submit">
+
+		<div>
+			<span class="answer"></span>
+		</div>
+
+	</form>
+
  <!-- index.ejs -->  <script src="js/bundle.js"></script>
 </body>
 </html>

@@ -1,0 +1,65 @@
+.ch-services {
+	background-color: $bg-services;
+	padding: 180px 0 150px;
+
+
+	&__content {
+		display: flex;
+		justify-content: space-around;
+
+		&-left {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		&-right {
+			position: relative;
+
+			&-title {
+				color:$letter-color;
+				font-size: 75px;
+				position: absolute;
+				left:0;
+				top:180px;
+				line-height: 100px;
+			}
+		}
+	}
+
+	&__svg {
+		position: absolute;
+		right: 25px;
+		top: 25px;
+	}
+
+	&__btn {
+		background: $letter-color;
+		display: block;
+		text-decoration: none;
+		color:$black;
+		min-width: 400px;
+		text-align: center;
+		min-height: 100px;
+		position: relative;
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+
+		&::before {
+			content: "";
+			display: block;
+			height: 100px;
+			width: 0;
+			border-left: 1px solid $border-services;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 25%;
+			pointer-events: none;
+			cursor: auto;
+		}
+
+	}
+}

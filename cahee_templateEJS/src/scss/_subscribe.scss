@@ -28,6 +28,7 @@
 		height: 55px;
 		min-width: 570px;
 		text-transform: capitalize;
+		margin-right: 10px;
 	}
 
 	&__send {
@@ -45,12 +46,12 @@
 		font-size: 20px;
 		text-decoration: none;
 		padding: 15px 0;
-		max-width: 200px;
-		// margin: auto;
+		min-width: 200px;
+		border:none;
 
 		&:hover {
 			background-color: $letter-color;
-			font-weight: 700;
+			// font-weight: 700;
 			color: $subscribe-btn;
 			border: 1px solid  $subscribe-btn;
 		}
