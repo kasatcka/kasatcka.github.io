@@ -1,14 +1,29 @@
 .ch-footer {
 	background-color:$menu;
 	height:90px;
-	color: $letter-color;
+
+
+	&__content {
+		color: $letter-color;
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		line-height: 90px;
+	}
 
 	&__logo {
 		font-family: $font-logo;
 		font-size: 25px;
 		text-decoration: none;
 		text-transform: capitalize;
+		color: $letter-color;
 
+	}
+
+	&__ankor {
+		text-decoration: none;
+		color: $footer-ankor;
+		font-weight: 700;
 	}
 
 }
