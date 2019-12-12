@@ -1,45 +1,44 @@
-<section class="ch-gallery">
+<section id="gallery" class="ch-gallery">
 	<div class="container">
-		<h2 class="ch-gallery__title">
-			gallery
-		</h2>
+		<!-- <div class="ch-gallery__wrapper"> -->
+			<!-- <div class="ch-gallery-header"> -->
+				<h2 class="ch-gallery__title">gallery</h2>
+				<p class="ch-gallery__subtitle">
+					Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+		<!-- 	</div> -->
+			<div class="ch-gallery__content">
+				<ul class="ch-gallery__list">
+					<li class="ch-gallery__item large">
+						<a href="#" class="ch-gallery__link-lg">
+							<img src="../../../img/gallery1.jpg" alt="">
+						</a>
+					</li>
+					<li class="ch-gallery__item small">
+						<a href="#" class="ch-gallery__link-sm">
+							<img src="../../../img/gallery2.jpg" alt="">
+						</a>
+					</li>
+					<li class="ch-gallery__item small">
+						<a href="#" class="ch-gallery__link-sm">
+							<img src="../../../img/gallery3.jpg" alt="">
+						</a>
+					</li>
+					<li class="ch-gallery__item middle">
+						<a href="#" class="ch-gallery__link-md">
+							<img src="../../../img/gallery4.jpg" alt="">
+						</a>
+					</li>
+					<li class="ch-gallery__item middle">
+						<a href="#" class="ch-gallery__link-md">
+							<img src="../../../img/gallery5.jpg" alt="">
+						</a>
+					</li>
+				</ul>
 
-		<h4 class="ch-gallery__subtitle">
-			Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-		</h4>
-
-		<ul class="ch-gallery__item">
-
-			<% const itemGallery = ['peach','blueberries','blackberry','glass','persimmon'] %>
-
-			<% itemGallery.forEach(pic => { %>
-			<li class="ch-gallery__list <%= pic %>">
-				<a href="#" class="ch-gallery__link " target="_blank"></a>
-			</li>
-			<%})%>
-
-
-
-			<!-- <li class="ch-gallery__list large ">
-				<a href="#" class="ch-gallery__link" target="_blank">
-					<img src="../../../img/gallery1.jpg" alt="peach">
-				</a>
-			</li>
-			<li class="ch-gallery__list small">
-				<a href="" class="ch-gallery__link "><img src="../../../img/gallery2.jpg" alt="blueberries"></a>
-			</li>
-			<li class="ch-gallery__list small">
-				<a href="" class="ch-gallery__link "><img src="../../../img/gallery3.jpg" alt="blackberry"></a>
-			</li>
-			<li class="ch-gallery__list">
-				<a href="" class="ch-gallery__link middle"><img src="../../../img/gallery4.jpg" alt="glass"></a>
-			</li>
-			<li class="ch-gallery__list">
-				<a href="" class="ch-gallery__link middle"><img src="../../../img/gallery5.jpg" alt="persimmon"></a>
-			</li> -->
-		</ul>
-
-		<a href="#" class="ch-gallery__btn cahee__shadow">view more</a>
+			</div>
+			<a class="btn-gallery" href="#">VIEW MORE</a>
+	<!-- 	</div> -->
 	</div>
 
 </section>
