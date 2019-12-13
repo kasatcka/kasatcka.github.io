@@ -5,6 +5,7 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <title></title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -124,47 +125,28 @@
 </section>
 <section id="gallery" class="ch-gallery">
 	<div class="container">
-		<!-- <div class="ch-gallery__wrapper"> -->
-			<!-- <div class="ch-gallery-header"> -->
-				<h2 class="ch-gallery__title">gallery</h2>
-				<p class="ch-gallery__subtitle">
-					Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</p>
-		<!-- 	</div> -->
-			<div class="ch-gallery__content">
-				<ul class="ch-gallery__list">
-					<li class="ch-gallery__item large">
-						<a href="#" class="ch-gallery__link-lg">
-							<img src="../../../img/gallery1.jpg" alt="">
-						</a>
-					</li>
-					<li class="ch-gallery__item small">
-						<a href="#" class="ch-gallery__link-sm">
-							<img src="../../../img/gallery2.jpg" alt="">
-						</a>
-					</li>
-					<li class="ch-gallery__item small">
-						<a href="#" class="ch-gallery__link-sm">
-							<img src="../../../img/gallery3.jpg" alt="">
-						</a>
-					</li>
-					<li class="ch-gallery__item middle">
-						<a href="#" class="ch-gallery__link-md">
-							<img src="../../../img/gallery4.jpg" alt="">
-						</a>
-					</li>
-					<li class="ch-gallery__item middle">
-						<a href="#" class="ch-gallery__link-md">
-							<img src="../../../img/gallery5.jpg" alt="">
-						</a>
-					</li>
-				</ul>
+		<h2 class="ch-gallery__title">gallery</h2>
+		<p class="ch-gallery__subtitle">
+			Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</p>
+		
 
+		<div class="container-fluid">
+			<div class="d-flex flex-row flex-wrap justify-content-center">
+				<img src="../../../img/gallery1.jpg" alt="">
+				<div class="d-flex flex-column ">
+					<img src="../../../img/gallery2.jpg" alt="">
+					<img src="../../../img/gallery3.jpg" alt="">
+				</div>
+				<div class="d-flex flex-row flex-wrap justify-content-center">
+					<img src="../../../img/gallery4.jpg" alt="">
+					<img src="../../../img/gallery5.jpg" alt="">
+
+				</div>
 			</div>
-			<a class="btn-gallery" href="#">VIEW MORE</a>
-	<!-- 	</div> -->
+		</div>
+		<a class="btn-gallery" href="#">VIEW MORE</a>
 	</div>
-
 </section>
 
 
@@ -216,12 +198,89 @@
 		<a href="#" class="cahee__btn cahee__shadow">view more</a>
 	</div>
 </section>
-<section class="ch-contact">
-<div class="container">
-	
-</div>
+<!-- <section class="ch-contact">
+	<div class="container">
+		<div class="ch-contact-wrapper">
+			<h2 class="ch-contact__title">
+				Contact
+			</h2>
+			<h4 class="ch-contact__subtitle">
+				For new projects, ideas, business or anything
+				you'd like to discuss, contact with me!
+			</h4>
+			<form class="ch-contact__form">
+				<input type="text" placeholder="Auskteez Tran" required>
+				<input type="email" placeholder="Your email..." required>
+				<input type="text" placeholder="Your phone number..." required>
+				<textarea type="text-messge" placeholder="Your messge..." required></textarea>
+				<input type="submit" value="send">
+			</form>
 
-</section>
+			<div class="sh-contacts__adresses">
+				<ul class="sh-contacts__adresses-list">
+					<li class="sh-contacts__adresses-item">
+						<address class="t-caps f-normal">
+							123 City name, Street, City, Country
+						</address>
+					</li>
+					<li class="sh-contacts__adresses-item">
+						<span class="t-caps">e-mail</span><a class="sh-contacts__adresses-link" href="mailto:info@designagency.net">cahee@domain.com</a>
+					</li>
+					<li class="sh-contacts__adresses-item">
+						<span class="t-caps">phone</span><a class="sh-contacts__adresses-link" href="tel:+3809600000000">+012 345 6789</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</section> -->
+
+<section class="sh-section ch-contacts">
+			<div class="container">
+				<h2 class="hidden">Contacts</h2>
+				<div class="ch-contacts__wrapper">
+					<form class="sh-contacts__form">
+						<input type="text" placeholder="Name*" required name="username" class="sh-contacts__field">
+						<input type="text" placeholder="Subject*" required name="subject" class="sh-contacts__field">
+						<input type="email" placeholder="Email*" required name="email" class="sh-contacts__field">
+						<textarea name="message" id="message" class="sh-contacts__field" rows="5" placeholder="Message*"></textarea>
+
+						<input type="submit" name="submit" class="sh-contacts__submit" value="Send Message">
+					</form>
+					<div class="sh-contacts__adresses">
+						<ul class="sh-contacts__adresses-list">
+							<li class="sh-contacts__adresses-item">
+								<address class="t-caps f-normal">
+									address line 1
+								</address>
+							</li>
+							<li class="sh-contacts__adresses-item">
+								<address class="t-caps f-normal">
+									address line 2
+								</address>
+							</li>
+							<li class="sh-contacts__adresses-item">
+								<span class="t-caps">phone</span><a class="sh-contacts__adresses-link" href="tel:+3809600000000">8 (096)000-00-00</a>
+							</li>
+							<li class="sh-contacts__adresses-item">
+								<span class="t-caps">fax</span><a class="sh-contacts__adresses-link" href="fax:+358.555.1234567">+358.555.1234567</a>
+							</li>
+							<li class="sh-contacts__adresses-item">
+								<span class="t-caps">web</span><a class="sh-contacts__adresses-link" href="www.designagency.net" target="_blank">www.designagency.net</a>
+							</li>
+							<li class="sh-contacts__adresses-item">
+								<span class="t-caps">e-mail</span><a class="sh-contacts__adresses-link" href="mailto:info@designagency.net">info@designagency.net</a>
+							</li>
+						</ul>
+						<div class="sh-contacts___map">
+							<img class="sh-contacts___map-img" src="img/map.jpg" alt="map">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
 <section class="ch-footer">
 	<div class="container">
 		<div class="ch-footer__content">
@@ -232,6 +291,9 @@
 	</div>
 </section>
 <!-- <h1></h1> -->
- <!-- index.ejs -->  <script src="js/bundle.js"></script>
+ <!-- index.ejs -->  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/bundle.js"></script>
 </body>
 </html>
