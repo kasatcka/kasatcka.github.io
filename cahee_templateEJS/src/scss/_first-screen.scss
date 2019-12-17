@@ -8,6 +8,7 @@
 		text-decoration: none;
 		text-transform: capitalize;
 		color: $title-font;
+		margin-right: 20px;
 	}
 
 	&__header {
@@ -44,8 +45,6 @@
 		content: "";
 		height: 4px;
 		width: 0%;
-		-webkit-transition: width .3s ease-in-out;
-		-moz--transition: width .3s ease-in-out;
 		transition: width .3s ease-in-out;
 	}
 
@@ -112,3 +111,110 @@
 	display: flex;
 	justify-content: center;
 }
+
+.check-label, .burger-line {
+	display: none;
+
+	@include sm-screen-max {
+		display: block;
+	}
+}
+
+
+.check-label {
+	display: block;
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 2;
+	line-height: 40px;
+
+	@include sm-screen-max  {
+		opacity: 0;
+	}
+}
+
+#check-menu {
+	display: none;
+}
+
+#check-menu:checked ~ .main-menu {
+
+	@include sm-screen-max {
+		max-height: 400px;
+		font-size: 16px;
+	}
+}
+
+#check-menu:checked ~ .first {
+
+	@include sm-screen-max {
+		display: none;
+	}
+}
+
+
+#check-menu:checked ~ .second {
+
+	@include sm-screen-max {
+		transform: rotate(45deg);
+	}
+
+}
+
+#check-menu:checked ~ .third {
+
+	@include sm-screen-max {
+		transform: rotate(-45deg);
+	}
+}
+
+#check-menu:checked ~ .fourth {
+
+	@include sm-screen-max {
+		display: none;
+	}
+}
+
+.main-menu {
+
+	@include sm-screen-max {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right:  0;
+		transform: translateY(100%);
+		max-height: 0;
+		font-size: 0;
+		overflow: hidden;
+		transition: .5s all;
+	}
+}
+
+.wrapper {
+	position: relative;
+	display: block;
+}
+
+.burger-line {
+	position: fixed;
+	top: 8px;
+	right: 5px;
+	width: 35px;
+	height: 2px;
+	background-color: $menu;
+	transition: .5s all;
+	z-index: 10;
+}
+
+.second, .third{
+	top: 18px;
+}
+
+.fourth{
+	top: 28px;
+}
+

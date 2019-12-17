@@ -2,7 +2,7 @@
 	color: $color;
 	&:hover {
 		background-color: $color;
-		border-color: $color; 
+		border-color: $color;
 	}
 }
 
@@ -28,6 +28,12 @@
 
 @mixin sm-screen {
 	@media only screen and (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin sm-screen-max {
+	@media only screen and (max-width: 767px) {
 		@content;
 	}
 }

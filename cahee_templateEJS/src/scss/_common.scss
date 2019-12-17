@@ -20,8 +20,11 @@ body {
 	margin: 0 auto;
 }
 
-ul{
-	li{
-		list-style: none;
+ul {
+	list-style: none;
+	li {
+		a {
+			text-decoration: none;
+		}
 	}
 }
