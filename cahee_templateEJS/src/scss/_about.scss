@@ -4,6 +4,17 @@
 	background: $bg-about;
 	display: flex;
 
+	&__img {
+
+		@include md-screen-max  {
+			width: 80%;
+			margin:0;
+		}
+
+		@include sm-screen-max {
+			display: none;
+		}
+	}
 }
 
 .about__content {
@@ -12,12 +23,47 @@
 	align-items: center;
 	height: 100vh;
 
+	@include md-screen-max {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&-left {
+
+		width: 80%;
+
+		@include md-screen-max {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
 	&-right {
 		color:$letter-color;
+
+		@include sm-screen-max {
+			display: flex;
+			flex-direction: column;
+		}
+
+		@include md-screen-max {
+			display: flex;
+			flex-direction: column;
+		}
+
 
 		.about__title {
 			font-size: 90px;
 			font-weight: 700;
+
+			@include sm-screen-max {
+				text-align: center;
+			}
+
+			@include md-screen-max {
+				text-align: center;
+			}
 		}
 
 		.about__subtitle {
@@ -27,6 +73,14 @@
 
 			&:not(:last-child) {
 				margin-bottom: 20px;
+			}
+
+			@include sm-screen-max {
+				text-align: center;
+			}
+
+			@include md-screen-max {
+				text-align: center;
 			}
 		}
 

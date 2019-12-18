@@ -28,6 +28,9 @@
 	&__item:not(:last-child) {
 		margin-right: 40px;
 
+		@include sm-screen-max  {
+			margin: 0;
+		}
 	}
 
 	&__link {
@@ -52,7 +55,6 @@
 	&__link:focus:after {
 		width: 100%;
 	}
-
 }
 
 .first-screen__content {
@@ -64,6 +66,10 @@
 
 .main {
 	font-size: 100%;
+
+	@include sm-screen-max  {
+		text-align: center;
+	}
 }
 
 .title {
@@ -79,6 +85,10 @@
 	margin-bottom: 35px;
 	max-width: 400px;
 	line-height: 27px;
+
+	@include sm-screen-max  {
+		margin:0 auto 35px;
+	}
 }
 
 .button {
@@ -110,6 +120,10 @@
 .scrol-link {
 	display: flex;
 	justify-content: center;
+
+	@include sm-screen-max  {
+		display: none;
+	}
 }
 
 .check-label, .burger-line {
@@ -120,20 +134,15 @@
 	}
 }
 
-
 .check-label {
 	display: block;
-	// position: absolute;
-	// top: 0;
-	// left: 0;
-	width: 100%;
-	height: 100%;
 	cursor: pointer;
 	z-index: 2;
-	line-height: 40px;
+	opacity: 0;
 
 	@include sm-screen-max  {
 		opacity: 0;
+		line-height: 40px;
 	}
 }
 
@@ -146,6 +155,9 @@
 	@include sm-screen-max {
 		max-height: 400px;
 		font-size: 16px;
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 }
 
@@ -156,13 +168,11 @@
 	}
 }
 
-
 #check-menu:checked ~ .second {
 
 	@include sm-screen-max {
 		transform: rotate(45deg);
 	}
-
 }
 
 #check-menu:checked ~ .third {
@@ -189,8 +199,8 @@
 		transform: translateY(100%);
 		max-height: 0;
 		font-size: 0;
-		overflow: hidden;
 		transition: .5s all;
+		margin:0;
 	}
 }
 
@@ -200,7 +210,7 @@
 }
 
 .burger-line {
-	position: fixed;
+	position: absolute;
 	top: 8px;
 	right: 5px;
 	width: 35px;
@@ -217,4 +227,3 @@
 .fourth{
 	top: 28px;
 }
-
