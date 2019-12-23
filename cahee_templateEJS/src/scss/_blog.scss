@@ -1,4 +1,4 @@
-.cahee__section {
+.ch__section {
 	padding: 100px 0;
 	color:$letter-color;
 }
@@ -7,10 +7,9 @@
 	text-transform: lowercase;
 }
 
-.cahee__btn {
+.ch__btn {
 	display: block;
 	background-color: $blog-btn;
-	// color: $letter-color;
 	text-transform: uppercase;
 	font-weight: 300;
 	text-align: center;
@@ -27,11 +26,11 @@
 	}
 }
 
-.cahee-shadow {
+.ch-shadow {
 	box-shadow: 3px 3px 7px 1px rgba(0,0,0,0.5);
 }
 
-.cahee__title {
+.ch__title {
 	font-size: 90px;
 	font-weight: bold;
 	text-align: center;
@@ -39,7 +38,7 @@
 	margin-bottom: 40px;
 }
 
-.cahee__subtitle {
+.ch__subtitle {
 	font-size: 17px;
 	font-weight: 300;
 	width: 100%;
@@ -57,6 +56,12 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 30px;
+
+		@include md-screen-max {
+			display: flex;
+			flex-direction:column;
+			align-items: center;
+		}
 	}
 
 	&__link {
@@ -69,6 +74,12 @@
 		text-decoration: none;
 		color: #fff;
 		position: relative;
+
+		@include lg-screen-max {
+			min-width: 280px;
+			height: 280px;
+		}
+
 
 		&:hover {
 			transform: translateY(-10px);
@@ -121,8 +132,6 @@
 		bottom: 0;
 		padding: 30px;
 		width: 100%;
-		background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	}
 

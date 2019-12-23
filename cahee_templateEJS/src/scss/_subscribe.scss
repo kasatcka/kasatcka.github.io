@@ -3,11 +3,23 @@
 	padding: 150px 0;
 
 
+	&__wrapper {
+		@include md-screen-max {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
 	&__content {
 		width: 100%;
 		max-width: 570px;
 		display: flex;
 		flex-direction: column;
+
+		@include md-screen-max {
+			text-align: center;
+		}
 	}
 
 	&__title  {
@@ -29,10 +41,23 @@
 		min-width: 570px;
 		text-transform: capitalize;
 		margin-right: 10px;
+
+		@include sm-screen-max {
+			min-width: 300px;
+		}
+
+		@include md-screen-max {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__send {
 		display: flex;
+
+		@include md-screen-max {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 
@@ -51,9 +76,13 @@
 
 		&:hover {
 			background-color: $letter-color;
-			// font-weight: 700;
-			color: $subscribe-btn;
+						color: $subscribe-btn;
 			border: 1px solid  $subscribe-btn;
+		}
+
+		@include md-screen-max {
+			max-width:170px;
+			margin:auto;
 		}
 	}
 }

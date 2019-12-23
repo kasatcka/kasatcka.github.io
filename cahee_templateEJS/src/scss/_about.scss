@@ -85,6 +85,14 @@
 		}
 
 	}
+
+	.container {
+
+		@include md-screen-max {
+			max-width: 960px;
+		}
+	}
+
 }
 
 

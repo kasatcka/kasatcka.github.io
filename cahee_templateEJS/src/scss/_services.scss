@@ -2,17 +2,21 @@
 	background-color: $bg-services;
 	padding: 180px 0 150px;
 
-
-
 	&__content {
 		display: flex;
 		justify-content: space-around;
+
+		@include lg-screen-max {
+			display: flex;
+			flex-direction: column-reverse;
+		}
 
 		&-left {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			padding: 0 120px;
+			max-width: 400px;
+			margin:auto;
 		}
 
 		&-right {
@@ -25,8 +29,22 @@
 				left:0;
 				top:180px;
 				line-height: 100px;
+
+				@include lg-screen-max {
+					position: static;
+					text-align: center;
+					margin-bottom: 40px;
+				}
+			}
+
+			&-bg {
+
+				@include lg-screen-max {
+					display: none;
+				}
 			}
 		}
+
 	}
 
 	&__svg {
@@ -41,7 +59,6 @@
 		text-decoration: none;
 		color:$black;
 		min-width: 400px;
-		// text-align: center;
 		min-height: 100px;
 		position: relative;
 
@@ -65,9 +82,6 @@
 
 		&-title {
 			line-height: 100px;
-			// max-width:250px;
-			// padding:0 40px;
 		}
-
 	}
 }

@@ -18,12 +18,29 @@
 		text-transform: capitalize;
 		color: $letter-color;
 
+		@include xs-screen {
+			display: none;
+		}
+
 	}
 
 	&__ankor {
 		text-decoration: none;
 		color: $footer-ankor;
 		font-weight: 700;
+	}
+
+	&__text {
+
+		@include xs-screen {
+			display: none;
+		}
+	}
+
+	&__left {
+		@include xs-screen {
+			margin: auto;
+		}
 	}
 
 }
