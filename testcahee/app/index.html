@@ -5,117 +5,56 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <title>Testpage</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   
 
 
-<!-- Grid row -->
-<div class="row">
 
-	<!-- Grid column -->
-	<div class="col-md-12 d-flex justify-content-center mb-5">
-
-		<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
-		<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Mountains</button>
-		<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Sea</button>
-
-	</div>
-	<!-- Grid column -->
-
-</div>
-<!-- Grid row -->
-
-<!-- Grid row -->
-<div class="gallery" id="gallery">
-
-	<!-- Grid column -->
-	<div class="mb-3 pics animation all 2">
-		<img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="Card image cap">
-	</div>
-	<!-- Grid column -->
-
-	<!-- Grid column -->
-	<div class="mb-3 pics animation all 1">
-		<img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="Card image cap">
-	</div>
-	<!-- Grid column -->
-
-	<!-- Grid column -->
-	<div class="mb-3 pics animation all 1">
-		<img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Card image cap">
-	</div>
-	<!-- Grid column -->
-
-	<!-- Grid column -->
-	<div class="mb-3 pics animation all 2">
-		<img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
-	</div>
-	<!-- Grid column -->
-
-	<!-- Grid column -->
-	<div class="mb-3 pics animation all 2">
-		<img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
-	</div>
-	<!-- Grid column -->
-
-	<!-- Grid column -->
-	<div class="mb-3 pics animation all 1">
-		<img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Card image cap">
-	</div>
-	<!-- Grid column -->
-
-</div>
-<!-- Grid row -->
-<section id="gallery" class="gallery">
+<section id="gallery" class="ch-gallery">
 	<div class="container">
-		<div class="gallery__wrapper">
-			<div class="gallery-header">
-				<h2 class="gallery-header__title">gallery</h2>
-				<p class="gallery-header__title-discription">
-					Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</p>
-			</div>
-			<div class="gallery-content">
-				<ul class="gallery-content__list">
-					<li class="gallery-content__item lg">
-						<a href="#" class="gallery-content__link-lg">
-							<img src="../../../img/gallery1.jpg" alt="">
-						</a>
-					</li>
-					<li class="gallery-content__item sm">
-						<a href="#" class="gallery-content__link-sm">
-							<img src="../../../img/gallery2.jpg" alt="">
-						</a>
-						<a href="#" class="gallery-content__link-sm">
-							<img src="../../../img/gallery3.jpg" alt="">
-						</a>
-					</li>
-					<li class="gallery-content__item md">
-						<a href="#" class="gallery-content__link-md">
-							<img src="../../../img/gallery4.jpg" alt="">
-						</a>
-					</li>
-					<li class="gallery-content__item md">
-						<a href="#" class="gallery-content__link-md">
-							<img src="../../../img/gallery5.jpg" alt="">
-						</a>
-					</li>
-				</ul>
+		<h2 class="ch__title">gallery</h2>
+		<h4 class="ch__subtitle">
+			Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</h4>
+		<div class="ch-gallery__content">
+			<ul class="ch-gallery__list">
+				<li class="ch-gallery__large">
+					<a href="#" class="ch-gallery__link-large">
+						<img class="ch-gallery__img-large" src="../../../img/gallery1.jpg" alt="
+						peach">
+					</a>
+				</li>
+				<li class="ch-gallery__small">
+					<a href="#" class="ch-gallery__link-small">
+						<img class="ch-gallery__img-small" src="../../../img/gallery2.jpg" alt="
+						blueberries">
+					</a>
+					<a href="#" class="ch-gallery__link-small">
+						<img class="ch-gallery__img-small" src="../../../img/gallery3.jpg" alt="
+						blackberry">
+					</a>
+				</li>
+				<li class="ch-gallery__middle">
+					<a href="#" class="ch-gallery__link-middle">
+						<img class="ch-gallery__img-middle" src="../../../img/gallery4.jpg" alt="glass">
+					</a>
+				</li>
+				<li class="ch-gallery__middle">
+					<a href="#" class="ch-gallery__link-middle">
+						<img class="ch-gallery__img-middle" src="../../../img/gallery5.jpg" alt="
+						persimmon">
+					</a>
+				</li>
+			</ul>
 
-			</div>
-			<a class="btn-gallery" href="#">VIEW MORE</a>
 		</div>
+		<a class="btn-gallery" href="#">VIEW MORE</a>
 	</div>
-
 </section>
 
 
- <!-- index.ejs -->  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="js/bundle.js"></script>
+ <!-- index.ejs -->  <script src="js/bundle.js"></script>
 </body>
 </html>
