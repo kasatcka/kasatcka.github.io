@@ -29,7 +29,25 @@ ul {
 	}
 }
 
- .hidden {
- 	position: absolute;
- 	opacity: 0;
- }
+.ch__title {
+	font-size: 90px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 40px;
+}
+
+.ch__subtitle {
+	font-size: 17px;
+	font-weight: 300;
+	width: 100%;
+	max-width: 570px;
+	margin: auto;
+	text-align: center;
+	line-height: 1.4;
+	margin-bottom: 50px;
+}
+
+.ch-shadow {
+	box-shadow: 3px 3px 7px 1px rgba(0,0,0,0.5);
+}
