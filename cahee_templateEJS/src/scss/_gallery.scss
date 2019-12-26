@@ -31,13 +31,17 @@
 	}
 
 	&__link-large {
-		@include padding-hack(545px) {
+		@include padding-hack(550px) {
 			display: flex;
 			width: 100%;
 			max-width: 760px;
 			height: 550px;
 			flex-basis: 64%;
+
+
 		}
+
+		
 	}
 
 	&__link-small {

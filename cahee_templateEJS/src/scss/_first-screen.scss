@@ -1,6 +1,6 @@
 .first-screen {
 	height: 100vh;
-	background:$bg url("../img/1.jpg") top center no-repeat;
+	background:$bg url("../img/1.jpg") center/cover no-repeat;
 
 	&__logo {
 		font-family: $font-logo;
@@ -9,13 +9,21 @@
 		text-transform: capitalize;
 		color: $title-font;
 		margin-right: 20px;
+
+		@include sm-screen-max {
+			font-size: 35px;
+		}
 	}
 
 	&__header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 50px 0 50px;
+		padding: 50px 0;
+
+		@include sm-screen-max {
+			padding: 20px 0;
+		}
 	}
 
 	&__menu {
@@ -28,7 +36,7 @@
 	&__item:not(:last-child) {
 		margin-right: 40px;
 
-		@include sm-screen-max  {
+		@include sm-screen-max {
 			margin: 0;
 		}
 	}
@@ -77,6 +85,10 @@
 	font-size:60px;
 	margin-bottom: 35px;
 	color: $title-font;
+
+	@include sm-screen-max {
+		margin-bottom: 10px;
+	}
 }
 
 .subtitle {
