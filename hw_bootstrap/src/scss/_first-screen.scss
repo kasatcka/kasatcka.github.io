@@ -1,0 +1,58 @@
+.first-screen {
+	height: 100vh;
+	background: url("../img/fs_bg.jpg") center/cover no-repeat;
+	padding: 35px 0 70px;
+	font-family: $main-font;
+	color:$white;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		display: flex;
+		max-height: 50px;
+
+		&-img {
+			margin-right: 5px;
+		}
+		&-text {
+			font-weight: 100;
+			font-size: 30px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav-link {
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 34px;
+		color:$white;
+		display: flex;
+
+		&:hover {
+			color:$menu-color;
+		}
+	}
+
+	&__subtitle {
+		text-align: center;
+
+		&:before {
+			content:'';
+			display:block;
+			border-top:1px solid;
+			width: 50px;
+
+		}
+	}
+}
+
+
+
