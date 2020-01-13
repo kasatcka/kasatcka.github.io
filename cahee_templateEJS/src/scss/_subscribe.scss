@@ -16,6 +16,7 @@
 		max-width: 570px;
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 30px;
 
 		@include md-screen-max {
 			text-align: center;
@@ -33,7 +34,6 @@
 		font-size: 17px;
 		font-weight: 400;
 		line-height: 27px;
-		margin-bottom: 30px;
 	}
 
 	&__input {

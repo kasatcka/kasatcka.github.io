@@ -53,18 +53,23 @@
 		top: 25px;
 	}
 
+	&__item {
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
 	&__btn {
 		background: $letter-color;
-		display: block;
 		text-decoration: none;
 		color:$black;
 		min-width: 400px;
 		min-height: 100px;
 		position: relative;
+		display: flex;
+		align-items: center;
 
-		&:not(:last-child) {
-			margin-bottom: 20px;
-		}
 
 		&::before {
 			content: "";
@@ -81,7 +86,7 @@
 		}
 
 		&-title {
-			padding: 35px;
+			// padding: 35px;
 			width: 300px;
 			text-align: center;
 		}
