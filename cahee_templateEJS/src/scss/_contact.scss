@@ -2,6 +2,25 @@
 	padding: 100px 0 55px;
 	background: url('../img/contact.jpg') no-repeat center/cover;
 
+	&__title {
+		font-size: 90px;
+		font-weight: bold;
+		text-align: center;
+		text-transform: capitalize;
+		margin-bottom: 40px;
+	}
+
+	&__subtitle {
+		font-size: 17px;
+		font-weight: 300;
+		width: 100%;
+		max-width: 350px;
+		margin: auto;
+		text-align: center;
+		line-height: 1.4;
+		margin-bottom: 50px;
+	}
+
 	&__wrapper {
 		position: relative;
 		z-index: 2;
@@ -125,21 +144,3 @@
 	}
 }
 
-.cahee__title {
-	font-size: 90px;
-	font-weight: bold;
-	text-align: center;
-	text-transform: capitalize;
-	margin-bottom: 40px;
-}
-
-.cahee__subtitle {
-	font-size: 17px;
-	font-weight: 300;
-	width: 100%;
-	max-width: 350px;
-	margin: auto;
-	text-align: center;
-	line-height: 1.4;
-	margin-bottom: 50px;
-}
