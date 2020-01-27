@@ -1,0 +1,99 @@
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/bundle.js"></script>
+<script>
+		var map;
+		function initMap() {;
+			const beetroot ={lat:  49.0665514, lng: 33.4140169}
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: beetroot,
+				zoom: 18,
+				styles: [
+				{elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+				{elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+				{elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+				{
+					featureType: 'administrative.locality',
+					elementType: 'labels.text.fill',
+					stylers: [{color: '#d59563'}]
+				},
+				{
+					featureType: 'poi',
+					elementType: 'labels.text.fill',
+					stylers: [{color: '#d59563'}]
+				},
+				{
+					featureType: 'poi.park',
+					elementType: 'geometry',
+					stylers: [{color: '#263c3f'}]
+				},
+				{
+					featureType: 'poi.park',
+					elementType: 'labels.text.fill',
+					stylers: [{color: '#6b9a76'}]
+				},
+				{
+					featureType: 'road',
+					elementType: 'geometry',
+					stylers: [{color: '#38414e'}]
+				},
+				{
+					featureType: 'road',
+					elementType: 'geometry.stroke',
+					stylers: [{color: '#212a37'}]
+				},
+				{
+					featureType: 'road',
+					elementType: 'labels.text.fill',
+					stylers: [{color: '#9ca5b3'}]
+				},
+				{
+					featureType: 'road.highway',
+					elementType: 'geometry',
+					stylers: [{color: '#746855'}]
+				},
+				{
+					featureType: 'road.highway',
+					elementType: 'geometry.stroke',
+					stylers: [{color: '#1f2835'}]
+				},
+				{
+					featureType: 'road.highway',
+					elementType: 'labels.text.fill',
+					stylers: [{color: '#f3d19c'}]
+				},
+				{
+					featureType: 'transit',
+					elementType: 'geometry',
+					stylers: [{color: '#2f3948'}]
+				},
+				{
+					featureType: 'transit.station',
+					elementType: 'labels.text.fill',
+					stylers: [{color: '#d59563'}]
+				},
+				{
+					featureType: 'water',
+					elementType: 'geometry',
+					stylers: [{color: '#17263c'}]
+				},
+				{
+					featureType: 'water',
+					elementType: 'labels.text.fill',
+					stylers: [{color: '#515c6d'}]
+				},
+				{
+					featureType: 'water',
+					elementType: 'labels.text.stroke',
+					stylers: [{color: '#17263c'}]
+				}
+				]
+			});
+			var marker = new google.maps.Marker({position: beetroot, map: map, icon:  'https://developers.google.com/maps/documentation/javascript/examples/full/images/parking_lot_maps.png'
+		});
+		}
+	</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LRYvXfKL0Kzu2robQZheDB97p-ZAflY&callback=initMap"
+async defer></script>

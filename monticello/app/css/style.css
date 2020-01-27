@@ -1,0 +1,15 @@
+@font-face {
+	font-family: "gothambold1";
+	src: url("../assets/fonts/gothambold1.eot");
+	src: url("../assets/fonts/gothambold1.eot");
+	src: local("gothambold1"), url("../assets/fonts/gothambold1.woff") format("woff"), url("../assets/fonts/gothambold1.ttf") format("truetype");
+}
+
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_5903">Text with this font applied</p> */
+.fontsforweb_fontid_5903 {
+	font-family: "gothambold1" !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl92YXJzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQywwQkFBMEI7RUFDMUIsMkNBQTJDO0VBQzNDLDJDQUEyQztFQUMzQyw0SUFBNEksRUFBQTs7QUFFN0ksOEhBQUE7QUFDQTtFQUNDLHFDQUFxQyxFQUFBOztBQUd0Qyx5Q0FBQSIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcclxuXHRmb250LWZhbWlseTogJ2dvdGhhbWJvbGQxJztcclxuXHRzcmM6IHVybCgnLi4vYXNzZXRzL2ZvbnRzL2dvdGhhbWJvbGQxLmVvdCcpO1xyXG5cdHNyYzogdXJsKCcuLi9hc3NldHMvZm9udHMvZ290aGFtYm9sZDEuZW90Jyk7XHJcblx0c3JjOiBsb2NhbCgnZ290aGFtYm9sZDEnKSwgdXJsKCcuLi9hc3NldHMvZm9udHMvZ290aGFtYm9sZDEud29mZicpIGZvcm1hdCgnd29mZicpLCB1cmwoJy4uL2Fzc2V0cy9mb250cy9nb3RoYW1ib2xkMS50dGYnKSBmb3JtYXQoJ3RydWV0eXBlJyk7XHJcbn1cclxuLyogdXNlIHRoaXMgY2xhc3MgdG8gYXR0YWNoIHRoaXMgZm9udCB0byBhbnkgZWxlbWVudCBpLmUuIDxwIGNsYXNzPVwiZm9udHNmb3J3ZWJfZm9udGlkXzU5MDNcIj5UZXh0IHdpdGggdGhpcyBmb250IGFwcGxpZWQ8L3A+ICovXHJcbi5mb250c2ZvcndlYl9mb250aWRfNTkwMyB7XHJcblx0Zm9udC1mYW1pbHk6ICdnb3RoYW1ib2xkMScgIWltcG9ydGFudDtcclxufVxyXG5cclxuLyogRm9udCBkb3dubG9hZGVkIGZyb20gRm9udHNGb3JXZWIuY29tICovIl19 */

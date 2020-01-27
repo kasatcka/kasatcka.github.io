@@ -1,0 +1,11 @@
+<% const menu = ['Home', 'About', 'Portfolio', 'Testimonials', 'Contacts'] %>
+
+<div class="nav">
+	<div class="container">
+		<ul class="nav__list">
+			<% menu.forEach(item => { %>
+			<li class="nav__item"><a href="#"><%= item %></a></li>
+			<%})%>
+		</ul>
+	</div>
+</div>
