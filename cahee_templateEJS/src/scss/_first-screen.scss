@@ -63,6 +63,8 @@
 	&__link:focus:after {
 		width: 100%;
 	}
+
+
 }
 
 .first-screen__content {
@@ -239,3 +241,15 @@
 .fourth{
 	top: 28px;
 }
+
+.to-top__link {
+	position: fixed;
+	z-index: 10;
+	right: 70px;
+	bottom: 100px;
+}
+
+.to-top__img {
+	fill:$menu;
+}
+
