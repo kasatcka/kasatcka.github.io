@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>Homepage</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+
+
+
+
+<ul>
+	
+	<li><a href="#">Home</a></li>
+	
+	<li><a href="#">About</a></li>
+	
+	<li><a href="#">Portfolio</a></li>
+	
+	<li><a href="#">Testimonials</a></li>
+	
+	<li><a href="#">Contacts</a></li>
+	
+</ul>
+
+
+
+ <div id="map"></div>
+<section class="contacts">
+	<div class="container">
+		<h2 class="contacts__title">Contact us</h2>
+		<h4 class="contacts__subtitle">For new projects, ideas, business or anything
+		you'd like to discuss, contact with me!</h4>
+
+		<div class="contacts__wrapper">
+			<form class="contacts__form">
+				<div class="contacts__input">
+					<input type="text" placeholder="Your Name" required name="username" class="contacts__field">
+					<input type="email" placeholder="Your email..." required name="email" class="contacts__field">
+					<input type="text" placeholder="Your subject..." required name="number" class="contacts__field">
+				</div>
+				<div class="contacts__down">
+					<textarea name="message" id="message" class="contacts__field" rows="5" placeholder="Your messge..." required></textarea>
+					<input type="submit" name="submit" class="contacts__submit" value="Send">
+				</div>
+			</form>
+			<div class="contacts__adresses">
+				<ul class="contacts__adresses-list">
+					<li class="contacts__adresses-item">
+						<span class="t-caps">address</span>
+						<a class="contacts__adresses-link">123 City name, Street, City, Country
+						</a>
+					</li>
+					<li class="contacts__adresses-item">
+						<span class="t-caps">e-mail</span>
+						<a class="contacts__adresses-link" href="mailto:cahee@domain.com">cahee@domain.com</a>
+					</li>
+					<li class="contacts__adresses-item">
+						<span class="t-caps">phone</span>
+						<a class="contacts__adresses-link" href="tel:+0123456789">+012 345 6789</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<p class="footer__text">Copyright ©2020 All rights reserved</p>
+</footer>
+
+<!-- <h1>Homepage</h1> -->
+ <!-- index.ejs -->  <!-- <script src="js/bundle.js"></script> -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3LRYvXfKL0Kzu2robQZheDB97p-ZAflY&callback=initMap"
+	async defer></script>
+</body>
+</html>

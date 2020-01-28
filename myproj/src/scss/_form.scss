@@ -1,0 +1,39 @@
+.contacts {
+	padding: 4em;
+
+	&__form {
+		margin-right: 20px;
+	}
+
+	&__wrapper {
+		display: flex;
+	}
+
+	&__title {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__field:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	&__input {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+
+	&__down {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#message {
+		margin-bottom: 20px;
+	}
+
+	&__submit {
+		max-width: 400px;
+	}
+}
