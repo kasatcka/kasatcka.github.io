@@ -1,0 +1,25 @@
+.first-screen {
+	background: url('../img/header.jpg') center/cover no-repeat;
+	height: 100vh;
+	color: $white;
+
+	.overlay {
+		position: relative;
+		background-color: rgba(0, 0, 0, 0.7);
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 10% 0;
+		height: 100%;
+	}
+
+	&__subtitle {
+		font-size: 15px;
+	}
+
+	&__title {
+		font-size: 50px;
+	}
+
+}

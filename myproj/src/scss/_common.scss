@@ -6,6 +6,8 @@
 
 html, body {
 	min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
 }
 
 .container {
@@ -15,12 +17,16 @@ html, body {
 	max-width: 1140px;
 }
 
-  #map {
-   	height: 100%;
-   }
-   /* Optional: Makes the sample page fill the window. */
-   html, body {
-   	height: 100%;
-   	margin: 0;
-   	padding: 0;
-   }
+#map {
+  height: 75vh;
+}
+
+ul {
+  list-style: none;
+  li {
+    a {
+      display: flex;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<% const menu = ['Home', 'About', 'Portfolio', 'Testimonials', 'Contacts'] %>
+
+<header class="header">
+	<div class="container">
+		<div class="header__wrapper">
+			<a class="header__logo" href="#" target="_blank" class="header__logo">
+				<img class="header__logo-pic" src="../../../img/logo.png" alt="logo">
+			</a>
+
+			<nav class="header__navbar">
+				<ul class="header__navbar-list">
+					<% menu.forEach(item => { %>
+					<li class="header__navbar-item">
+						<a class="header__navbar-link" href="#"><%= item %></a>
+					</li>
+					<%})%>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>

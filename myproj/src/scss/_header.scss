@@ -1,0 +1,40 @@
+.header {
+	padding: 25px 0 35px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		font-size: 0;
+
+		&-pic {
+			height: 45px;
+		}
+	}
+
+	&__navbar {
+		align-items: center;
+		display: flex;
+
+		&-list {
+			list-style: none;
+			display: flex;
+		}
+
+		&-item:not(:last-child) {
+			margin-right: 30px;
+		}
+
+		&-link {
+			color: $header-menu;
+			text-transform: uppercase;
+
+			&:hover {
+				color: $footer-bg;
+			}
+		}
+	}
+}
+
