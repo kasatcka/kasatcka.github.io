@@ -1,0 +1,29 @@
+.history {
+	padding: 145px 0;
+	background:$history-bg;
+
+	&__wrapper {
+		text-align: center;
+	}
+
+	&__title {
+		margin-bottom: 45px;
+		color: $history-title;
+		position: relative;
+	}
+
+	&__pic {
+		margin-bottom: 45px;
+		fill:rgb(0, 199, 252);
+	}
+
+	&__text {
+		font-family: 'Crimson Text', serif;
+		display: flex;
+		max-width: 720px;
+		margin: auto;
+		line-height: 2.5em;
+		font-size: 14px	;
+		color: $history-text;
+	}
+}

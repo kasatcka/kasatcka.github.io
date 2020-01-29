@@ -4,12 +4,19 @@
 	url('../assets/fonts/Montserrat-Regular.ttf');
 }
 
+font-face {
+	font-family: 'Crimson Text', serif;
+	font-style: normal,
+	url('../assets/fonts/CrimsonText-Regular.ttf');
+}
+
 $header-menu:#707070;
 $white:#fff;
 
 
-
-
+$history-text:#768996;
+$history-title:#231f20;
+$history-bg:#f4f4f4;
 
 
 
