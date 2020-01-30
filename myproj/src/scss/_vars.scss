@@ -4,7 +4,7 @@
 	url('../assets/fonts/Montserrat-Regular.ttf');
 }
 
-font-face {
+@font-face {
 	font-family: 'Crimson Text', serif;
 	font-style: normal,
 	url('../assets/fonts/CrimsonText-Regular.ttf');
@@ -17,6 +17,8 @@ $white:#fff;
 $history-text:#768996;
 $history-title:#231f20;
 $history-bg:#f4f4f4;
+
+$form-bg:#101012;
 
 
 

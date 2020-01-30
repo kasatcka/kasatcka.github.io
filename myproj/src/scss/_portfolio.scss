@@ -9,8 +9,54 @@
 	}
 
 	&__mate-pic {
-		fill:#000;
+		fill:$white;
 		height: 20px;
 		width: 20px;
+	}
+
+	&__link {
+		position: relative;
+
+		&:hover {
+			&-pic {
+				transform: initial;
+			}
+
+			.portfolio__mate {
+				opacity: .8;
+				transition: all .3s ease;
+			}
+		}
+	}
+
+	&__mate {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background:$footer-bg;
+		height: 350px;
+		opacity: 0;
+		color: $white;
+		padding: 50px 35px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: space-between;
+		font-size: 15px;
+		max-width: 320px;
+
+		&-title {
+			letter-spacing: .2em;
+		}
+
+		&-text {
+			font-family: 'Crimson Text', serif;
+			line-height: 1.7em;
+		}
+
+		&-item:not(:last-child) {
+			margin-right: 35px;
+		}
 	}
 }

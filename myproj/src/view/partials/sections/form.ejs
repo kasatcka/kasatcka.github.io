@@ -1,39 +1,18 @@
 <section class="contacts">
 	<div class="container">
-		<h2 class="contacts__title">Contact us</h2>
-		<h4 class="contacts__subtitle">For new projects, ideas, business or anything
-		you'd like to discuss, contact with me!</h4>
-
 		<div class="contacts__wrapper">
-			<form class="contacts__form">
-				<div class="contacts__input">
-					<input type="text" placeholder="Your Name" required name="username" class="contacts__field">
-					<input type="email" placeholder="Your email..." required name="email" class="contacts__field">
-					<input type="text" placeholder="Your subject..." required name="number" class="contacts__field">
-				</div>
-				<div class="contacts__down">
-					<textarea name="message" id="message" class="contacts__field" rows="5" placeholder="Your messge..." required></textarea>
-					<input type="submit" name="submit" class="contacts__submit" value="Send">
-				</div>
-			</form>
-			<div class="contacts__adresses">
-				<ul class="contacts__adresses-list">
-					<li class="contacts__adresses-item">
-						<span class="t-caps">address</span>
-						<a class="contacts__adresses-link">123 City name, Street, City, Country
-						</a>
-					</li>
-					<li class="contacts__adresses-item">
-						<span class="t-caps">e-mail</span>
-						<a class="contacts__adresses-link" href="mailto:cahee@domain.com">cahee@domain.com</a>
-					</li>
-					<li class="contacts__adresses-item">
-						<span class="t-caps">phone</span>
-						<a class="contacts__adresses-link" href="tel:+0123456789">+012 345 6789</a>
-					</li>
-				</ul>
+			<div class="contacts__aboutus">
+				<h3 class="contacts__aboutus-title">ABOUT US</h3>
+				<p class="contacts__aboutus-text">Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.	Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus suscipit tortor eget felis.</p>
 			</div>
-
+			<form class="contacts__form">
+				<h3 class="contacts__form-title">CONTACT US</h3>
+				<label class="contacts__form-label">email</label>
+				<input class="contacts__form-email" type="email" required>
+				<label class="contacts__form-label">message</label>
+				<textarea class="contacts__form-message"  value="message" required rows="5"></textarea>
+				<input type="submit" value="send">
+			</form>
 		</div>
 	</div>
 </section>
