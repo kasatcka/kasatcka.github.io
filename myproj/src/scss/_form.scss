@@ -43,6 +43,7 @@
 		padding: 90px 85px 140px;
 		min-width: 570px;
 		border:1px solid $white;
+		color:$white;
 
 		&-title {
 			font-size: 25px;
@@ -52,19 +53,36 @@
 
 		&-label {
 			text-transform: uppercase;
+			margin-bottom: 20px;
 		}
 
 		&-email {
 			margin-bottom: 60px;
-			height: 30px;
+			height: 20px;
 			background-color: transparent;
 			border: none;
 			border-bottom: 1px solid $white;
+			color:$white;
 		}
 
 		&-message {
 			background-color: transparent;
+			margin-bottom: 20px;
+			color:$white;
+		}
 
+		&-btn {
+			background-color: transparent;
+			border: none;
+			text-transform: uppercase;
+			color: $footer-bg;
+			max-width: 100px;
+			padding: 10px;
+
+			&:hover {
+				background: $footer-bg;
+				color: $white;
+			}
 		}
 	}
 }
