@@ -10,6 +10,14 @@
 	url('../assets/fonts/CrimsonText-Regular.ttf');
 }
 
+@font-face {
+	font-family: 'Crimson Text Italic', serif;
+	font-style: normal,
+	url('../assets/fonts/CrimsonText-Italic.ttf');
+}
+
+
+
 $header-menu:#707070;
 $white:#fff;
 
@@ -17,13 +25,10 @@ $white:#fff;
 $history-text:#768996;
 $history-title:#231f20;
 $history-bg:#f4f4f4;
+$services-bg:#edebeb;
+$services-title:#231f20;
+$services-text:#788b98;
 
 $form-bg:#101012;
-
-
-
-
-
-
 $footer-bg:#00c7fc;
 $footer-color:#fff;

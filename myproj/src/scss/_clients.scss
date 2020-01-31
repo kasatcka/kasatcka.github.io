@@ -1,0 +1,46 @@
+.clients {
+	padding: 145px 0 150px;
+
+	&__content {
+		text-align: center;
+
+		&-title {
+			margin-bottom: 40px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__svg {
+		fill:$footer-bg;
+		margin-bottom: 35px;
+	}
+
+	&__pic {
+		margin-top: 115px;
+
+		&-svg {
+			fill:rgb(16, 16, 18);
+		}
+	}
+
+	&__bq {
+		color: #231f20;
+
+		&-text {
+			margin-bottom: 30px;
+			font-family: 'Crimson Text', serif;
+		}
+
+		&-footer {
+			color: #999999;
+
+			&:before {
+				content: '';
+			}
+
+			&-cite {
+				font-family: 'Crimson Text Italic', serif;
+			}
+		}
+	}
+}
