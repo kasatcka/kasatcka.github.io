@@ -24,10 +24,16 @@ html, body {
 
 ul {
   list-style: none;
-   li {
+  li {
+ &:hover {
+        text-decoration: none;
+       }
     a {
       display: flex;
       text-decoration: none;
+       &:hover {
+        text-decoration: none;
+       }
     }
   }
 }
