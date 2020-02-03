@@ -11,6 +11,7 @@
 
 	&__text {
 		color: $footer-color;
+		margin-bottom: 0;
 	}
 
 	&__list {
@@ -21,9 +22,4 @@
 		margin-right: 30px;
 	}
 
-	&__pic {
-		color: #fff;
-		width: 20px;
-		height: 20px;
-	}
 }
