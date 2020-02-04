@@ -28,8 +28,12 @@
 	&__title {
 		font-size: 50px;
 		margin-bottom: 45px;
+	}
 
-		&-btn {
+	&__btn {
+		display: flex;
+
+		&-link {
 			text-decoration: none;
 			color: $white;
 			font-size: 15px;
@@ -43,16 +47,14 @@
 			&:hover {
 				background: $footer-bg;
 				border: 2px solid $footer-bg;
+				text-decoration: none;
+				color: $white;
 			}
 		}
 
-		&-btn:not(:last-child) {
+		&-link:not(:last-child) {
 			margin-right: 30px;
 		}
-	}
-
-	&__btn {
-		display: flex;
 	}
 
 	&__footer {
@@ -60,9 +62,4 @@
 		justify-content: center;
 		padding: 165px 0 0;
 	}
-
-	&__scroll {
-
-	}
-
 }

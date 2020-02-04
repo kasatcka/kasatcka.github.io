@@ -29,11 +29,13 @@
 		}
 
 		&-link {
+			text-decoration: none;
 			color: $header-menu;
 			text-transform: uppercase;
 
 			&:hover {
 				color: $footer-bg;
+				text-decoration: none;
 			}
 		}
 	}
