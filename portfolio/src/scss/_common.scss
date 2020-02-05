@@ -5,161 +5,85 @@
 * Start typing your code under these comments
 */
 
-ul {
-    list-style: none;
-    li {
-        a {
-            text-decoration: none;
-            display: flex;
-        }
-    }
+.carousel {
+ margin-bottom: 0;
+ padding: 0 40px 30px 40px;
 }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.carousel-control {
+ left: -12px;
 }
-
-html, body {
-    min-height: 100vh;
+.carousel-control.right {
+ right: -12px;
 }
-
-.container {
-    width: 100%;
-    margin: auto;
-    padding: 0 15px;
+.carousel-indicators {
+ right: 50%;
+ top: auto;
+ bottom: 0px;
+ margin-right: -19px;
 }
-
-// .container {
-// 	width: 100%;
-// 	// max-width: 1140px;
-// 	margin: 0 auto;
-// }
-.photo {
-	float: left;
-    width: 33.333333%;
-    padding: 10px;
-    box-sizing: border-box;
+.carousel-indicators li {
+ background: #c0c0c0;
 }
-.photo img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border: 10px solid #eee;
-    box-sizing: border-box;
+.carousel-indicators .active {
+background: #333333;
 }
-.photo a:hover {
-    opacity: 0.5;
-}
-.photo a {
-    display: block;
-    position: relative;
-}
-.photo a:after {
-    content: '';
-    background: transparent url('../img/icons/eye-icon.png') no-repeat center;
-    width: 52px;
-    height: 35px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    visibility: hidden;
-}
-.photo:hover> a:after {
-    visibility: visible;
-}
-.photo figcaption {
-    color: #999999;
-    text-align: center;
-    margin-top: 20px;
-}
-h1 {
-    font-size: 36px;
-    text-transform: uppercase;
-    color: #cccccc;
-    text-align: center;
-    margin: 30px 0;
-}
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-#gallery {
-    margin-bottom: 60px;
-}
-#gallery:after { 
-   content: '';
-   display: block; 
-   height: 0; 
-   clear: both;
-}
-
-
 
 
 .portfolio  {
 
-    &__list {
+    &__wrapper {
         display: flex;
         justify-content: center;
     }
 
-    &__mate-list {
-        display: flex;
-    }
-
-    &__mate-pic {
-        fill:white;
-        height: 20px;
-        width: 20px;
-    }
-
-    &__link {
+    &__card {
         position: relative;
+        width: 320px;
+        height: 555px;
+        overflow: hidden;
+        outline: none;
 
-        &:hover {
-            &-pic {
-                transform: initial;
-                height: auto;
-            }
-
-            .portfolio__mate {
-                opacity: .8;
-                transition: all .3s ease;
-            }
+        &:hover .description {
+            transform: translateY(-100%);
         }
-    }
-
-    &__mate {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        background:green;
-        height: 350px;
-        opacity: 0;
-        color: white;
-        padding: 50px 35px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between;
-        font-size: 15px;
-        max-width: 320px;
 
         &-title {
-            letter-spacing: .2em;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            font-size: 15px;
         }
 
         &-text {
+            margin-bottom: 55px;
             font-family: 'Crimson Text', serif;
-            line-height: 1.7em;
+            line-height: 1.5em;
         }
 
-        &-item:not(:last-child) {
+        &-pic {
+            fill:white;
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+
+    .description {
+        position: absolute;
+        width: 100%;
+        height: 370px;
+        padding: 61px 33px 54px;
+        background: blue;
+        opacity: .8;
+        color: white;
+        text-align: center;
+        transition: all .3s ease;
+    }
+
+    .social-list {
+        display: flex;
+        justify-content: center;
+
+        li:not(:last-child) {
             margin-right: 35px;
         }
     }

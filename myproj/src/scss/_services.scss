@@ -23,11 +23,13 @@
 	&__title {
 		color: $services-title;
 		text-transform: uppercase;
+		margin-bottom: 50px;
 	}
 
 	&__text {
 		color: $services-text;
 		font-family: 'Crimson Text', serif;
 		margin-bottom: 0;
+		line-height: 1.5rem;
 	}
 }

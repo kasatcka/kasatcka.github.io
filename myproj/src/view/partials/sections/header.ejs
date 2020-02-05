@@ -8,13 +8,19 @@
 			</a>
 
 			<nav class="header__navbar">
-				<ul class="header__navbar-list">
+				<ul class="header__navbar-list main-menu">
 					<% menu.forEach(item => { %>
 					<li class="header__navbar-item">
 						<a class="header__navbar-link" href="#"><%= item %></a>
 					</li>
 					<%})%>
 				</ul>
+				<input type="checkbox" id="check-menu">
+				<label class="check-label" for="check-menu">menu</label>
+				<div class="burger-line first"></div>
+				<div class="burger-line second"></div>
+				<div class="burger-line third"></div>
+				<div class="burger-line fourth"></div>
 			</nav>
 		</div>
 	</div>

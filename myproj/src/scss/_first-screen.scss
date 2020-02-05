@@ -28,6 +28,7 @@
 	&__title {
 		font-size: 50px;
 		margin-bottom: 45px;
+		text-align: center;
 	}
 
 	&__btn {
@@ -61,5 +62,11 @@
 		display: flex;
 		justify-content: center;
 		padding: 165px 0 0;
+
+		@include sm-screen-max {
+			display: none;
+		}
 	}
 }
+
+
