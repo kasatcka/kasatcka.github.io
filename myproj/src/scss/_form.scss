@@ -5,9 +5,12 @@
 
 	&__aboutus {
 
+		@include md-screen-max {
+			margin-bottom: 20px;
+		}
+
 		&-title {
 			position: relative;
-			// font-size: 25px;
 
 			&:after {
 				display: block;
@@ -25,6 +28,10 @@
 		text-align: center;
 		min-height: 500px;
 		padding: 95px 92px 149px;
+
+		&-text {
+			font-family: 'Crimson Text Italic', serif;
+		}
 	}
 
 
@@ -32,23 +39,60 @@
 		display: flex;
 		flex-direction: column;
 		border: 1px solid $header-menu;
-		// text-align: center;
 		min-height: 500px;
 		padding: 95px 70px 76px;
 		overflow: hidden;
 
 		&-title {
 			margin-bottom: 28px;
+			text-align: center;
 		}
 
 		&-label {
-			
+			text-transform: uppercase;
+			margin-bottom: 15px;
 		}
 
 		&-email {
 			padding: 0 5px;
 			height: 33px;
-			margin-bottom: 60px;
+			margin-bottom: 50px;
+			border: 0;
+			color: $white;
+			border-bottom: 1px solid $header-menu;
+			background: linear-gradient(transparent 49px, $header-menu 1px);
+		}
+
+		&-message {
+			margin: 0;
+			padding: 0 5px;
+			border: 0;
+			resize: none;
+			line-height: 50px;
+			vertical-align: bottom;
+			background: linear-gradient(transparent 49px, $header-menu 1px);
+			background-size: 100% 50px;
+			background-repeat: repeat-y;
+			color: $white;
+			margin-bottom: 20px;
+		}
+
+		&-btn {
+			color: $footer-bg;
+			background: transparent;
+			border: 0;
+			border-color: transparent;
+			border-radius: 0;
+			padding: 10px 0;
+			outline: none;
+			box-shadow: none;
+			min-width: 100px;
+			text-transform: uppercase;
+
+			&:hover {
+				background: $footer-bg;
+				color: $white;
+			}
 		}
 	}
 }

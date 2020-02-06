@@ -2,6 +2,10 @@
 	padding: 145px 0;
 	background:$history-bg;
 
+	@include sm-screen-max {
+		padding: 60px 30px;
+	}
+
 	&__wrapper {
 		text-align: center;
 		position: relative;

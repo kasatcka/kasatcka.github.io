@@ -181,6 +181,10 @@
 	&__btn {
 		display: flex;
 
+	@include sm-screen-max  {
+		flex-direction: column;
+	}
+
 		&-link {
 			text-decoration: none;
 			color: $white;
@@ -202,6 +206,11 @@
 
 		&-link:not(:last-child) {
 			margin-right: 30px;
+
+			@include sm-screen-max {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
 		}
 	}
 

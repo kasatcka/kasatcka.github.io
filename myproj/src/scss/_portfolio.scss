@@ -12,18 +12,22 @@
 		overflow: hidden;
 		outline: none;
 
+		@include lg-screen-max {
+			width: 320px;
+			height: 320px;
+			overflow: hidden;
+		}
+
 		&:hover .description {
 			transform: translateY(-100%);
 		}
 
 		&-title {
 			text-transform: uppercase;
-			// margin-bottom: 60px;
 			font-size: 15px;
 		}
 
 		&-text {
-			// margin-bottom: 55px;
 			font-family: 'Crimson Text', serif;
 			line-height: 1.5em;
 		}

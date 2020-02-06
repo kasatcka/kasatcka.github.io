@@ -12,6 +12,10 @@
 		padding: 55px 55px 95px;
 		text-align: center;
 
+		@include xs-screen {
+			padding: 55px;
+		}
+
 		&-line {
 			width: 30px;
 			height: 2px;

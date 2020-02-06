@@ -4,18 +4,34 @@
 	padding: 55px 30px;
 	display: flex;
 
+	@include xs-screen {
+		padding: 25px 0;
+	}
+
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
+
+		@include xs-screen {
+			display: block;
+			text-align: center;
+		}
 	}
 
 	&__text {
 		color: $footer-color;
 		margin-bottom: 0;
+		@include xs-screen {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__list {
 		display: flex;
+
+		@include xs-screen {
+			justify-content: center;
+		}
 	}
 
 	&__item:not(:last-child) {
