@@ -1,3 +1,30 @@
+<% const menu = ['Home', 'About', 'Portfolio', 'Testimonials', 'Contacts'] %>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a class="header__logo" href="#" target="_blank" class="header__logo">
+					<img class="header__logo-pic" src="../../../img/logo.png" alt="logo">
+				</a>
+
+				<nav class="header__navbar">
+					<ul class="header__navbar-list main-menu">
+						<% menu.forEach(item => { %>
+						<li class="header__navbar-item">
+							<a class="header__navbar-link" href="#"><%= item %></a>
+						</li>
+						<%})%>
+					</ul>
+					<input type="checkbox" id="check-menu">
+					<label class="check-label" for="check-menu">menu</label>
+					<div class="burger-line first"></div>
+					<div class="burger-line second"></div>
+					<div class="burger-line third"></div>
+					<div class="burger-line fourth"></div>
+				</nav>
+			</div>
+		</div>
+	</header>
 <section class="first-screen" id="first-screen">
 	<div class="overlay">
 		<div class="container">

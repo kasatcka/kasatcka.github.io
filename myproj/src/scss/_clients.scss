@@ -1,6 +1,10 @@
 .clients {
 	padding: 145px 0 150px;
 
+	@include md-screen-max {
+		padding: 60px 0;
+	}
+
 	&__content {
 		text-align: center;
 
@@ -20,6 +24,10 @@
 
 		&-svg {
 			fill:rgb(16, 16, 18);
+		}
+
+		@include xs-screen {
+			display: none;
 		}
 	}
 
