@@ -11,6 +11,8 @@
 
 		&-title {
 			position: relative;
+			font-size: 25px;
+			font-weight: bold;
 
 			&:after {
 				display: block;
@@ -30,10 +32,10 @@
 		padding: 95px 92px 149px;
 
 		&-text {
-			font-family: 'Crimson Text Italic', serif;
+			font-family: 'Crimson Text', serif;
+		    line-height: 1.7rem;
 		}
 	}
-
 
 	&__form {
 		display: flex;
@@ -44,19 +46,21 @@
 		overflow: hidden;
 
 		&-title {
-			margin-bottom: 28px;
+			margin-bottom: 30px;
 			text-align: center;
+			font-size: 25px;
+			font-weight: bold;
 		}
 
 		&-label {
 			text-transform: uppercase;
-			margin-bottom: 15px;
+			margin-bottom: 21px;
 		}
 
 		&-email {
 			padding: 0 5px;
 			height: 33px;
-			margin-bottom: 50px;
+			margin-bottom: 60px;
 			border: 0;
 			color: $white;
 			border-bottom: 1px solid $header-menu;
@@ -96,138 +100,3 @@
 		}
 	}
 }
-
-
-
-
-
-// .contacts {
-// 	padding: 55px 0 58px;
-// 	background:$form-bg;
-// 	color:$white;
-
-// 	&__wrapper {
-// 		display: flex;
-// 	}
-
-// 	&__aboutus {
-// 		min-width: 500px;
-// 		border:1px solid $white;
-// 		padding: 95px 92px 149px;
-// 		text-align: center;
-// 		margin-right: 30px;
-
-// 		@include md-screen-max {
-// 			margin-bottom: 50px;
-// 			margin-right: 0;
-// 		}
-
-// 		@include lg-screen-max {
-// 			padding: 95px 50px 50px;
-// 			min-height: 560px;
-// 		}
-
-// 		&-title {
-// 			position: relative;
-// 			font-size: 25px;
-
-// 			&:after {
-// 				display: block;
-// 				content: '';
-// 				width: 30px;
-// 				height: 2px;
-// 				background: $footer-bg;
-// 				margin: 46px auto 54px;
-// 			}
-// 		}
-
-// 		&-text {
-// 			font-family: 'Crimson Text', serif;
-// 			line-height: 2.1em;
-// 			margin-bottom: 0;
-// 		}
-// 	}
-
-// 	&__form {
-// 		display: flex;
-// 		flex-direction: column;
-// 		padding: 95px 70px 104px;
-// 		overflow: hidden;
-// 		min-width: 500px;
-// 		border:1px solid $white;
-// 		color:$white;
-
-// 		@include lg-screen-max {
-// 			padding: 95px 50px 50px;
-// 			min-height: 560px;
-// 		}
-
-// 		// @include md-screen-max {
-// 		// 	padding: 95px 70px 70px;
-// 		// 	min-height: 560px;
-// 		// }
-
-// 		&-title {
-// 			font-size: 25px;
-// 			text-align: center;
-// 			margin-bottom: 28px;
-// 		}
-
-// 		&-label {
-// 			text-transform: uppercase;
-// 			margin-bottom: 20px;
-// 		}
-
-// 		&-email {
-// 			margin-bottom: 60px;
-// 			height: 33px;
-// 			background-color: transparent;
-// 			border: none;
-// 			border-bottom: 1px solid $form-line;
-// 			color:$white;
-// 			padding: 0 5px;
-// 		}
-
-// 		&-message {
-// 			margin: 0;
-// 			padding: 0 5px;
-// 			border: 0;
-// 			box-sizing: border-box;
-// 			resize: none;
-// 			font-size: 15px;
-// 			line-height: 50px;
-// 			vertical-align: bottom;
-// 			background: linear-gradient(transparent 49px, $form-line 1px) repeat-y;
-// 			background-size: 100% 50px;
-// 			margin-bottom: 38px;
-// 			color: $white;
-
-// 		}
-
-// 		&-btn {
-// 			background-color: transparent;
-// 			border: none;
-// 			text-transform: uppercase;
-// 			color: $footer-bg;
-// 			max-width: 100px;
-// 			padding: 10px;
-// 			background: transparent;
-// 			border: 0;
-// 			border-color: transparent;
-// 			border-radius: 0;
-// 			padding: 10px 0;
-// 			outline: none;
-
-// 			&:hover {
-// 				background: $footer-bg;
-// 				color: $white;
-// 			}
-// 		}
-// 	}
-
-// 	.container {
-// 		@include lg-screen-max{
-// 			width: 960px;
-// 		}
-// 	}
-// }

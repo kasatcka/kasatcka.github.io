@@ -1,17 +1,23 @@
-<% const menu = ['Home', 'About', 'Portfolio', 'Testimonials', 'Contacts'] %>
+<% const menu = [
+{name:'home', href:'#'},
+{name:'about', href:'#contacts'},
+{name:'portfolio', href:'#portfolio'},
+{name:'testimonials', href:'#testimonials'},
+{name:'contacts', href:'#contacts'}
+] %>
 
 	<header class="header">
 		<div class="container">
 			<div class="header__wrapper">
 				<a class="header__logo" href="#" target="_blank">
-					<img class="header__logo-pic" src="../../../img/logo.png" alt="logo">
+					<img class="header__logo-pic" src="img/logo.png" alt="logo">
 				</a>
 
 				<nav class="header__navbar">
 					<ul class="header__navbar-list main-menu">
-						<% menu.forEach(item => { %>
+						<% menu.forEach(menuItem => { %>
 						<li class="header__navbar-item">
-							<a class="header__navbar-link" href="#"><%= item %></a>
+							<a class="header__navbar-link" href="<%= menuItem.href %>"><%= menuItem.name %></a>
 						</li>
 						<%})%>
 					</ul>
