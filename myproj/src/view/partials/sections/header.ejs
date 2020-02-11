@@ -1,0 +1,35 @@
+<% const menu = [
+{name:'home', href:'#'},
+{name:'about', href:'#contacts'},
+{name:'portfolio', href:'#portfolio'},
+{name:'testimonials', href:'#testimonials'},
+{name:'contacts', href:'#contacts'}
+] %>
+
+<header class="header">
+	<div class="container">
+		<div class="header__content">
+			<a class="header__logo" href="#" target="_blank">
+				<img class="header__logo-pic" src="img/logo.png" alt="logo">
+			</a>
+
+			<div class="header__wrapper">
+				<input type="checkbox" id="check-menu">
+				<label class="check-label" for="check-menu">menu</label>
+				<div class="burger-line first"></div>
+				<div class="burger-line second"></div>
+				<div class="burger-line third"></div>
+				<div class="burger-line fourth"></div>
+
+				<ul class="header__list main-menu">
+					<% menu.forEach(menuItem => { %>
+					<li class="header__item">
+						<a class="header__link" href="<%= menuItem.href %>"><%= menuItem.name %></a>
+					</li>
+					<%})%>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</header>

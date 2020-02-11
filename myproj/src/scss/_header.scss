@@ -1,0 +1,161 @@
+.header {
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 25px 0;
+
+		@include sm-screen-max {
+			padding: 20px 0;
+		}
+	}
+
+	&__wrapper {
+		position: relative;
+		display: block;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		list-style: none;
+		text-transform: uppercase;
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 20px;
+
+		@include sm-screen-max {
+			margin: 0 0 15px;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		color: $header-menu;
+		line-height: 1;
+		text-decoration: none;
+		cursor: pointer;
+		// font-weight: 900;
+
+		&:hover {
+			color:$footer-bg;
+		}
+	}
+
+	.check-label, .burger-line {
+		display: none;
+
+		@include sm-screen-max {
+			display: block;
+		}
+	}
+
+	.check-label {
+		display: block;
+		cursor: pointer;
+		z-index: 2;
+		opacity: 0;
+
+		@include sm-screen-max  {
+			opacity: 0;
+			line-height: 40px;
+		}
+	}
+
+	#check-menu {
+		display: none;
+	}
+
+	#check-menu:checked ~ .main-menu {
+
+		@include sm-screen-max {
+			max-height: 400px;
+			font-size: 16px;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+
+	#check-menu:checked ~ .first {
+
+		@include sm-screen-max {
+			display: none;
+		}
+	}
+
+	#check-menu:checked ~ .second {
+
+		@include sm-screen-max {
+			transform: rotate(45deg);
+		}
+	}
+
+	#check-menu:checked ~ .third {
+
+		@include sm-screen-max {
+			transform: rotate(-45deg);
+		}
+	}
+
+	#check-menu:checked ~ .fourth {
+
+		@include sm-screen-max {
+			display: none;
+		}
+	}
+
+	.main-menu {
+
+		@include sm-screen-max {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right:  0;
+			transform: translateY(100%);
+			max-height: 0;
+			font-size: 0;
+			transition: .5s all;
+			margin:0;
+		}
+	}
+
+
+
+	.burger-line {
+		position: absolute;
+		top: 8px;
+		right: 5px;
+		width: 35px;
+		height: 2px;
+		background-color: $header-menu;
+		transition: .5s all;
+		z-index: 10;
+	}
+
+	.second, .third{
+		top: 18px;
+	}
+
+	.fourth{
+		top: 28px;
+	}
+
+
+	// &__link:after {
+	// 	background-color: $line-menu;
+	// 	display: block;
+	// 	content: "";
+	// 	height: 4px;
+	// 	width: 0%;
+	// 	transition: width .3s ease-in-out;
+	// }
+
+	// &__link:hover:after,
+	// &__link:focus:after {
+	// 	width: 100%;
+	// }
+
+}
