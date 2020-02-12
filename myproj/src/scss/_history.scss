@@ -33,4 +33,25 @@
 		font-size: 14px	;
 		color: $history-text;
 	}
+
+	#fixed {
+		position:fixed;
+		bottom: 100px;
+		right: -90px;
+		z-index:50;
+		width:200px;
+		height:50px;
+		padding:10px;
+		cursor:pointer;
+		display:none;
+	}
+
+	.to-top {
+		display: block;
+
+		&__pic {
+			height: 42px;
+			width: 42px;
+		}
+	}
 }
