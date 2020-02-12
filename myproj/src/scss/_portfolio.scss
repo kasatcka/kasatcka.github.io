@@ -3,6 +3,10 @@
 	&__wrapper {
 		display: flex;
 		justify-content: center;
+
+		@include lg-screen-max {
+			flex-flow: row wrap;
+		}
 	}
 
 	&__card {
@@ -11,12 +15,6 @@
 		height: 555px;
 		overflow: hidden;
 		outline: none;
-
-		@include lg-screen-max {
-			width: 320px;
-			height: 320px;
-			overflow: hidden;
-		}
 
 		&:hover .description {
 			transform: translateY(-100%);
