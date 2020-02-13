@@ -33,7 +33,14 @@
 
 		&-text {
 			font-family: 'Crimson Text', serif;
-		    line-height: 1.7rem;
+			line-height: 1.7rem;
+		}
+
+		@include md-screen-max {
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 	}
 
@@ -44,6 +51,10 @@
 		min-height: 500px;
 		padding: 95px 70px 76px;
 		overflow: hidden;
+
+		@include md-screen-max {
+			padding: 50px;
+		}
 
 		&-title {
 			margin-bottom: 30px;
