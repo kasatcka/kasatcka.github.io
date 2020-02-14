@@ -1,7 +1,5 @@
 .header {
 
-
-
 	&__content {
 		display: flex;
 		justify-content: space-between;
@@ -10,8 +8,6 @@
 	}
 
 	&__wrapper {
-		// position: relative;
-		// display: block;
 		position: fixed;
 		z-index: 10;
 		top: 29px;
@@ -30,6 +26,10 @@
 		top: 22px;
 		right: 0;
 		bottom: 0;
+
+		@include sm-screen-max {
+			display: none;
+		}
 	}
 
 	&__item:not(:last-child) {
@@ -52,101 +52,114 @@
 		}
 	}
 
-	.check-label, .burger-line {
-		display: none;
+	#menu {
+		background: $footer-bg;
+		width: 100vw;
+		height: auto;
+		padding: 50px 0;
+		color: $color-two;
+		display: flex;
+		visibility: visible;
+		opacity: 1;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+		border-radius: 3px;
+		transition: all 300ms ease-in-out;
+		position: fixed;
+		top: -100vh;
+		left: 0px;
+		z-index: 9;
 
-		@include sm-screen-max {
-			display: block;
-		}
-	}
-
-	.check-label {
-		display: block;
-		cursor: pointer;
-		z-index: 2;
-		opacity: 0;
-
-		@include sm-screen-max  {
-			opacity: 0;
-			line-height: 40px;
-		}
-	}
-
-	#check-menu {
-		display: none;
-	}
-
-	#check-menu:checked ~ .main-menu {
-
-		@include sm-screen-max {
-			max-height: 400px;
-			font-size: 16px;
-			position: absolute;
+		&.active {
 			top: 0;
-			right: 0;
-			background-color: green;
+		}
+
+		#logo {
+			font-size: 25px;
+			font-weight: 700;
+		}
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+			li {
+				margin: 10px 0;
+			}
 		}
 	}
 
-	#check-menu:checked ~ .first {
+	#toggle {
+		position: fixed;
+		width: 42px;
+		height: 42px;
+		right: 20px;
+		top: 35px;
+		transition: all 300ms ease-in-out;
+		z-index: 10;
 
-		@include sm-screen-max {
-			display: none;
+		input {
+			position: absolute;
+			top: -3px;
+			left: -3px;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			opacity: 0;
+			cursor: pointer;
+
+			&:checked {
+				+ span {
+					background: transparent;
+					left: 0;
+
+					&:after {
+						transform: rotate(45deg) translate(-1px, -12px);
+						left: -7px;
+						background: #fff;
+					}
+
+					&:before {
+						transform: rotate(-45deg) translate(-4px, 16px);
+						left: -7px;
+						background: #fff;
+					}
+				}
+			}
+		}
+
+		span {
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background: $color-one;
+			margin-top: 10px;
+			transition: all 0.1s;
+			left: 0;
+
+			&:before, &:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				background: $color-one;
+				top: -12px;
+				left: 0;
+				transition: all 0.3s;
+			}
+
+			&:after {
+				top: 12px;
+			}
 		}
 	}
 
-	#check-menu:checked ~ .second {
-
-		@include sm-screen-max {
-			transform: rotate(45deg);
-		}
-	}
-
-	#check-menu:checked ~ .third {
-
-		@include sm-screen-max {
-			transform: rotate(-45deg);
-		}
-	}
-
-	#check-menu:checked ~ .fourth {
-
-		@include sm-screen-max {
-			display: none;
-		}
-	}
-
-	.main-menu {
+	.burger {
+		display: none;
 
 		@include sm-screen-max {
 			display: block;
-			position: absolute;
-			bottom: 0;
-			right:  0;
-			transform: translateY(100%);
-			max-height: 0;
-			font-size: 0;
-			transition: .5s all;
-			margin:0;
 		}
 	}
 
-	.burger-line {
-		position: absolute;
-		top: 8px;
-		right: 5px;
-		width: 35px;
-		height: 2px;
-		background-color: $header-menu;
-		transition: .5s all;
-		z-index: 10;
-	}
-
-	.second, .third{
-		top: 18px;
-	}
-
-	.fourth{
-		top: 28px;
-	}
 }
