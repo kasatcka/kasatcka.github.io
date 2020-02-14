@@ -36,3 +36,8 @@ ul {
 figure,h3 {
   margin: 0;
 }
+
+
+body:first-child {
+  display: none;
+}
