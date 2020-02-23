@@ -1,0 +1,24 @@
+.first-screen {
+	background-color:$fs-bg;
+	padding: 60px 0 0;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		height: 100vh;
+	}
+
+	&__burger {
+		height: 19px;
+		width: 19px;
+	}
+
+	&__social  {
+
+		&-pic {
+			height: 19px;
+			width: 19px;
+
+		}
+	}
+}
