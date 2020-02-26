@@ -1,0 +1,48 @@
+.about {
+	padding: 120px 0 100px;
+
+	&__title {
+		font-size: 32px;
+		font-weight: bold;
+	}
+
+	&__text {
+		text-align: center;
+	}
+
+	&__left {
+
+
+		&-title {
+			font-size: 22px;
+		}
+
+		&-title:first-child {
+			padding: 130px 0 0;
+		}
+
+		&-text {
+			font-size: 16px;
+			color: $about-letter;
+		}
+
+		&-text:first-child {
+			padding-bottom: 85px;
+		}
+	}
+
+	&__phone {
+		position: relative;
+	}
+
+	&__logotip {
+		&-content {
+			position: absolute;
+			background: white;
+			top: 1084px;
+			left: 602px;
+			z-index: 10;
+			padding: 186px 90px;
+		}
+	}
+}
