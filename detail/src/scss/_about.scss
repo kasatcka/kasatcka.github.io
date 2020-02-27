@@ -31,18 +31,20 @@
 		}
 	}
 
-	&__phone {
-		position: relative;
-	}
-
 	&__logotip {
+		position: relative;
+
 		&-content {
 			position: absolute;
-			background: white;
-			top: 1084px;
-			left: 602px;
+			background: $white;
+			top: 27px;
+			left: 12px;
 			z-index: 10;
 			padding: 186px 90px;
+		}
+
+		&-link {
+			color: $black;
 		}
 	}
 }

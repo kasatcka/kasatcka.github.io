@@ -1,5 +1,5 @@
 .first-screen {
-	background-color:$fs-bg;
+	background-color:$yellow;
 	padding: 60px 0 50px;
 
 	&__header {
@@ -11,17 +11,15 @@
 	&__burger {
 		height: 19px;
 		width: 19px;
-
 	}
 
 	&__logo {
 
 		&-link {
 			text-decoration: none;
-			color: black;
+			color: $black;
 			font-size: 30px;
 		}
-
 	}
 
 	&__social  {
@@ -29,13 +27,11 @@
 		&-pic {
 			height: 19px;
 			width: 19px;
-			fill: black;
-
+			fill: $black;
 		}
 	}
 
 	&__carousel {
-
 		text-align: center;
 
 		&-title {
@@ -68,7 +64,7 @@
 
 		&-img {
 			padding: 15px;
-			border:1px solid black;
+			border:1px solid $black;
 			border-radius: 50%;
 			margin-bottom: 150px;
 			width: 60px;
