@@ -43,8 +43,14 @@
 			padding: 186px 90px;
 		}
 
-		&-link {
+		&-img {
+			cursor: pointer;
+		}
+
+		&-link,
+		&-link:hover {
 			color: $black;
+			text-decoration: none;
 		}
 	}
 }

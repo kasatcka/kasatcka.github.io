@@ -11,11 +11,17 @@
 	&__burger {
 		height: 19px;
 		width: 19px;
+		cursor: pointer;
 	}
 
 	&__logo {
 
-		&-link {
+		&-img {
+			cursor: pointer;
+		}
+
+		&-link,
+		&-link:hover {
 			text-decoration: none;
 			color: $black;
 			font-size: 30px;

@@ -35,7 +35,6 @@
 		font-weight: bold;
 		font-size: 16px;
 		min-width: 145px;
-		
 
 		&:hover {
 			color: $yellow;
@@ -62,6 +61,12 @@
 
 		&-link {
 			color: $white;
+
+			&:hover {
+				color:$yellow;
+				text-decoration: none;
+				font-weight: bold;
+			}
 		}
 	}
 }
