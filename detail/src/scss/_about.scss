@@ -1,0 +1,56 @@
+.about {
+	padding: 120px 0 100px;
+
+	&__title {
+		font-size: 32px;
+		font-weight: bold;
+	}
+
+	&__text {
+		text-align: center;
+	}
+
+	&__left {
+
+
+		&-title {
+			font-size: 22px;
+		}
+
+		&-title:first-child {
+			padding: 130px 0 0;
+		}
+
+		&-text {
+			font-size: 16px;
+			color: $about-letter;
+		}
+
+		&-text:first-child {
+			padding-bottom: 85px;
+		}
+	}
+
+	&__logotip {
+		position: relative;
+
+		&-content {
+			position: absolute;
+			background: $white;
+			top: 27px;
+			left: 12px;
+			z-index: 10;
+			padding: 186px 90px;
+		}
+
+		&-img {
+			cursor: pointer;
+		}
+
+		&-link,
+		&-link:hover {
+			color: $black;
+			text-decoration: none;
+		}
+	}
+}
