@@ -25,12 +25,21 @@ html, body {
 	background-color:$header-bg;
 	padding: 40px 100px;
 	align-items: center;
+	justify-content: space-around;
+
+	@include sm-screen-max {
+		padding: 20px;
+	}
+
+	@include xs-screen {
+		display: block;
+		text-align: center;
+	}
 
 	&__photo {
 		height: 200px;
 		width: 200px;
 		border-radius: 50%;
-		margin-right: 200px;
 	}
 
 	&__wrapper {
@@ -41,6 +50,10 @@ html, body {
 		text-transform: uppercase;
 		font-size: 60px;
 		margin-bottom: 30px;
+
+		@include sm-screen-max {
+			font-size: 30px;
+		}
 	}
 
 	&__text {
@@ -50,6 +63,10 @@ html, body {
 
 .content {
 	display: flex;
+
+	@include sm-screen-max {
+		display: block;
+	}
 }
 
 .left {
@@ -60,16 +77,29 @@ html, body {
 	width: 40%;
 	color: $left-color;
 
+	@include sm-screen-max {
+		width: 100%;
+		padding: 20px 50px;
+	}
+
 	&__text {
 
 		&:not(:last-child) {
 			margin-bottom: 90px;
+
+			@include sm-screen-max {
+				margin-bottom: 20px;
+			}
 		}
 	}
 
 	&__list {
 		list-style: none;
 		margin-bottom:90px;
+
+		@include sm-screen-max {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__span {
@@ -86,14 +116,22 @@ html, body {
 	width: 60%;
 	padding: 30px 50px 0;
 
+	@include sm-screen-max {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
 	&__wrapper {
 		padding: 20px 0;
 		margin-bottom: 20px;
+
+		@include sm-screen-max {
+			margin-bottom: 0;
+			padding: 0;
+		}
 	}
 
 	&__block {
 		margin-bottom: 20px;
 	}
-
-	
 }
