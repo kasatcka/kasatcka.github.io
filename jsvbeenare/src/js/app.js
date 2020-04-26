@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // let name=prompt('whats you name?');
 // let surname=prompt('whats you surname?');
 // let fullName=name+' '+surname;
@@ -148,4 +149,18 @@ for (var i = 0; i < products.length; i++) {
 	outerDIV.appendChild(a);
 
 	document.body.appendChild (outerDIV);
+=======
+// let button = document.querySelector('.button');
+// button.onclick=function() {
+// 	console.log('клик');
+// };
+
+//poisk elementa
+var elem = document.querySelector('.button');
+
+//sobitiya
+
+elem.onclick = function () {
+	document.querySelector('.block').style.backgroundColor = 'red'
+>>>>>>> 02899c5b10a274862ddb71319699d55ac9f742b1
 }

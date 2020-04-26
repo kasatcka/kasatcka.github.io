@@ -12,34 +12,36 @@ html, body {
 	width: 100%;
 	margin: auto;
 	padding: 0 15px;
-	max-width: 1200px;
-}
-
-p {
-	margin-bottom: 20px;
+	max-width: 1140px;
 }
 
 .wrapper {
-	padding: 50px 0;
 	display: flex;
-}
-
-.photo {
-	height: 250px;
-	width: 250px;
-	border-radius: 50%;
-	margin-bottom: 50px;
+	box-shadow: 3px 3px 10px 0 rgba(0,0,0,.5);
 }
 
 .left {
 	padding: 50px;
-	margin-right: 50px;
-	background-color: #3A41E4;
+	margin-right: 30px;
+	background-color: $left-bg;
 	height: 100%;
 	width: 40%;
+	color: $left-color;
+
+	&__photo {
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		margin-bottom: 70px;
+	}
+
+	&__text {
+		margin-bottom: 70px;
+	}
 
 	&__list {
 		list-style: none;
+		margin-bottom:50px;
 	}
 
 	&__span {
@@ -47,18 +49,31 @@ p {
 	}
 
 	&__link {
-		color:#000;
+		color:$left-color;
+		text-decoration: none;
 	}
-
 }
 
 .right {
 	width: 60%;
+	padding: 30px 50px 0;
 
+	&__wrapper {
+		padding: 20px 0;
+		margin-bottom: 20px;
+	}
+
+	&__block {
+		margin-bottom: 20px;
+	}
 
 	&__name {
 		text-transform: uppercase;
-		font-size: 70px;
+		font-size: 60px;
+		margin-bottom: 30px;
 	}
 
+	&__text {
+		margin-bottom: 20px;
+	}
 }
