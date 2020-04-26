@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Title</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- <iframe src="https://calendar.google.com/calendar/embed?src=ru.ukrainian%23holiday%40group.v.calendar.google.com&ctz=Europe%2FKiev" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe> -->
+	<script>
+		// "use strict";
+		// let a=100;
+		// console.log(a);
+		// let string = 'Hello people!';
+		// document.write(string);
+		// let mas = [
+		// 'vasya',
+		// 'petya'
+		// ]
+		// console.log(mas[1]);
+		// console.log(mas[0]);
+		// let boolX = 5<6;
+		// console.log(boolX);
+
+		// let user = {
+		// 	id:1,
+		// 	name:'Tatiana',
+		// 	age:39,
+		// 	surname:'zakharova',
+		// 	child:['Sonya','Michael']
+		// };
+
+		// console.log(user.age);
+
+		// let result = confirm('Are you older than 18 age?');
+		// console.log(result);
+
+		// if (result) {
+		// 	document.write('<h1>Hello! Enjoy!</h1>')
+		// }
+
+//spisok pokupok
+let h1=document.createElement('h1');
+h1.innerText="task list";
+document.body.append(h1);
+
+let ol = document.createElement('ol');
+document.body.append(ol);
+
+while (true) {
+	let data = prompt('name of element');
+
+	if (!data) {
+		break;
+	}
+
+	let  li = document.createElement ('li');
+	li.textContent=data;
+	ol.append(li);
+
+}
+
+
+
+
+</script>
+<script src="js/bundle.js"></script>
+</body>
+</html>
