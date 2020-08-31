@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Title</title>
+	<style>
+		img {
+			width: 100px;
+		}
+	</style>
+
+	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<script>
+		fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json())
+  .then(json => console.log(json))
+	</script>
+
+
+	<!-- <script>
+		let products = [
+		{
+			title:'milk',
+			price:22,
+			image:'https://sweetness.com.ua/4747-large_default/a-pieu-white-hydrating-milk-one-pack.jpg'
+		},
+		{
+			title:'juice',
+			price:27,
+			image:'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcThxtT7rEKigzQMuHy25Vi0h-bYPo_B-KvxWQ&usqp=CAU'
+		},
+		{
+			title:'tomato',
+			price:47,
+			image:'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhISEhMQFRUWFRUVFRUVFRUSFRAVFRUWFxUVFRUYHSggGBolGxUVITEiJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGi0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBEQACEQEDEQH/xAAbAAEAAQUBAAAAAAAAAAAAAAAABgECAwQFB//EAD4QAAIBAgMFBAYJAwQDAQAAAAABAgMRBAUhBhIxQVEiYXGBEzKRobHBBxQjQlJicoLhFUPRkqKy8ETC0hb/xAAbAQEAAwEBAQEAAAAAAAAAAAAAAQIDBAUGB//EADYRAQACAgEDAQYEBQMEAwAAAAABAgMRBBIhMQUTIjJBUXFhgbHRFJGh4fAGFSMWM5LBQlJi/9oADAMBAAIRAxEAPwD3EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5+MzCVJuVSD9FzqR7Xo++pDio96v3pFZnXlEzpvU6iklKLTTSaad00+DT5oslcAAAAAAAAAAAAAAAAAAAAAAAAAAACytVUVeWi016XdvmNi8AAAiuOxf9PrQf8A4laWq5YWbfrR6Qbd2uWrXfjM9E/hLOZ6Z/BKUzZoqAAAAMNPExc5w+9FRbX5ZXtJd11JftZG/kMxIAAAAAAAAAAAAAAAAAAABydpcRuUovlKvh4vwlWhve65nknUfnH6jrGgAAOBtrhlUwzWmkovyb3X/wAr+Rjm+HamSPdNjsdv0NxvWnaPG9427PzX7RhtuDHbcO+bLgAABwcXW3cxw6X9yhVjLv3ZKcf/AG9rM5n34V+bvGiwAAAAAAAAAAAAAAAAAAAEb+kKk3garXGLhP2TWvvMOR/25Vv4Z8p2kpVMPTqzklK1prpNet5Piu5oUz1mm5ltx8N83wQ5mZ7dUad7O5nfl0q9nj+h5cnlEsf9JE2+xF+Zy25lp8Paw/6dpEe9LTwW2detUjTnbcldNftbXvSM/b3ntMs/VPR8OLh5L18xH/uFKWf1MPNyhqpKXnazv7mXnLNO8PlPSMVcvKrjt4tuPz1t1cD9JDvaaaNa8yfm+ozf6fjzVNsp2g9LFStp38zspl6o28DkcH2Vul0HmsFxa9qLdcOb+Gv8iObUvxL2odcItx71jcwiuVZj9ZzN1EnuU4TUG9NF2fe5SfgYVv15N/KHHWZtedfJOTqagAAAAAAAAAAAAAAAAAAo2BDNrtp6ajOhHtbycZeD0aOHk8iIiaw9vg+j2zV6snaHnMqsqXZk5KErdpcEuUrfE4OmddpefweRf07lTTJHbepj9Jhv4rIIRjvSnvXV073un0ZrOCIjcy+3w+ozkn3I7IpmEYxlaJhMRvs9jFaZruVcrklUj4/JlZcnqkdXDyx/+Z/Ru0qt6uHurrfcX5pr4M6K/DD8w4WT2eelvxj9mDM4KVR7q7Kdm+Xeilo3PZ+oYbTGPvPd1XtFOEVCmnoreHka+1mI7OKODW09V2th8fiq0rKVk3a7vZc/N9xn1XmVOZl4fCx9WTz8o+c/b93Yp46NCEnUnKTto+c2+UI8P3cF3msWisd3ys35Xq+Tow06af0j7z8/tDlZbtJWpylKnGyk+CvwXBe8iMt97h9Lg9A42DH073Pzmf8AO0JhlH0hSTSqRaN68mY+Jxcn0GJjdJTnKdoaNdLdkr9Drplrbw+e5HAy4Z7x2dc1cQAAAAAAAAAAAAAABbOaSu3ZdQmImZ1CKZ/tJGzhDzfU5cuePEPa4XptpmLXea5pjVvby4nlZLd+z7DjYZ6dSy1s2hiKap2SqJWs+E0tdO+1/abRlidbfMev+j5KV/iK94jz9v7NOeMlTpuCb3NUr3+ylfh+nj4e0m3w+74eZ6N6lXBkimX4Z+f0/sjlaTu78e8wiH6T1RqJhL8swtOFLCtRwt52nXlXvv7spf2rtKKUOau29NC/ux5fnnrnqvJnlXw1vqsdtR9u+/q5tZQjVio8qz3f0vSPuaN48R9nz3V0ztIVkW7Spwes5Xlw1bevwsX9l7sQ+/jnddpvHhuyyGFKmnJJy6Xt7XyXV9xNqVpHfy87mes+yiZj8o/z5I1nWJUN21mraJqyl+aS5R42j4N3bMLW7dnH6Z6Xl9Tv/Ecm09P9Z/CPpH+fijdavKb3pO77/l0Ri+9wYcWCkY8VdVj5Q6+Q4iN9yVjbHLn5VbfFCQ1cthJcjWaRLgrntWXMnQqUXvU5MymJr4dXVjyxq8Jhslt5qqWI8FLodWLk/KzwPUfRfN8L0elUUkpRaaeqa5nbE7fL2rNZ1K8lAAAAAAAAAA16+GctVOpF8t1qy/a00/NETGxr4fMGqnoa1o1HrCXCFZLnC/CS5x5d6KxbvqUbblesoRcpOyRaZiPK9azadQ882n2q3m4xdor3nDmz77Q+q9O9K6Yi1o7oJj81nK+6nbqcV7TL6XDxaV8uNUqtmWndERDCqrTTTs1qn0fItpne0TExbxLvelVSHpbXjPs1UvuTtbe7k+Pma0t8pflHq/CnhcqaR8M96/b6fl4crE4bXdk7P7k+U1yT6MTTXd6PpPr1+LrFl74/l9a/vH4fyb+cVHGlhVJcKUfc5K3wI1t5Xq2SuTmZLVncT4ZfWqUZLnq+fqq1/Yi9bdu7zursk+yeNbdfFVm5Wk6VJdIxWtun8G1MnTXqt5fT8jlVxcTHH1iJn8ZamfZ5aE6sndvsxjwSfG1ulmr+Xect7zeXlcDBPqHMrW/jzP2j5f8ApAsTjpVHeTv8vAnpfpeO9MdYrSNQxqRGmsZNstOo001oyN6ax3jUuzh9oai0aTNIyywtw6T4bKzneWq+BPVtT+G6fEtLFVE3fg/YUmW1I1Gk3+j/AGulTkqFZtweib+4zq4+fXafD571n0uLx7XH5erxd9Uei+OVAAAAAAAAAANXMcJTqwcai7PG97ODXCUZcmupW1YmO5rfZ5vnOeVXvUPTekjFtRm1uya5b9tJPvODLm37u3v8Ph5+LMZL4+qJ+nmPy+aK4jByernF+D4LvvY5ZnT2LevYcPb2V9/Tp1+rFUwkWremS8I3+DKdbD/qS1fe/hr6/wA/CWv/AEiD/vr/AEr/AOjPc/Rjf/WNa+cE/wA/7H9FhzqJr9Nvg2WrafnCn/WGG3nFaPzif2Y8NQnh5tr7SlJWmlq0uTa46X4rvLzqe8Ofn83h+q4OmttXjvXfbv8AT6d/v50sxFWNnG6cfuvjY3q+P7xOpY85nvYei+O7Fr/e7acjPxkmFN6yabORymoxqSVqeq9JLswd1rZ/efFaFZ1E6TXHNp6YS/LMRgNxJVYNav1ZRV3xu3xfeXjU+Xd/D5ssxXW5jx9mbOMgwWIjCV2vwyjU3Vr1jK6fs1NuiI76d3FnlcK09GPz57b/AEcGnsHDVxrX8YP3NOwmm/m9rF6/SvbLjmJ+/wDbbFW2Vpwfbq7v6oWT8L8Sk4o+r2sPqdctd46xP2lnp7O0X9+m/BbpPs4+q0828eIlgxuytlenJPuf+RONri9R32tDiSwcoO0k0U1p3e2i8bhkT63KzCGWlS1TTs0RDO1+2peu7AZ06tP0M324LS/OP8HpcfJuNS+K9X4ns7+0r4n9UuOl44AAAAAAAAAhu3OdOK9BB2v676flOLlZte5D2/SuNG/a3iZ+kRG/zQP6u30S+PtOCKb8vo552Kna0zH3iY/r4WYnBqEHJrQtNYiG+Lke0tqsoli6zk3yRnD1O9Y1DVcG9C0TEOXLgi/xVifvG2SGExH3HU8I73wRPXT5vF5fpnEtEzetY/Hw26FDGRf2qio/inONP+X7C0zT5S+P53F4lJ/4r7/CNz/VkxnoWrPExtzsnL4fERaYnw8yKXmfDoYHF0pU40aVCpXtwcrQpt/mfGXHgjO9bTabeJ/m6MXpufPbqiv7MGY4OpUkvrFR9lWjTjpGK6X/AIRnFpp4jv8AWX1HB9BrWN3nf2/dSjRhDSCSt5mU5L73L6DHwceONVjTTzKrUk9ZSa4JXaR01yTby6seGlY7Q1KVaUfVlKPg2vgSvalbxq8RP3h1sBnGLeim5rhaaU0+57xpWbT83n5vSuDPvTTpn61maz/Ts35qpKLe4oSSv2L7srct3l5FtSzx1nFeI6+us/8A211R+O/nH13314KGMrripE93VbFinxK+ri1NWqRfmuBEyiuKaTustOcbd669PEo6Kzv7lrWKk90m2Sx+7UjJesveuaOjBb3nj+o4erHMT4ewUpqSUlwaTXmem+MmNTqVwQAAAAAAAwY7EKnCU3yXv5FbTqNtMWP2l4r9Xlc4yr1pPjdu7PL1N7bfaxNcGGISPDZZGEdVqdVccQ8nLyrXns5WaZXF8IpeGl/YZXxxPyWxY8Nvij+Xb9HCxuXzjwcv9Uv8mNsToj0/jZPnaPtaXCxmJrRuru3jr7zntjhvX0Di37ze/wD5f2YaO/P13K3Vt/Mmtawt/s/CxfDTc/jMy0MwoRvZWffZN+3kT1anst/t+GY/7cfyZ8tyGn69TV8ovW/iWnLaY+jOPTsXV8MJDDFVEtylFQXC6Vn7SIm3iIdlePir3s1K+Clq5N+Y9n85dFc1Y7VhyMTJR0TKzSHXT3u8tapWuRFdLaiGBl0S6mSV1F69Top4cvJrMwneXSjJLgbw8TLuHVWXQkuCLdES5v4i1WDEZBFrRIpOJtTmzHlGs1yOVO7Rhekw9TByq38uI4NaPzMdOzcMmX4h06kXfmTWdSyz44vWYe47N4jfoQfTT5/M9fHO6vgeZToyzDqF3MAAAAAAAjW3GM3KSguMn/34nPybarp63pGHry9U+IcjZ7AqMbviZYq6h387PNradp0rm+nnxZiq0kRML1tLRxGCUr6FJrt00zTWUXx+SXk3Y5rY3rYuXHTraMZjhpuW5DzOOazNnpYrVivVZtZPs1OUjauCZc+fmUrCX4bZyEFeep1VwRHl5dufa06q1sfOnTWiRFtQ1xdd/KI5vml20jCbPVwYNd5R2cru5lPd3eFtwrtS4RMr6c7NM0pbSJ7xpKshzHgdES83k4U8y7EJpG1ZeHmpp01JFnM18VRjJNNETG2uO81ncIRn+W7rbRx5Kae9xc/XCNT4mD0fMPYPo4xe/Qa6W/78D1ONbdXxPrOPpzbS86HjgAAAAAAIBttW3sTCHKKXtevzOHkTu8Q+n9Ip08e1vq6eXNbqNqeHHn+KW7KRdzxDBJ3Ky0jsyxhoWZzbu52ayUYszv2h18aJtZFsHgk5tvizmpR7OXLquknwcFCJ01jTycszeXMzjNVFPUzvd08bj7ee5zmzm2kzlvZ9Bx+PFY3LiVJ3MnVKwlTagRsuABttYKvuyRrjt8kXrFoTvIcxulqdFZ08Xk4Upo4i6NdvLtTTJKqFYq5ua0lODRneNw6+PeaWee4ulabXecUw+hrb3dvQ/oqrevH8vwaO3iT5fM+vV8S9HO180AAAAAAA812nlfE1H0lb2afI8/NHvvrvTo1x6w6uT1LwTNsc9nDyq6vpt1KpeZYVquoO4hF402Kk7ItLKtdyi+e462hzZLvZ4eHttzssxnaK0s6s+Ls6WNx9kXmzkx4e6HZzjr38zC0vX4+JE5yMJ8vSmVjYUmVrZKuy4RtS4RtW4TErkxHaVol3MhxVnY6Yncbc3JpuNp1gMRdLU1iXh5ad246pO2cVYZ1Su2taohndG1S66nLeO718Ft0S/wCjWNqzX5X8jq40al4frc7xR93pZ2vmAAAAAAAHmuex+2q/rn/yZw5I7vreFP8Aw1+0NrJqtoWLY57MeXXd9tipV1LTLKtOzawsy1WOSFMdiLRbItPZOHHuXnud4+7bOK07l9PxsOo00srx2ty1VuRibeOzGy4lplz48O5RXGYpzZha23qUpFIarZVEytbJUmVpKuwI2A2XBtVMhbbYwdZxkmaUnXZNo6q6TrK8VeKN4l42and0frBaZYxRr1sUZzLopjcvGS3ncyt3ddI6YTD6O6f2sn0g/il8zs48Pn/Wbe5Efi9DOp86AAAAAAA8/wBpqO7Xqd73var/AOTlyx3fS+n33hq5VLEbrMOrT0LY+pmhjbst1M5w6dbDV1Y1iXDkp3aOb4nsszyT2dPFx+883zqr2rHHaX03Hr2aeErbrL0lOWvVBjMVvWJvKmOnS02zJMytbJUmVrZKkyoFdqEm1SACYAlfDiFolJMoxNlZm8T2cmem5dT613k7c/Qx1axSW1Y0xRlcq1nw9J+jzD2hUn4RXvb+R34I7Pk/V8m7xVMTd4wAAAAAACLbZ4X1Ki/S/ivmZZY+b1vTMupmn5oJiJWZwW7PqMcbhrqtqViWs07N+ljmkaRdzWwRMsWKxe8miJttbHi6Z2hmb+uYWexhn3XPTIqmy2TJnupMrGwzmVrZKkyo2SpK0IVArcAEqoJ2yUwnbfw07FonSs92/TqMnbOYZ1U0CIhnwivJE1jurktqr2fZjB+jw9Nc2t5+fD3WPSpGqviObk9pmmfydUs5QAAAAAAGrmWEVWnKHVaPo1wZExuGmHJOO8WeUZtRcZNNWabT7muJ52WNS+24eSL0iYctsxd+lfSllZhiq1yExVw8xnvMrZ1Y46Yc9oiCZY5BSZWslnMrWyVZlaFJkJV2BOwJ2EG1yYNstMk226LCdtunIspMtqAV2k2xuVOtXgmuyu1LuiuP+PM3xU3LzfUeT7LFM/P5PYUjufHqgAAAAAAAAIhtvk28vTwXD118JHPnpuNva9J5nRb2dvyeeVqdjgmNPra33DA2SS08SyJaUcuuijaJakkFJlikiVJlYyVZlY2FJlQlXahKNqkaNhOjapGja5InRtkiSbbFJg23sNFsmIVmzr4XDNtJF4qwtk1D17ZHJfq9LtL7SdnL8q5RO3HTph8nz+V7fJ28R4/d3jRwgAAAAAAAACkoppp6p6NdQb14ed7V7OOk3Ugm6b/2Po+448uLXeH0/pvqPXHRfz+qI1qNjn09uL7c/FQKzDWtnMrIrpttqOI0rMsM0SzmWKQ0pMrGTpWZUJV2pYI2qkDathpO1yQ0ja5Ik2yRiNJ226FInSs2dvAYRvU0irnvkem7F7Mblq9VdrjCL5fmfyOnHj13l4HP53V/x08fP9k0NnkAAAAAAAAAAAAtqQUk00mno09U0ExMxO4QraDZNq86KvHnHi4+HVe8574vo93h+p793J5+qC43CNXTX8HNNXu0y77w4eKoNGc1dVb7aU6RGlttepAlSZa8kFJla4kqzKm4FdrlAlG1dwG1VAaRtcoE6NskaY0jqbFKiTpWbO5lGVynJJRbb4JK7fgaVqwyZorG5l6nszslGlapWScuKhxUe99WdFMevLwOVz5v7tPH1Sw1eaAAAAAAAAAAAAAAAcXOtnqVdN+rP8SWj/UuZS2OLO3jc3Jh7eYebZ/s5UovtR05NaxfgzlvjmH0fG51MsdpRmthmjHTvi8S06tEaRNmnUpE6R1MfoxpG1VTGkbXqmSrtXcGkbVUCdI6l8KZOlJs2aVAnSs3S7ZzY+rWtKS9HDrJav8ATHi/ga1xzLz+Rz6Y+0d5em5NlFHDxtTjrzm9ZPz5LuRvWsQ8TPyL5Z96fydVMswXJgVAAAAAAAAAAAAABa2BawNfEwUk1JJp8U1dPyHlNZmJ3EoVnmyUJXlSe6/wu7j5PiveY2xRPh63H9UvXtk7/j80GzPKKtL14NLqtV7UYTjmHsYuZiyfDLi1aZXTfra8oEaT1KWGlZsusTpGxRLRCs2bFHDN8E2WikufJycdPitDs5fkE52v2V7WXjF9XBk9SrHwRtNMjyKlTs1C8vxS7T8uS8jWKRDz8vKy5PM9vwSvDou5Zb1MDPEIZEBcAAAAAAAAAAAAAC1gWsDFUiBp16QS5eKwdwlHMx2ahO73VfqlZlZrEtqcjLTxaXCr7IdGyvs6uivPzx8/6Nb/APIPrIezqn/cc/1j+TNS2PXO/tZPRVS3Nzz/APL9G9h9lIr7pMRDC2W9vitM/m6+E2eiuRLN2MNlaXII26VHCWJNtynSCGxGAQyxQFyAuAAAAAAAAAAAAAAAtAo4gY5UwMUqAGKWEQSxSwK6A2s/p66A2qsvXQG2SOCQNskcKgMkaAQyKkBeoAXJAXJAVAAAAAAAAAAAAAAAAAAFLALAU3QG6A3QG6A3QG6BWwCwCwFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/Z'
+		},
+		{
+			title:'tea',
+			price:15,
+			image:'https://via.placeholder.com/150'
+		},
+		{
+			title:'coffee',
+			price:150,
+			image:'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRuseQPwvhPGkvK9xSgHwbONgyx5MSmnd6o_g&usqp=CAU'
+		},
+		];
+
+
+
+		for (const product of products) {
+
+			let container = document.createElement('div');
+			document.body.appendChild(container);
+
+			let title = document.createElement('h2');
+			title.innerText=product.title;
+			container.appendChild(title);
+
+			let price = document.createElement('div');
+			price.innerText=product.price;
+			container.appendChild(price);
+
+			let image = document.createElement('img');
+			image.src=product.image;
+			container.appendChild(image);
+
+			let btn=document.createElement('button');
+				btn.innerText='buy';
+				document.body.appendChild(btn);
+
+				btn.onclick = function () {
+					localStorage.setItem(product.title, JSON.stringify(product));
+				}
+
+
+		}
+	</script> -->
+
+	<!-- <script>
+		fetch ('https://jsonplaceholder.typicode.com/users')
+		.then (value => value.json())
+		.then (value => {
+			//console.log(value);
+			for (const user of value) {
+				console.log (user);
+
+				let div=document.createElement('div');
+				div.innerText=`${user.username}-${user.name}`;
+				document.body.appendChild(div);
+
+				let btn=document.createElement('button');
+				btn.innerText='Delete';
+				document.body.appendChild(btn);
+			}
+		});
+	</script> -->
+
+	<script src="js/bundle.js"></script>
+</body>
+</html>
